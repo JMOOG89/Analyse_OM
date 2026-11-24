@@ -63,13 +63,18 @@ PAGES = [
     ("1. Résultats & réalisme", "Vue d'ensemble", "Nos résultats reflètent-ils ce qu'on produit et ce qu'on concède ?"),
     ("2. Quand concède-t-on ?", "Sans ballon", "À quels moments du match et dans quel état du score se fait-on déborder ?"),
     ("3. Comment concède-t-on ?", "Sans ballon", "Par quel côté, sur quel type de tir, après quelle perte de balle ?"),
+    ("Piste 1 · Défendre les centres", "Piste de travail",
+     "Qui défend le mieux les centres, avant (éviter, limiter) et après (placement, duel, 2e ballon) ? Que leur prendre ?"),
+    ("Piste 2 · Protéger la zone de vérité", "Piste de travail",
+     "Comment les meilleures défenses empêchent-elles d'entrer dans la surface et de tirer face au but ?"),
     ("4. Production offensive", "Avec ballon", "Crée-t-on assez, selon le score et selon le moment du match ?"),
     ("5. Pressing & transitions", "Transitions", "Notre pressing récupère-t-il le ballon, et que se passe-t-il quand on le perd ?"),
     ("6. Joueurs : ce qui pêche", "Joueurs", "Poste par poste, où nos joueurs se situent-ils face aux 5 grands championnats ?"),
     ("7. Qui est sur le terrain ?", "Joueurs", "Concède-t-on plus ou moins selon les joueurs alignés, et de quel côté ?"),
     ("Détail match par match", "Niveau 3", "Tous les chiffres, match par match"),
 ]
-COULEURS_PHASE = {"Vue d'ensemble": ("#EEF1F5", "#334155"), "Avec ballon": ("#ECE9FB", "#4C3DB0"),
+PAGES_TITRES = [p[0] for p in PAGES]
+COULEURS_PHASE = {"Piste de travail": ("#FEF3C7", "#92400E"), "Vue d'ensemble": ("#EEF1F5", "#334155"), "Avec ballon": ("#ECE9FB", "#4C3DB0"),
                   "Sans ballon": ("#FBE9F1", "#9D2257"), "Transitions": ("#E3F5F8", "#0E6675"),
                   "Joueurs": ("#E0E7FF", "#3730A3"), "Niveau 3": ("#FFF4E0", "#92400E")}
 
@@ -1118,7 +1123,7 @@ def page_3():
 
 # ------------------------------------------------------------------ PAGE 4
 def page_4():
-    entete(4)
+    entete(6)
     rangee(["4.1", "4.2", "4.3", "4.4"])
 
     titre("Baisse de régime ? Ce qu'on crée et ce qu'on concède, tranche par tranche",
@@ -1197,7 +1202,7 @@ def page_4():
 
 # ------------------------------------------------------------------ PAGE 5
 def page_5():
-    entete(5)
+    entete(7)
     titre("Le pressing", "PPDA = passes que l'adversaire fait chez lui avant qu'on intervienne : plus c'est bas, plus on presse")
     rangee(["5.2", "5.5", "5.3", "5.4"])
     ecart_l1 = moy("ppda_approx", L1) - moy("ppda_approx")
@@ -1502,7 +1507,7 @@ def nos_joueurs():
 
 
 def page_6():
-    entete(6)
+    entete(8)
     nos = nos_joueurs()
     titre("Vue d'ensemble : ce qui pêche, joueur par joueur",
           f"joueurs encore au club ayant joué au moins {MIN_NOS_JOUEURS} min. « P20 » = mieux que 20 % des joueurs "
@@ -1675,7 +1680,7 @@ def texte_ou_tiret(df, formats):
 
 
 def page_7():
-    entete(7)
+    entete(9)
     mode_emploi("**Ajusté à l'adversaire** : chaque match est pondéré par la force offensive de l'adversaire (ses xG "
                 "créés par match ÷ moyenne de sa ligue). Concéder 3 xG contre une attaque 1,6 fois plus forte que la "
                 "moyenne « vaut » 1,9 xG contre une équipe moyenne. La colonne **Difficulté** donne le coefficient moyen "
@@ -1750,8 +1755,1166 @@ def page_7():
 
 
 
+# ------------------------------------------------------------------ PISTES DE TRAVAIL (outils communs)
+EM = charger("equipes_matchs.csv")
+WS_CENTRES = charger("ws_centres_concedes.csv") if WS_OK else None
+WS_ENTREES = charger("ws_entrees_concedees.csv") if WS_OK else None
+WS_EXEMPLES = charger("ws_exemples_video.csv") if WS_OK else None
+WS_CENTRES_L1 = charger("ws_centres_l1.csv") if WS_OK else None
+WS_TIRS_L1 = charger("ws_tirs_l1.csv") if WS_OK else None
+WS_AC = charger("ws_anti_centres.csv") if WS_OK else None
+WS_AC_SEQ = charger("ws_anti_centres_sequences.csv") if WS_OK else None
+
+
+def selection_references(df, criteres, etiquette="equipe", k_min=2, k_max=6):
+    """
+    Score = moyenne des écarts à la moyenne (en écarts-types), orientés pour que + = mieux.
+    On garde les équipes situées AVANT le plus grand écart de score entre la 2e et la 6e place :
+    un groupe de tête net plutôt qu'un nombre fixe (qualitatif).
+    criteres = {colonne: sens}, sens = -1 si « plus bas = mieux ».
+    """
+    d = df.dropna(subset=list(criteres)).copy()
+    z = pd.DataFrame({c: (d[c] - d[c].mean()) / (d[c].std() or 1) * s for c, s in criteres.items()})
+    d["score"] = z.mean(axis=1)
+    d = d.sort_values("score", ascending=False).reset_index(drop=True)
+    ecarts = {k: d.loc[k - 1, "score"] - d.loc[k, "score"] for k in range(k_min, min(k_max, len(d) - 1) + 1)}
+    k = max(ecarts, key=ecarts.get)
+    nous = d.index[d[etiquette].isin([EQUIPE, NOM_WS])]
+    rang_nous = int(nous[0]) + 1 if len(nous) else None
+    texte = (f"**{k} équipe(s) retenue(s)** : le plus grand écart de score entre la 2e et la 6e place se situe après "
+             f"la {k}e ({fmt(ecarts[k], 2)} contre {fmt(np.mean([e for kk, e in ecarts.items() if kk != k]), 2)} en "
+             f"moyenne pour les autres écarts)." + (f" {EQUIPE} : {ordinal(rang_nous)} / {len(d)}." if rang_nous else ""))
+    return d, d.head(k)[etiquette].tolist(), texte
+
+
+PROFILS = {"Idéal": "#16A34A", "Peu mais dangereux": "#D97706", "Beaucoup mais peu dangereux": "#94A3B8",
+           "Beaucoup et dangereux": "#DC2626"}
+
+
+def avec_contexte(df):
+    """Ajoute aux tableaux WhoScored (Ligue 1) les colonnes FotMob utiles : système, possession, tirs, xG par tir."""
+    cols = ["equipe", "ligue", "pct_def4", "systeme", "possession_m", "ppda_approx", "tirs_contre_m", "xga_par_tir",
+            "tirs_surface_contre_m", "centres_adv_tentes_m", "xg_contre_m"]
+    d = df.drop(columns=[c for c in cols[1:] if c in df.columns])
+    return d.merge(EQ[cols], on="equipe", how="left")
+
+
+def a_possession_egale(df, colonnes):
+    """Volume ramené à une possession 50/50 : on divise par la part de ballon laissée à l'adversaire."""
+    d = df.copy()
+    for c in colonnes:
+        d[c] = d[c] * 50 / (100 - d["possession_m"])
+    return d
+
+
+def selection_profil(df, volume, qualite, axe_vol, axe_qual, def4=True, poids_vol=0.6, etiquette="equipe",
+                     k_min=2, k_max=6, unite="actions"):
+    """
+    Références au profil recherché : PEU de volume concédé d'abord, PEU de danger ensuite.
+    1. Carré idéal : volume ≤ médiane ET danger ≤ médiane (les équipes qui défendent bien mais subissent
+       beaucoup — bloc bas, défense à 5 — sont écartées volontairement).
+    2. Option : défense à 4 (2 centraux) sur au moins la moitié des matchs.
+    3. Score = 60 % volume + 40 % qualité (en écarts-types), coupe au plus grand écart entre la 2e et la 6e place.
+    """
+    d = df.dropna(subset=list(volume) + list(qualite)).copy()
+
+    def z(crit):
+        return pd.DataFrame({c: (d[c] - d[c].mean()) / (d[c].std() or 1) * s for c, s in crit.items()}).mean(axis=1)
+    d["score_volume"], d["score_qualite"] = z(volume), z(qualite)
+    d["score"] = poids_vol * d["score_volume"] + (1 - poids_vol) * d["score_qualite"]
+    mv, mq = d[axe_vol].median(), d[axe_qual].median()
+    peu, faible = d[axe_vol] <= mv, d[axe_qual] <= mq
+    d["profil"] = np.select([peu & faible, peu & ~faible, ~peu & faible],
+                            ["Idéal", "Peu mais dangereux", "Beaucoup mais peu dangereux"], "Beaucoup et dangereux")
+    d["def4"] = d["pct_def4"].fillna(0) >= 50
+    d = d.sort_values("score", ascending=False).reset_index(drop=True)
+    ok = d[(d["profil"] == "Idéal") & (d["def4"] | (not def4))]
+    if len(ok) <= k_min:
+        refs, coupe = ok[etiquette].tolist(), None
+    else:
+        sc = ok["score"].tolist()
+        ecarts = {k: sc[k - 1] - sc[k] for k in range(k_min, min(k_max, len(sc) - 1) + 1)}
+        k = max(ecarts, key=ecarts.get)
+        refs, coupe = ok.head(k)[etiquette].tolist(), (k, ecarts)
+    nous = d[d[etiquette].isin([EQUIPE, NOM_WS])]
+    texte = (f"**{int((d['profil'] == 'Idéal').sum())} clubs sur {len(d)}** sont dans le carré idéal (peu de {unite} "
+             f"**et** peu de danger)" + (f", dont **{len(d[(d['profil'] == 'Idéal') & d['def4']])} à 4 défenseurs**"
+                                          if def4 else "") + ". ")
+    if coupe:
+        k, ecarts = coupe
+        texte += (f"On garde les **{k} premiers** au score (60 % volume, 40 % danger) : le plus grand écart de score se "
+                  f"situe après le {ordinal(k)} ({fmt(ecarts[k], 2)}).")
+    if len(nous):
+        texte += f" {EQUIPE} : profil « {nous['profil'].iloc[0]} », {ordinal(int(nous.index[0]) + 1)} / {len(d)} au score."
+    ecartes = {
+        "volume": d[(d["profil"] == "Beaucoup mais peu dangereux")].sort_values("score_qualite", ascending=False)
+                   .head(4)[etiquette].tolist(),
+        "systeme": d[(d["profil"] == "Idéal") & ~d["def4"]].head(4)[etiquette].tolist() if def4 else [],
+    }
+    return d, refs, texte, ecartes, (mv, mq)
+
+
+def encadre_ecartes(ecartes, d, quoi, pourquoi, etiquette="equipe"):
+    """Ceux qu'on écarte volontairement, et pourquoi."""
+    morceaux = []
+    if ecartes["volume"]:
+        noms = ", ".join(f"<b>{e}</b> ({sans_zero(d.loc[d[etiquette] == e, 'systeme'])})" for e in ecartes["volume"])
+        morceaux.append(f"{noms} : peu de danger, mais <b>{quoi}</b>. {pourquoi} : pas le modèle recherché.")
+    if ecartes["systeme"]:
+        noms = ", ".join(f"<b>{e}</b> ({sans_zero(d.loc[d[etiquette] == e, 'systeme'])})" for e in ecartes["systeme"])
+        morceaux.append(f"{noms} : bon profil mais <b>défense à 3 / 5</b> la plupart du temps (désactiver le filtre pour "
+                        "les inclure).")
+    if morceaux:
+        st.markdown('<div class="creuser" style="border-left-color:#94A3B8;background:#F8FAFC"><b>✖ Écartés '
+                    'volontairement</b><br><span style="font-size:12.5px">' + "<br>".join(morceaux) + "</span></div>",
+                    unsafe_allow_html=True)
+
+
+def sans_zero(serie):
+    v = serie.iloc[0] if len(serie) else ""
+    return "système ?" if pd.isna(v) or v == "" else str(v).split(",")[0].split(" (")[0]
+
+
+def matrice_profil(d, x, y, lib_x, lib_y, refs, medianes, libelles, etiquette="equipe", ligue_col=None,
+                   taille=(6.6, 4.8), noms=False):
+    """Matrice volume × danger : carré idéal en vert (en haut à droite), défenses à 3/5 en creux."""
+    mv, mq = medianes
+    fig, ax = graphique(taille)
+    pad_x, pad_y = (d[x].max() - d[x].min()) * 0.06, (d[y].max() - d[y].min()) * 0.08
+    x0, x1, y0, y1 = d[x].min() - pad_x, d[x].max() + pad_x, d[y].min() - pad_y, d[y].max() + pad_y
+    ax.add_patch(plt.Rectangle((x0, y0), mv - x0, mq - y0, color="#DCFCE7", zorder=0))
+    est_nous = d[etiquette].isin([EQUIPE, NOM_WS])
+    est_ref = d[etiquette].isin(refs)
+    for plein, masque in ((True, d["def4"]), (False, ~d["def4"])):
+        a = d[~est_nous & ~est_ref & masque]
+        ax.scatter(a[x], a[y], s=22, facecolors="#B8C0B3" if plein else "none", edgecolors="#9AA394", linewidths=0.9)
+    ax.scatter(d.loc[est_ref, x], d.loc[est_ref, y], s=80, color=VERT, edgecolors="white", zorder=3)
+    ax.scatter(d.loc[est_nous, x], d.loc[est_nous, y], s=160, color=BLEU_OM, edgecolors="white", zorder=4)
+    # références numérotées (la liste est dans l'encadré vert) : pas de chevauchement de noms
+    for i, nom in enumerate(refs, 1):
+        r = d[d[etiquette] == nom].iloc[0]
+        ax.annotate(str(i), (r[x], r[y]), xytext=(0, 0), textcoords="offset points", fontsize=7, fontweight="bold",
+                    color="white", ha="center", va="center", zorder=5)
+    for _, r in d[est_nous].iterrows():
+        ax.annotate(r[etiquette], (r[x], r[y]), xytext=(7, 4), textcoords="offset points", fontsize=8.5,
+                    fontweight="bold", color=BLEU_OM, path_effects=[pe.withStroke(linewidth=3, foreground="white")])
+    if noms:      # tous les clubs nommés (championnat à 18)
+        for _, r in d[~est_nous].iterrows():
+            ref = r[etiquette] in refs
+            ax.annotate(r[etiquette], (r[x], r[y]), xytext=(6, -3 if ref else 3), textcoords="offset points",
+                        fontsize=7.2 if ref else 6.6, fontweight="bold" if ref else "normal", color=VERT if ref else GRIS,
+                        path_effects=[pe.withStroke(linewidth=2.5, foreground="white")])
+    ax.axvline(mv, color=GRIS, lw=0.8, ls=":")
+    ax.axhline(mq, color=GRIS, lw=0.8, ls=":")
+    ax.set_xlim(x1, x0)
+    ax.set_ylim(y1, y0)
+    ax.set_xlabel(lib_x, color=GRIS, fontsize=9)
+    ax.set_ylabel(lib_y, color=GRIS, fontsize=9)
+    style = dict(transform=ax.transAxes, fontsize=7.5, style="italic")
+    ax.text(1.0, 1.02, libelles[0], ha="right", va="bottom", color="#166534", fontweight="bold", **style)
+    ax.text(0.0, 1.02, libelles[1].replace("\n", " "), ha="left", va="bottom", color=GRIS, **style)
+    ax.text(0.98, 0.03, libelles[2], ha="right", va="bottom", color="#B45309", **style)
+    ax.text(0.02, 0.03, libelles[3], ha="left", va="bottom", color="#B91C1C", **style)
+    ax.scatter([], [], s=22, facecolors="none", edgecolors="#9AA394", label="défense à 3 / 5")
+    ax.legend(loc="upper left", fontsize=7, frameon=False, bbox_to_anchor=(0, -0.12))
+    afficher(fig)
+
+
+def profil_refs(refs, colonnes, ws_cols=None):
+    """Comment ils y arrivent : système, ballon, pressing et volumes, références vs nous."""
+    noms = list(dict.fromkeys(refs + [EQUIPE]))
+    t = EQ[EQ["equipe"].isin(noms)].copy()
+    t["ordre"] = t["equipe"].map({n: i for i, n in enumerate(noms)})
+    t = t.sort_values("ordre")
+    if ws_cols and WS_OK:
+        w = WS.set_index("equipe")
+        for c, lib in ws_cols.items():
+            t[lib] = t["equipe"].map(lambda e: w[c].get(NOM_WS if e == EQUIPE else e, np.nan))
+    base = {"equipe": "Club", "ligue": "Ligue", "systeme": "Systèmes les plus utilisés", "possession_m": "Possession %",
+            "ppda_approx": "PPDA (approx.)"}
+    t = t[list(base) + list(colonnes) + (list(ws_cols.values()) if ws_cols and WS_OK else [])]
+    t = t.rename(columns={**base, **colonnes})
+    for c in t.columns[3:]:
+        f = "{:.0f}" if c.startswith("%") or c.startswith("Possession") else ("{:.1f}" if "/match" in c else "{:.2f}")
+        t[c] = ["–" if pd.isna(v) else f.format(v).replace(".", ",") for v in t[c]]
+    st.dataframe(t.style.apply(lambda r: ["background-color:#E0ECF8;font-weight:600" if r["Club"] == EQUIPE
+                                          else "background-color:#F0FDF4"] * len(r), axis=1), hide_index=True)
+
+
+def tableau_classement(d, refs, colonnes, etiquette="equipe", n=10):
+    """Classement : références en vert, nous en bleu (toujours affichés)."""
+    t = pd.concat([d.head(n), d[d[etiquette].isin([EQUIPE, NOM_WS])]]).drop_duplicates(etiquette)
+    t = t.assign(Rang=[int(i) + 1 for i in t.index])
+    cols = ["Rang", etiquette] + [c for c in colonnes if c in t.columns] + ["score"]
+    noms = {etiquette: "Club", "score": "Score", **colonnes}
+    t = t[cols].rename(columns=noms)
+    num = [v for v in list(colonnes.values()) + ["Score"] if pd.api.types.is_numeric_dtype(t[v])]
+    fmt_ = {v: "{:.2f}" for v in num}
+    fmt_.update({v: "{:.1f}" for v in num if v.startswith("%") or "/match" in v and "xG" not in v})
+
+    def couleur(r):
+        if r["Club"] in (EQUIPE, NOM_WS):
+            return ["background-color:#E0ECF8;font-weight:600"] * len(r)
+        if r["Club"] in refs:
+            return ["background-color:#DCFCE7"] * len(r)
+        return [""] * len(r)
+    st.dataframe(t.style.format(fmt_).apply(couleur, axis=1), hide_index=True, height=38 + 35 * len(t))
+
+
+def nuage_refs(df, x, y, lib_x, lib_y, refs, etiquette="equipe", inverser_x=False, inverser_y=False, quadrants=None,
+               ligue_col=None, taille=(6.6, 4.6)):
+    """Nuage : toutes les équipes en gris, références en vert (nommées), nous en bleu."""
+    fig, ax = graphique(taille)
+    est_nous = df[etiquette].isin([EQUIPE, NOM_WS])
+    est_ref = df[etiquette].isin(refs)
+    autres = df[~est_nous & ~est_ref]
+    ax.scatter(autres[x], autres[y], s=18, color="#C9CFC4")
+    ax.scatter(df.loc[est_ref, x], df.loc[est_ref, y], s=70, color=VERT, edgecolors="white", zorder=3)
+    ax.scatter(df.loc[est_nous, x], df.loc[est_nous, y], s=150, color=BLEU_OM, edgecolors="white", zorder=4)
+    for _, r in df[est_ref | est_nous].iterrows():
+        lib = r[etiquette] + (f" ({r[ligue_col]})" if ligue_col and r[etiquette] not in (EQUIPE, NOM_WS) else "")
+        ax.annotate(lib, (r[x], r[y]), xytext=(5, 4), textcoords="offset points", fontsize=8,
+                    fontweight="bold", color=BLEU_OM if r[etiquette] in (EQUIPE, NOM_WS) else VERT,
+                    path_effects=[pe.withStroke(linewidth=3, foreground="white")])
+    ax.axvline(df[x].mean(), color=GRIS, lw=0.7, ls=":")
+    ax.axhline(df[y].mean(), color=GRIS, lw=0.7, ls=":")
+    ax.set_xlabel(lib_x, color=GRIS, fontsize=9)
+    ax.set_ylabel(lib_y, color=GRIS, fontsize=9)
+    if inverser_x:
+        ax.invert_xaxis()
+    if inverser_y:
+        ax.invert_yaxis()
+    ax.text(0.99, 0.01, "en haut à droite = mieux", transform=ax.transAxes, fontsize=7.5, color=GRIS, style="italic",
+            ha="right", va="bottom")
+    afficher(fig)
+
+
+def encadre_refs(titre_, refs, texte, couleur=VERT):
+    st.markdown(f'<div class="creuser" style="border-left-color:{couleur};background:#F0FDF4"><b>✔ {titre_}</b> : '
+                + ", ".join(f"<b>{i}. {r}</b>" for i, r in enumerate(refs, 1)) + f"<br><span style='font-size:12.5px'>{gras(texte)}</span></div>",
+                unsafe_allow_html=True)
+
+
+def comparatif_joueurs(club, postes, colonnes_fm, colonnes_ws, minutes_min=300):
+    """Joueurs d'un club de référence et nos joueurs aux mêmes postes, avec la médiane européenne du poste."""
+    lignes = []
+    ws_club = sans_accents(club)
+    for poste in postes:
+        for qui, masque in ((club, JOUEURS["equipe"] == club),
+                            (EQUIPE, (JOUEURS["equipe_id"] == str(META["equipe_id"])) & JOUEURS["au_club"])):
+            j = JOUEURS[masque & (JOUEURS["poste"] == poste) & (JOUEURS["minutes"] >= minutes_min)]
+            for _, r in j.sort_values("minutes", ascending=False).iterrows():
+                ligne = {"Club": qui, "Joueur": r["joueur"], "Poste": poste, "Min.": int(r["minutes"])}
+                ligne.update({lib: r[col] for col, lib in colonnes_fm.items()})
+                if WS_JOUEURS is not None and colonnes_ws:
+                    eq_ws = NOM_WS if qui == EQUIPE else qui
+                    w = WS_JOUEURS[(WS_JOUEURS["equipe"].map(sans_accents) == sans_accents(eq_ws))
+                                   & (pd.to_numeric(WS_JOUEURS["joueur_id"], errors="coerce") ==
+                                      pd.to_numeric(r["joueur_id"], errors="coerce"))]
+                    for col, lib in colonnes_ws.items():
+                        ligne[lib] = w[col].iloc[0] if len(w) else np.nan
+                lignes.append(ligne)
+        pop = population(poste)
+        med = {"Club": "Médiane 5 champ.", "Joueur": f"({len(pop)} joueurs)", "Poste": poste, "Min.": np.nan}
+        med.update({lib: pop[col].median() for col, lib in colonnes_fm.items()})
+        if WS_JOUEURS is not None and colonnes_ws:
+            pws = population_ws(poste)
+            med.update({lib: pws[col].median() if len(pws) else np.nan for col, lib in colonnes_ws.items()})
+        lignes.append(med)
+    t = pd.DataFrame(lignes)
+    if not len(t):
+        st.info("Pas de joueur avec assez de minutes à ces postes.")
+        return
+    num = [c for c in t.columns if c not in ("Club", "Joueur", "Poste")]
+    for c in num:
+        f = "{:.0f}" if (c == "Min." or c.startswith("%")) else "{:.2f}"
+        t[c] = ["–" if pd.isna(v) else f.format(v).replace(".", ",") for v in t[c]]
+
+    def couleur(r):
+        if r["Club"] == EQUIPE:
+            return ["background-color:#E0ECF8"] * len(r)
+        if r["Club"].startswith("Médiane"):
+            return ["background-color:#F3F5F1;font-style:italic"] * len(r)
+        return ["background-color:#F0FDF4"] * len(r)
+    st.dataframe(t.style.apply(couleur, axis=1), hide_index=True, height=38 + 35 * min(len(t), 16))
+
+
+def exemples(theme, refs_l1, refs_europe, choisir_match, lib_match):
+    """Séquences vidéo : à reproduire (références, Ligue 1 avec minutes ; Europe : match à visionner) et à corriger (nous)."""
+    large = {"Action": st.column_config.TextColumn(width="large"), "Séquence": st.column_config.TextColumn(width="large"),
+             "Pourquoi": st.column_config.TextColumn(width="large")}
+    with st.container():
+        st.markdown("**✔ À reproduire — chez les références**")
+        if WS_EXEMPLES is not None and refs_l1:
+            club = st.selectbox("Club de référence (Ligue 1, avec minutes)", refs_l1, key=f"ex_{theme}")
+            t = WS_EXEMPLES[(WS_EXEMPLES["equipe"] == club) & (WS_EXEMPLES["theme"] == theme)
+                            & (WS_EXEMPLES["type"] == "À reproduire")]
+            if len(t):
+                st.caption(f"Match à visionner : **{club} – {t['adversaire'].iloc[0]}** ({t['date'].iloc[0]}) — "
+                           f"{t['match_resume'].iloc[0]}.")
+                st.dataframe(t[["minute", "joueur", "description"]].rename(
+                    columns={"minute": "Min.", "joueur": "Joueur", "description": "Action"}), hide_index=True,
+                    column_config=large)
+        if refs_europe:
+            st.markdown("Références européennes (sans minutes : match à visionner)")
+            lignes = []
+            for club in refs_europe:
+                m = EM[EM["equipe"] == club]
+                if len(m):
+                    r = choisir_match(m)
+                    lignes.append({"Club": club, "Match": f"{club} – {r['adversaire']} ({r['date']}, {r['score']})",
+                                   "Pourquoi": lib_match(r)})
+            st.dataframe(pd.DataFrame(lignes), hide_index=True, column_config=large)
+    with st.container():
+        st.markdown(f"**✖ À corriger — chez {EQUIPE}** (les plus dangereuses)")
+        if WS_EXEMPLES is not None:
+            t = WS_EXEMPLES[(WS_EXEMPLES["equipe"] == NOM_WS) & (WS_EXEMPLES["theme"] == theme)
+                            & (WS_EXEMPLES["type"] == "À corriger")]
+            st.dataframe(t[["adversaire", "date", "minute", "description"]].rename(
+                columns={"adversaire": "Adversaire", "date": "Date", "minute": "Min.", "description": "Séquence"}),
+                hide_index=True, column_config=large)
+        else:
+            message_whoscored()
+
+
+def match_peu_de_centres(m):
+    """Match contre une attaque au-dessus de la moyenne où l'adversaire a le moins centré."""
+    force = dict(zip(EQ["equipe"], EQ["xg_m"]))
+    m = m.assign(force_adv=m["adversaire"].map(force))
+    fort = m[m["force_adv"] >= EQ["xg_m"].median()]
+    return (fort if len(fort) else m).assign(s=lambda x: x["centres_adv"] + 25 * x["xga_tete"]).sort_values("s").iloc[0]
+
+
+def match_zone_parlant(m):
+    """Match contre une attaque au-dessus de la moyenne où l'on a concédé le moins de tirs dans la surface et de xG."""
+    force = dict(zip(EQ["equipe"], EQ["xg_m"]))
+    m = m.assign(force_adv=m["adversaire"].map(force))
+    fort = m[m["force_adv"] >= EQ["xg_m"].median()]
+    return (fort if len(fort) else m).assign(s=lambda x: x["tirs_surface_contre"] + 10 * x["xga"]).sort_values("s").iloc[0]
+
+
+def consignes(titre_, lignes):
+    items = "".join(f"<li>{gras(l)}</li>" for l in lignes)
+    st.markdown(f'<div class="creuser" style="border-left-color:{ORANGE};background:#FFF7ED"><b>⚽ {titre_}</b>'
+                f'<ul style="margin:4px 0 0 0">{items}</ul></div>', unsafe_allow_html=True)
+
+
+def rang_txt(df, col, sens, nom=None):
+    """« 17e / 18 » pour notre équipe dans df (sens -1 = plus bas = mieux)."""
+    nom = nom or (EQUIPE if "equipe_id" in df.columns else NOM_WS)
+    v = df.loc[df["equipe"] == nom, col]
+    if not len(v):
+        return "–"
+    v = v.iloc[0]
+    r = int((df[col] < v).sum() + 1) if sens < 0 else int((df[col] > v).sum() + 1)
+    return f"{ordinal(r)} / {len(df)}"
+
+
+# ------------------------------------------------------------------ RADARS JOUEURS
+COULEURS_RADAR = ["#0A60A8", "#16A34A", "#D97706", "#9333EA"]
+
+
+def dessiner_radar(series, libelles, taille=(5.6, 5.6)):
+    """series : [(nom, [percentiles 0-100])]. Plus loin du centre = mieux (indicateurs « bas = bien » retournés)."""
+    n = len(libelles)
+    ang = np.linspace(0, 2 * np.pi, n, endpoint=False).tolist()
+    fig = plt.figure(figsize=taille)
+    ax = fig.add_subplot(111, polar=True)
+    ax.set_theta_offset(np.pi / 2)
+    ax.set_theta_direction(-1)
+    ax.set_ylim(0, 100)
+    ax.set_yticks([25, 50, 75])
+    ax.set_yticklabels(["25", "50", "75"], fontsize=7, color=GRIS)
+    ax.set_xticks(ang)
+    ax.set_xticklabels(libelles, fontsize=8, color=TEXTE)
+    ax.tick_params(axis="x", pad=12)
+    ax.grid(color="#D5DAD0", lw=0.7)
+    ax.spines["polar"].set_color("#D5DAD0")
+    ax.fill(ang + ang[:1], [50] * (n + 1), color="#F3F5F1", zorder=0)
+    for i, (nom, vals) in enumerate(series):
+        v = [0 if pd.isna(x) else x for x in vals]
+        c = COULEURS_RADAR[i % len(COULEURS_RADAR)]
+        ax.plot(ang + ang[:1], v + v[:1], color=c, lw=2, label=nom)
+        ax.fill(ang + ang[:1], v + v[:1], color=c, alpha=0.10)
+        ax.scatter(ang, v, color=c, s=16, zorder=3)
+    ax.legend(loc="upper center", bbox_to_anchor=(0.5, -0.07), ncol=2, fontsize=8, frameon=False)
+    afficher(fig)
+
+
+def radar_joueurs(cle, postes, ind_ws, ind_fm, clubs_defaut, minutes_min=300):
+    """
+    Jusqu'à 4 joueurs sur un radar à 6 indicateurs. Chaque valeur = percentile parmi les joueurs du même poste
+    (Ligue 1 pour les indicateurs WhoScored, 5 championnats pour FotMob). 50 = médiane du poste.
+    ind_* : [(colonne, libellé, sens)] avec sens -1 si « plus bas = mieux ».
+    """
+    sources = (["Ligue 1 : détail des événements (WhoScored)"] if WS_OK else []) + ["5 championnats (FotMob)"]
+    src = st.radio("Indicateurs", sources, horizontal=True, key=f"{cle}_src")
+    if src.startswith("Ligue 1"):
+        pool = WS_JOUEURS[WS_JOUEURS["poste"].isin(postes) & (WS_JOUEURS["minutes_ws"] >= minutes_min)].copy()
+        if "Latéral / piston" in postes:          # un « latéral » qui joue dans l'axe ne subit pas de centres de son côté
+            pool = pool[pool["cote"] != "Axe"]
+        pool["lib"] = pool["joueur"] + " (" + pool["equipe"] + ")"
+        pool["nous"] = (pool["equipe"] == NOM_WS) & pool["au_club"].fillna(True).astype(bool)
+        ind, mins = ind_ws, "minutes_ws"
+    else:
+        pool = JOUEURS[JOUEURS["poste"].isin(postes) & (JOUEURS["minutes"] >= minutes_min)].copy()
+        pool["lib"] = pool["joueur"] + " (" + pool["equipe"] + ")"
+        pool["nous"] = (pool["equipe_id"] == str(META["equipe_id"])) & pool["au_club"].astype(bool)
+        ind, mins = ind_fm, "minutes"
+    if not len(pool):
+        st.info("Pas de joueur avec assez de minutes à ces postes.")
+        return
+    pool = pool.sort_values(mins, ascending=False).drop_duplicates("lib")
+    defaut = pool[pool["nous"]].head(2)["lib"].tolist()
+    for c in clubs_defaut:
+        j = pool[pool["equipe"].map(sans_accents) == sans_accents(c)].head(1)["lib"].tolist()
+        defaut += j
+        if len(defaut) >= 4:
+            break
+    choix = st.multiselect("Joueurs (4 au maximum)", pool["lib"].tolist(), default=defaut[:4], max_selections=4,
+                           key=f"{cle}_{src[:3]}")
+    if not choix:
+        return
+    series, lignes = [], []
+    for lib in choix:
+        r = pool[pool["lib"] == lib].iloc[0]
+        ref = pool[pool["poste"] == r["poste"]]
+        series.append((lib, [percentile_serie(ref[c], r[c], s) for c, _, s in ind]))
+        lignes.append({"Joueur": lib, "Poste": r["poste"], "Min.": int(r[mins]),
+                       **{l: r[c] for c, l, _ in ind}})
+    med = {"Joueur": "Médiane du poste", "Poste": "", "Min.": np.nan,
+           **{l: pool.loc[pool["poste"] == postes[0], c].median() for c, l, _ in ind}}
+    g, d = st.columns([1.1, 1])
+    with g:
+        dessiner_radar(series, [l.replace(" (", "\n(") if len(l) > 18 else l for _, l, _ in ind])
+    with d:
+        t = pd.DataFrame(lignes + [med])
+        for c in t.columns[3:]:
+            t[c] = ["–" if pd.isna(v) else (f"{v:.0f}" if c.startswith("%") else f"{v:.2f}").replace(".", ",")
+                    for v in t[c]]
+        t["Min."] = ["–" if pd.isna(v) else str(int(v)) for v in t["Min."]]
+        st.dataframe(t.set_index("Joueur").T, height=38 + 35 * (len(ind) + 2))
+        st.caption("Radar : percentile parmi les joueurs du même poste (" +
+                   ("Ligue 1" if src.startswith("Ligue 1") else "5 championnats") +
+                   f", ≥ {minutes_min} min). Plus loin du centre = mieux ; les indicateurs où « bas = bien » sont retournés. "
+                   "Le cercle gris = médiane.")
+
+
+# ------------------------------------------------------------------ INDICATEURS DISCRIMINANTS
+def correlations(df, cols, cible):
+    return pd.Series({c: df[[c, cible]].dropna().corr().iloc[0, 1] for c in cols})
+
+
+def barres_correlations(r, libelles, titre_x):
+    r = r.dropna().sort_values()
+    fig, ax = graphique((6.4, 0.38 * len(r) + 0.9))
+    couleurs = [ROUGE if v > 0.3 else VERT if v < -0.3 else "#B8C0B3" for v in r]
+    ax.barh([libelles[c] for c in r.index], r.values, color=couleurs)
+    ax.axvline(0, color=GRIS, lw=0.8)
+    for x in (-0.3, 0.3):
+        ax.axvline(x, color=GRIS, lw=0.6, ls=":")
+    for i, v in enumerate(r.values):
+        ax.text(v + (0.02 if v >= 0 else -0.02), i, fmt(v, 2), va="center", ha="left" if v >= 0 else "right",
+                fontsize=7.5, color=GRIS)
+    ax.set_xlim(-1, 1)
+    ax.set_xlabel(titre_x, color=GRIS, fontsize=8.5)
+    ax.tick_params(axis="y", labelsize=8)
+    afficher(fig)
+
+
+def tableau_indicateurs(df, clubs, indicateurs, cible, etiquette="equipe"):
+    """Lignes = indicateurs ; colonnes = clubs choisis, moyenne, lien avec la cible (r)."""
+    r = correlations(df, [c for c, _, _ in indicateurs], cible)
+    lignes = []
+    for c, lib, d in indicateurs:
+        ligne = {"Indicateur": lib}
+        for club in clubs:
+            v = df.loc[df[etiquette] == club, c]
+            ligne[club] = "–" if not len(v) or pd.isna(v.iloc[0]) else fmt(v.iloc[0], d)
+        ligne["Moyenne"] = fmt(df[c].mean(), d)
+        ligne["Lien avec le danger (r)"] = fmt(r[c], 2)
+        lignes.append(ligne)
+    t = pd.DataFrame(lignes)
+
+    def couleur(row):
+        try:
+            v = float(row["Lien avec le danger (r)"].replace(",", "."))
+        except ValueError:
+            v = 0
+        fond = "#FEE2E2" if v >= 0.3 else "#DCFCE7" if v <= -0.3 else ""
+        return [f"background-color:{fond}" if col == "Lien avec le danger (r)" else "" for col in row.index]
+    st.dataframe(t.style.apply(couleur, axis=1), hide_index=True, height=38 + 35 * len(t))
+    return r
+
+
+def ecarts_qui_comptent(df, nous, autre, indicateurs, r, etiquette="equipe", seuil=0.3, n=3):
+    """Les indicateurs liés au danger (|r| ≥ 0,3) où l'écart entre deux clubs est le plus grand (en écarts-types)."""
+    out = []
+    for c, lib, d in indicateurs:
+        if pd.isna(r.get(c)) or abs(r[c]) < seuil:
+            continue
+        a = df.loc[df[etiquette] == nous, c]
+        b = df.loc[df[etiquette] == autre, c]
+        if not len(a) or not len(b):
+            continue
+        z = (a.iloc[0] - b.iloc[0]) / (df[c].std() or 1)
+        out.append((abs(z) * abs(r[c]), lib, a.iloc[0], b.iloc[0], d, r[c]))
+    return sorted(out, reverse=True)[:n]
+
+
+def nuage_iso(df, x, y, lib_x, lib_y, refs, etiquette="equipe"):
+    """Entrées × % suivies d'un tir, avec les courbes « même nombre de tirs par match » (x × y / 100 = constante)."""
+    fig, ax = graphique((6.6, 4.8))
+    xs = np.linspace(df[x].min() * 0.9, df[x].max() * 1.05, 100)
+    for k in (4, 6, 8, 10):
+        ax.plot(xs, 100 * k / xs, color="#D5DAD0", lw=1, zorder=0)
+        xa = xs[-1]
+        ya = 100 * k / xa
+        if df[y].min() * 0.85 <= ya <= df[y].max() * 1.1:
+            ax.text(xa, ya, f" {k} tirs/match", fontsize=7, color=GRIS, va="center")
+    est_nous = df[etiquette].isin([EQUIPE, NOM_WS])
+    for _, r in df.iterrows():
+        ref, nous = r[etiquette] in refs, r[etiquette] in (EQUIPE, NOM_WS)
+        c = BLEU_OM if nous else VERT if ref else "#B8C0B3"
+        ax.scatter(r[x], r[y], s=150 if nous else 70 if ref else 30, color=c, edgecolors="white", zorder=3)
+        ax.annotate(r[etiquette], (r[x], r[y]), xytext=(6, 3), textcoords="offset points",
+                    fontsize=8 if nous or ref else 6.6, fontweight="bold" if nous or ref else "normal", color=c if nous or ref else GRIS,
+                    path_effects=[pe.withStroke(linewidth=2.5, foreground="white")])
+    ax.set_ylim(df[y].min() * 0.85, df[y].max() * 1.1)
+    ax.invert_xaxis()
+    ax.invert_yaxis()
+    ax.set_xlabel(lib_x, color=GRIS, fontsize=9)
+    ax.set_ylabel(lib_y, color=GRIS, fontsize=9)
+    ax.text(0.99, 0.01, "en haut à droite = mieux ; courbes grises = même nombre de tirs après une entrée", transform=ax.transAxes,
+            fontsize=7, color=GRIS, style="italic", ha="right", va="bottom")
+    afficher(fig)
+
+
+def encadre_limite(titre_, texte):
+    st.markdown(f'<div class="creuser" style="border-left-color:{NAVY};background:#F1F5F9"><b>ⓘ {titre_}</b><br>'
+                f'<span style="font-size:12.5px">{gras(texte)}</span></div>', unsafe_allow_html=True)
+
+
+TEXTE_STATSBOMB = (
+    "WhoScored (données Opta) n'enregistre que les actions **sur le ballon** : une pression sans contact, la distance du "
+    "défenseur le plus proche, une prise à deux ou un milieu qui redescend sans toucher le ballon sont **invisibles**. "
+    "Nos indicateurs de « pression » ne captent donc que les contacts (tacle, duel, faute, contre). "
+    "**Hudl StatsBomb** comblerait ce manque : chaque événement porte un indicateur **« sous pression »**, chaque "
+    "pression est un événement (qui presse, où, combien de temps), et l'offre **StatsBomb 360** donne la position de tous "
+    "les joueurs visibles à chaque événement (distance au centreur ou au tireur, nombre de défenseurs dans la surface, "
+    "défenseurs entre le ballon et le but). Couverture Ligue 1 en 360 et tarif : à confirmer avec Hudl (offre sur devis). "
+    "Alternative : SkillCorner (données de suivi issues des images TV, intensité de la pression).")
+
+
+# ------------------------------------------------------------------ PISTE 2 : sections
+CRIT_ZONE = {"entrees_surface_match": ("Entrées /match", -1), "tirs_apres_entrees_match": ("Tirs après entrée /match", -1),
+             "pct_entrees_suivies_tir": ("% entrées → tir", -1), "pct_z14_suivies_tir": ("% zone 14 → tir", -1),
+             "pct_duels_gagnes_30m": ("% duels gagnés (30 m)", 1), "dribble_subi_30m_match": ("Dribblé (30 m) /match", -1)}
+
+
+def section_zone_score(refs_l1):
+    w = avec_contexte(WS)
+    g, d = st.columns(2)
+    with g:
+        bloc(f"{LIGUE} : entrées dans notre surface et part qui finit en tir",
+             lambda: nuage_iso(w, "entrees_surface_match", "pct_entrees_suivies_tir",
+                               "← entrées adverses dans notre surface /match (passe ou balle au pied)",
+                               "← % suivies d'un tir en 10 s", refs_l1), "")
+    with d:
+        crit = {c: s_ for c, (_, s_) in CRIT_ZONE.items()}
+        d_ws, _, _ = selection_references(w, crit)
+        st.markdown(f"**{LIGUE} : la zone de vérité, club par club** (références de A en vert)")
+        tableau_classement(d_ws, refs_l1, {c: l for c, (l, _) in CRIT_ZONE.items()}, n=18)
+    nous = w[w["equipe"] == NOM_WS].iloc[0]
+    lecture(f"On concède **{fmt(nous['entrees_surface_match'], 1)} entrées** par match ({rang_txt(w, 'entrees_surface_match', -1)}) "
+            f"et **{fmt(nous['pct_entrees_suivies_tir'], 0)} %** finissent en tir : **{fmt(nous['tirs_apres_entrees_match'], 1)} "
+            f"tirs par match après une entrée**, {rang_txt(w, 'tirs_apres_entrees_match', -1)} (moyenne "
+            f"{fmt(w['tirs_apres_entrees_match'].mean(), 1)}). Les courbes grises du graphique relient les clubs qui "
+            "concèdent le même nombre de tirs après une entrée : un club à 55 % avec 10 entrées et un club à 37 % avec 15 "
+            "entrées concèdent autant.")
+    with st.expander("Le détail du score, et ce qui pèse vraiment sur le danger", expanded=True):
+        z = pd.DataFrame({l: (w[c] - w[c].mean()) / (w[c].std() or 1) * s_ for c, (l, s_) in CRIT_ZONE.items()})
+        z.insert(0, "Club", w["equipe"].values)
+        z["Score"] = z.drop(columns="Club").mean(axis=1)
+        z = z.sort_values("Score", ascending=False)
+        cols_num = [c for c in z.columns if c != "Club"]
+        st.dataframe(z.style.format({c: "{:+.2f}" for c in cols_num})
+                     .background_gradient(subset=cols_num, cmap="RdYlGn", vmin=-2, vmax=2)
+                     .apply(lambda r: ["font-weight:700" if r["Club"] in (NOM_WS, *refs_l1) else ""] * len(r), axis=1),
+                     hide_index=True, height=38 + 35 * len(z))
+        st.caption("Chaque case = écart à la moyenne du championnat en écarts-types, orienté pour que + = mieux "
+                   "(vert). Score = moyenne des six cases : chaque critère pèse autant.")
+        r = correlations(w, list(CRIT_ZONE), "xg_contre_m")
+        g, _ = st.columns([1.6, 1])
+        with g:
+            barres_correlations(r, {c: l for c, (l, _) in CRIT_ZONE.items()},
+                                "lien avec les xG concédés par match (r) — rouge : plus il y en a, plus on concède")
+        tri = r.abs().sort_values(ascending=False)
+        lib = {c: l for c, (l, _) in CRIT_ZONE.items()}
+        psg = w[w["equipe"] == "Paris Saint-Germain"]
+        texte = (f"Ce qui pèse le plus sur les xG concédés : **{lib[tri.index[0]]}** (r = {fmt(r[tri.index[0]], 2)}) et "
+                 f"**{lib[tri.index[1]]}** (r = {fmt(r[tri.index[1]], 2)}) : **le volume d'entrées compte plus que le % "
+                 f"qui finit en tir** (r = {fmt(r['pct_entrees_suivies_tir'], 2)}). Le score met les six critères au même "
+                 "niveau : il sert à classer, le graphique dit sur quoi travailler en premier.")
+        if len(psg):
+            p = psg.iloc[0]
+            texte += (f" **Pourquoi le PSG gagne peu de duels près de sa surface sans en souffrir ?** Il n'en dispute que "
+                      f"**{fmt(p['duels_30m_match'], 1)} par match** (moyenne {fmt(w['duels_30m_match'].mean(), 1)}) parce "
+                      f"que l'adversaire y arrive peu ({fmt(p['entrees_surface_match'], 1)} entrées par match, le moins de la "
+                      "ligue) : sur si peu de duels, le % varie beaucoup, et un duel perdu y arrive souvent quand le danger "
+                      "est déjà là (dernier défenseur). Le % de duels gagnés ne compte que **rapporté au nombre de duels**.")
+        lecture(texte)
+
+
+def section_discriminants(refs_l1, refs_eu):
+    w = avec_contexte(WS)
+    tp = [c for c in w.columns if c.startswith("tirs_passe_") and "Penalty" not in c and "Coup de pied" not in c]
+    tot = w[tp].sum(axis=1).replace(0, np.nan)
+    w["pct_tirs_remise"] = w["tirs_passe_Remise en retrait_match"] / tot * 100
+    w["pct_tirs_profondeur"] = w["tirs_passe_Passe en profondeur_match"] / tot * 100
+    w["pct_tirs_rebond"] = w["tirs_passe_2e ballon : rebond après arrêt ou tir contré_match"] / tot * 100
+    mil = WS_JOUEURS[WS_JOUEURS["poste"].astype(str).str.startswith("Milieu")].groupby("equipe")["interventions_surface"].sum()
+    w["milieux_surface_match"] = w["equipe"].map(mil) / w["matchs"]
+    inds = [("dist_tirs_m", "Distance moyenne du tir (m)", 1),
+            ("pct_grosses_occasions", "% de grosses occasions (définition Opta)", 0),
+            ("pct_tirs_contre_attaque", "% tirs en contre-attaque", 0),
+            ("pct_tirs_1re_intention", "% tirs en 1re intention (tireur libre à la réception)", 0),
+            ("pct_tirs_individuels", "% tirs après une action individuelle (sans passe décisive)", 0),
+            ("pct_tirs_apres_elimination", "% tirs juste après avoir éliminé un des nôtres", 0),
+            ("pct_tirs_remise", "% tirs après une remise en retrait", 0),
+            ("pct_tirs_profondeur", "% tirs après une passe en profondeur", 0),
+            ("pct_tirs_rebond", "% tirs sur un 2e ballon (rebond)", 0),
+            ("pct_tirs_tete_jeu", "% tirs de la tête", 0),
+            ("pct_tirs_contres", "% tirs contrés", 0),
+            ("pct_tirs_contact", "% tirs avec un contact défensif à ≤ 10 m dans les 3 s", 0),
+            ("joueurs_impliques_tir", "Nos joueurs impliqués dans les 10 s avant le tir", 2),
+            ("milieux_surface_match", "Interventions de nos milieux dans la surface /match", 1)]
+    defaut = [c for c in [NOM_WS, "Brest"] + refs_l1 if c in set(w["equipe"])]
+    clubs = st.multiselect("Clubs comparés", sorted(w["equipe"]), default=list(dict.fromkeys(defaut))[:5], key="p2_disc")
+    st.markdown(f"xG par tir concédé (dans le jeu) : " + " · ".join(
+        f"**{c}** {fmt(w.loc[w['equipe'] == c, 'xg_par_tir_jeu'].iloc[0], 3)}" for c in clubs)
+        + f" · moyenne {fmt(w['xg_par_tir_jeu'].mean(), 3)}")
+    r = tableau_indicateurs(w, clubs, inds, "xg_par_tir_jeu")
+    g, _ = st.columns([2.2, 1])
+    with g:
+        barres_correlations(r, {c: l.split(" (")[0] for c, l, _ in inds},
+                            "lien avec le xG par tir concédé (r) — rouge : plus il y en a, plus les tirs sont dangereux")
+    phrases = []
+    for autre in [c for c in clubs if c != NOM_WS]:
+        e = ecarts_qui_comptent(w, NOM_WS, autre, inds, r)
+        if e:
+            phrases.append(f"**{EQUIPE} vs {autre}** : " + " ; ".join(
+                f"{lib[0].lower() + lib[1:]} {fmt(a_, d_)} contre {fmt(b_, d_)}" for _, lib, a_, b_, d_, _ in e))
+    if phrases:
+        lecture("Les écarts qui comptent (indicateurs liés au danger, |r| ≥ 0,3, classés par écart × lien) :<br>"
+                + "<br>".join(phrases))
+    nous = w[w["equipe"] == NOM_WS].iloc[0]
+    lecture("Lecture : ce qui rend les tirs adverses dangereux, ce n'est pas le nombre de nos joueurs autour ni les contacts "
+            f"(liens faibles : r = {fmt(r['joueurs_impliques_tir'], 2)} et {fmt(r['pct_tirs_contact'], 2)}), c'est **d'où et "
+            f"comment l'adversaire tire** : de près (r = {fmt(r['dist_tirs_m'], 2)}), en **contre-attaque** "
+            f"(r = {fmt(r['pct_tirs_contre_attaque'], 2)}), en **1re intention**, c'est-à-dire libre à la réception "
+            f"(r = {fmt(r['pct_tirs_1re_intention'], 2)}), ou **juste après avoir éliminé un des nôtres** "
+            f"(r = {fmt(r['pct_tirs_apres_elimination'], 2)}). À l'inverse, les défenses solides obligent l'adversaire à "
+            f"**se créer le tir seul** (tirs individuels, r = {fmt(r['pct_tirs_individuels'], 2)}) et leurs **milieux "
+            f"interviennent davantage dans la surface** (r = {fmt(r['milieux_surface_match'], 2)}) : c'est la trace "
+            f"statistique de la redescente d'un milieu (chez nous {fmt(nous['milieux_surface_match'], 1)} par match, moyenne "
+            f"{fmt(w['milieux_surface_match'].mean(), 1)}). Pistes : **un milieu qui redescend dans la surface** sur les "
+            "attaques placées, **personne de libre au point de penalty** à la réception, **ne pas se faire éliminer** "
+            "près de la surface, **sécuriser la perte** (contre-attaques).")
+    with st.expander("Europe (FotMob, 96 clubs) : les mêmes questions avec moins de détail"):
+        inds_fm = [("dist_tirs_contre_m", "Distance moyenne du tir (m)", 1),
+                   ("pct_tirs_surface_contre", "% tirs dans la surface", 0),
+                   ("pct_tirs_axe_contre", "% tirs face au but (entre les poteaux)", 0),
+                   ("pct_grosses_occ_contre", "% de grosses occasions", 0),
+                   ("pct_tirs_tete_contre", "% tirs de la tête", 0),
+                   ("pct_tirs_contres_contre", "% tirs contrés", 0)]
+        clubs_fm = list(dict.fromkeys([EQUIPE] + refs_eu + refs_l1))
+        r_fm = tableau_indicateurs(EQ, clubs_fm, inds_fm, "xga_par_tir")
+        g, _ = st.columns([2.2, 1])
+        with g:
+            barres_correlations(r_fm, {c: l for c, l, _ in inds_fm}, "lien avec le xG par tir concédé (r, 96 clubs)")
+    encadre_limite("Distance au tireur, prise à 2, milieu qui redescend : ce que nos données ne voient pas",
+                   "Le % de tirs avec un contact défensif est un indice très partiel (lien faible avec le danger) : la "
+                   "plupart des pressions, des prises à 2 et des replacements se font sans toucher le ballon. " + TEXTE_STATSBOMB)
+
+
+# ------------------------------------------------------------------ PISTE 1 : sections
+def tableau_par(c, groupe, ordre):
+    """Centres de Ligue 1 et nos centres concédés, regroupés : nombre, % réussis, % suivis d'un tir, xG par centre."""
+    lignes = []
+    for k in ordre:
+        ligne = {groupe: k}
+        for nom, d in ((LIGUE, c), (EQUIPE, c[c["equipe"] == NOM_WS])):
+            x = d[d[groupe] == k]
+            ligne[f"{nom} : centres"] = len(x)
+            ligne[f"{nom} : % réussis"] = fmt(x["reussi"].mean() * 100, 0) if len(x) else "–"
+            ligne[f"{nom} : xG / centre"] = fmt(x["xg_10s"].mean(), 3) if len(x) else "–"
+        lignes.append(ligne)
+    st.dataframe(pd.DataFrame(lignes), hide_index=True)
+
+
+def section_pression_distance():
+    c = WS_CENTRES_L1.copy()
+    c["Distance du centre"] = pd.cut(c["distance_but_m"], [0, 20, 30, 300], labels=["< 20 m", "20 à 30 m", "> 30 m"]).astype(str)
+    c["Temps laissé au centreur"] = pd.cut(c["temps_centreur_s"], [-1, 1, 3, 1e4],
+                                           labels=["≤ 1 s (1re intention)", "1 à 3 s", "> 3 s"]).astype(str)
+    c["Type de centre"] = np.where(c["long"], "Ballon long (« long ball » Opta)", "Court ou moyen")
+    g, d = st.columns(2)
+    with g:
+        st.markdown("**Selon la distance du centre**")
+        tableau_par(c, "Distance du centre", ["< 20 m", "20 à 30 m", "> 30 m"])
+        st.markdown("**Selon le type de centre**")
+        tableau_par(c, "Type de centre", ["Court ou moyen", "Ballon long (« long ball » Opta)"])
+    with d:
+        st.markdown("**Selon le temps laissé au centreur** (≈ pression)")
+        tableau_par(c, "Temps laissé au centreur", ["≤ 1 s (1re intention)", "1 à 3 s", "> 3 s"])
+        st.caption("Temps laissé au centreur = secondes entre la dernière action d'un autre adversaire (la passe qu'il a "
+                   "reçue) et son centre. Plus il est long, plus il a eu le temps de contrôler, d'avancer, de lever la tête.")
+    nous = c[c["equipe"] == NOM_WS]
+
+    def xg(d, masque):
+        return d.loc[masque(d), "xg_10s"].mean()
+    l_loin, l_pres = xg(c, lambda d: d["distance_but_m"] > 30), xg(c, lambda d: d["distance_but_m"] <= 30)
+    n_loin, n_pres = xg(nous, lambda d: d["distance_but_m"] > 30), xg(nous, lambda d: d["distance_but_m"] <= 30)
+    l_long, n_long = xg(c, lambda d: d["long"]), xg(nous, lambda d: d["long"])
+    r_long_l = c.loc[c["long"], "reussi"].mean() * 100
+    r_long_n = nous.loc[nous["long"], "reussi"].mean() * 100
+    l_3, n_3 = xg(c, lambda d: d["temps_centreur_s"] > 3), xg(nous, lambda d: d["temps_centreur_s"] > 3)
+    lecture(f"En {LIGUE}, un centre tiré de plus de 30 m vaut **{fmt(l_loin, 3)} xG**, contre {fmt(l_pres, 3)} plus près : "
+            f"la distance protège un peu. **Chez nous, c'est l'inverse** : {fmt(n_loin, 3)} xG de loin contre {fmt(n_pres, 3)} "
+            f"de près. Ce n'est donc pas la distance qui fait le danger, c'est **ce qui se passe dans la surface sur les centres "
+            f"longs** : nos adversaires réussissent **{fmt(r_long_n, 0)} %** de leurs centres longs, contre "
+            f"{fmt(r_long_l, 0)} % en moyenne, pour {fmt(n_long, 3)} xG par centre (moyenne {fmt(l_long, 3)}). Quand le centreur "
+            f"a eu **plus de 3 s**, ses centres nous coûtent {fmt(n_3, 3)} xG (moyenne {fmt(l_3, 3)}) : le temps laissé au "
+            "centreur compte, mais il ne dit pas à lui seul si quelqu'un était sur lui.")
+    contact = c["contact"].mean() * 100
+    encadre_limite("Peut-on prouver que c'est la pression et pas la distance ? Pas avec nos données",
+                   f"Seuls **{fmt(contact, 1)} %** des centres de {LIGUE} ont une action défensive enregistrée à moins de 10 m du "
+                   "centreur dans les 3 s avant : la pression sur le centreur est presque toujours **sans contact**, donc "
+                   "absente des événements. Le temps laissé au centreur et le type de centre sont les meilleurs indices "
+                   "disponibles, pas une preuve. " + TEXTE_STATSBOMB)
+
+
+def section_systeme_collectif():
+    a = WS_AC.copy()
+    moy = a.groupby("attaque").agg(c_moy=("centres", "mean"), xg_moy=("xg_apres_centres", "mean"),
+                                   arr_moy=("arrivees_couloir", "mean"), pc_moy=("pct_arrivees_centre", "mean"))
+    a = a.join(moy, on="attaque")
+    a["ratio_centres"] = a["centres"] / a["c_moy"]
+    dang = moy[(moy["c_moy"] >= moy["c_moy"].median()) & (moy["xg_moy"] >= moy["xg_moy"].median())].index.tolist()
+    a["a4"] = a["systeme_defense"].astype(str).str[0].eq("4")
+    ex = a[a["attaque"].isin(dang) & a["a4"] & (a["defense"] != NOM_WS)
+           & ((a["ratio_centres"] <= 0.65) | ((a["xg_apres_centres"] <= 0.35 * a["xg_moy"]) & (a["ratio_centres"] <= 0.85)))]
+    ex = ex.assign(baisse=(1 - ex["ratio_centres"]) + (1 - ex["xg_apres_centres"] / ex["xg_moy"]).clip(lower=-1))
+    ex = ex.sort_values("baisse", ascending=False).head(10)
+    st.markdown(f"Attaques **habituellement dangereuses sur centres** (au-dessus de la médiane en centres **et** en xG "
+                f"après centre) : {', '.join(dang)}. Matchs où une **défense à 4** les a fait passer bien sous leur habitude :")
+    t = pd.DataFrame({
+        "Match (défense – attaque)": [f"{r['defense']} – {r['attaque']} ({pd.Timestamp(r['date']).strftime('%d/%m')})"
+                                      for _, r in ex.iterrows()],
+        "Système défense": ex["systeme_defense"],
+        "Centres (habituel)": [f"{int(r['centres'])} ({fmt(r['c_moy'], 1)})" for _, r in ex.iterrows()],
+        "xG après centres (habituel)": [f"{fmt(r['xg_apres_centres'], 2)} ({fmt(r['xg_moy'], 2)})" for _, r in ex.iterrows()],
+        "Arrivées dans le couloir (habituel)": [f"{int(r['arrivees_couloir'])} ({fmt(r['arr_moy'], 0)})" for _, r in ex.iterrows()],
+        "% arrivées → centre (habituel)": [f"{fmt(r['pct_arrivees_centre'], 0)} ({fmt(r['pc_moy'], 0)})" for _, r in ex.iterrows()],
+        "% ressorties": [fmt(v, 0) for v in ex["pct_arrivees_ressortie"]],
+        "% actions ailier / milieu": [fmt(v, 0) for v in ex["pct_aide"]],
+        "Prises à 2": ex["prises_a_2"].astype(int),
+    })
+    st.dataframe(t, hide_index=True)
+    st.caption("Arrivées dans le couloir = possessions adverses qui touchent le ballon dans un couloir des 30 derniers mètres. "
+               "Ressortie = passe vers l'arrière (≥ 10 m) depuis le couloir, sans centre. % actions ailier / milieu = part des "
+               "actions défensives dans nos couloirs (40 m) faites par un non-défenseur. Prise à 2 = deux de nos joueurs qui "
+               "interviennent dans le même couloir en moins de 4 s.")
+    r_pc = a[["ratio_centres", "pct_arrivees_centre"]].corr().iloc[0, 1]
+    r_arr = a.assign(r_arr=a["arrivees_couloir"] / a["arr_moy"])[["ratio_centres", "r_arr"]].corr().iloc[0, 1]
+    r_aide = a[["ratio_centres", "pct_aide"]].corr().iloc[0, 1]
+    r_p2 = a[["ratio_centres", "prises_a_2"]].corr().iloc[0, 1]
+    nous = a[a["defense"] == NOM_WS]
+    lecture(f"Sur les {len(a)} matchs de {LIGUE}, ce qui fait baisser le nombre de centres adverses : d'abord **moins "
+            f"d'arrivées dans le couloir** (lien r = {fmt(r_arr, 2)}), puis le fait que, **une fois dans le couloir, "
+            f"l'adversaire ne centre pas** (r = {fmt(r_pc, 2)}). La part d'actions faites par un ailier ou un milieu "
+            f"(r = {fmt(r_aide, 2)}) et les prises à 2 (r = {fmt(r_p2, 2)}) **ne suffisent pas à l'expliquer** dans les "
+            "événements : l'aide qui compte (fermer l'intérieur, se placer à côté du latéral) se fait souvent **sans toucher "
+            f"le ballon**. Chez nous : **{fmt(nous['arrivees_couloir'].mean(), 0)} arrivées** adverses dans nos couloirs par "
+            f"match (moyenne {fmt(a['arrivees_couloir'].mean(), 0)}), **{fmt(nous['pct_arrivees_centre'].mean(), 0)} %** "
+            f"finissent en centre (moyenne {fmt(a['pct_arrivees_centre'].mean(), 0)} %), "
+            f"**{fmt(nous['pct_aide'].mean(), 0)} %** de nos actions dans les couloirs faites par un ailier ou un milieu "
+            f"(moyenne {fmt(a['pct_aide'].mean(), 0)} %).")
+    if len(ex):
+        choix = st.selectbox("Voir les prises à 2 d'un match (minutes pour la vidéo)", t["Match (défense – attaque)"].tolist(),
+                             key="p1_ac_match")
+        r = ex.iloc[t["Match (défense – attaque)"].tolist().index(choix)]
+        sq = WS_AC_SEQ[(WS_AC_SEQ["game_id"] == r["game_id"]) & (WS_AC_SEQ["defense"] == r["defense"])]
+        if len(sq):
+            st.dataframe(sq[["minute", "cote_defense", "joueur_1", "joueur_2", "actions", "suite"]].rename(columns={
+                "minute": "Min.", "cote_defense": "Couloir (vu par la défense)", "joueur_1": "1er joueur",
+                "joueur_2": "2e joueur", "actions": "Actions", "suite": "Suite"}), hide_index=True)
+        else:
+            st.caption("Aucune prise à 2 enregistrée dans ce match : l'aide s'est faite sans contact — à regarder en vidéo "
+                       "(placement de l'ailier, distance avec le latéral).")
+
+
+def section_europe_centres():
+    """Europe (FotMob) : attaques qui centrent beaucoup, tombées sur une défense à 4 qui les a privées de centres."""
+    if "systeme" not in EM.columns:
+        return
+    att = EQ.set_index("equipe")
+    moy_c = att["centres_tentes"] / att["mj"]
+    dang = moy_c[moy_c >= moy_c.quantile(0.66)].index
+    m = EM[(EM["adversaire"].isin(dang)) & EM["systeme"].astype(str).str[0].eq("4")].copy()
+    m["c_moy"] = m["adversaire"].map(moy_c)
+    m["ratio"] = m["centres_adv"] / m["c_moy"]
+    m["ligue"] = m["equipe"].map(att["ligue"])
+    m = m[(m["ratio"] <= 0.5) & (m["ligue"] != LIGUE)].sort_values("ratio").head(8)
+    if not len(m):
+        return
+    st.markdown("**Ailleurs en Europe (FotMob, sans le détail des actions)** : grosses équipes de centreurs privées de "
+                "centres par une défense à 4 — matchs à regarder en vidéo")
+    st.dataframe(pd.DataFrame({
+        "Match (défense – attaque)": [f"{r['equipe']} – {r['adversaire']} ({r['date']}, {r['score']})" for _, r in m.iterrows()],
+        "Ligue": m["ligue"], "Système défense": m["systeme"],
+        "Centres de l'attaque (habituel)": [f"{int(r['centres_adv'])} ({fmt(r['c_moy'], 1)})" for _, r in m.iterrows()],
+        "xG de la tête concédé": [fmt(v, 2) for v in m["xga_tete"]]}), hide_index=True)
+
+
+def tableau_lateraux(clubs):
+    lat = WS_JOUEURS[(WS_JOUEURS["poste"] == "Latéral / piston") & (WS_JOUEURS["minutes_ws"] >= 300)].copy()
+    lat = lat[((lat["equipe"] != NOM_WS) | lat["au_club"].fillna(True).astype(bool)) & (lat["cote"] != "Axe")]
+    cols = {"centres_adv_cote_90": "Centres subis de son côté /90", "pct_centres_cote_reussis": "% réussis",
+            "pct_centres_cote_loin": "% de loin (> 30 m)", "temps_centreur_cote_s": "Temps laissé au centreur (s)",
+            "centres_adv_cote_tir_90": "Centres suivis d'un tir /90", "xg_apres_centres_adv_cote_90": "xG après ces centres /90"}
+    t = lat[lat["equipe"].isin(clubs)].sort_values(["equipe", "minutes_ws"], ascending=[True, False])
+    t = t[["equipe", "joueur", "cote", "minutes_ws"] + list(cols)].rename(
+        columns={"equipe": "Club", "joueur": "Joueur", "cote": "Côté", "minutes_ws": "Min.", **cols})
+    med = {"Club": f"Médiane {LIGUE}", "Joueur": f"({len(lat)} latéraux)", "Côté": "", "Min.": np.nan,
+           **{l: lat[c].median() for c, l in cols.items()}}
+    t = pd.concat([t, pd.DataFrame([med])], ignore_index=True)
+    for c in list(cols.values()) + ["Min."]:
+        t[c] = ["–" if pd.isna(v) else (f"{v:.0f}" if c.startswith("%") or c == "Min." else f"{v:.2f}").replace(".", ",")
+                for v in t[c]]
+
+    def couleur(r):
+        if r["Club"] == NOM_WS:
+            return ["background-color:#E0ECF8"] * len(r)
+        if r["Club"].startswith("Médiane"):
+            return ["background-color:#F3F5F1;font-style:italic"] * len(r)
+        return ["background-color:#F0FDF4"] * len(r)
+    st.dataframe(t.style.apply(couleur, axis=1), hide_index=True, height=38 + 35 * min(len(t), 14))
+    st.caption("Bas = bien pour toutes les colonnes. Un latéral qui joue beaucoup côté fort adverse subit plus de centres : "
+               "à lire avec la qualité (% réussis, xG après).")
+
+
+# ------------------------------------------------------------------ PISTE 1 : DÉFENDRE LES CENTRES
+def page_piste_centres():
+    entete(PAGES_TITRES.index("Piste 1 · Défendre les centres"))
+    o = NOUS
+    lecture(f"Chaque centre adverse nous coûte **{fmt(o['xga_tete_par_centre_adv'] * 100, 1)} centièmes de xG de la tête**, "
+            f"contre {fmt(EQ['xga_tete_par_centre_adv'].mean() * 100, 1)} en moyenne "
+            f"({rang_txt(EQ, 'xga_tete_par_centre_adv', -1)} des 5 championnats). "
+            + (f"En Ligue 1, **{fmt(WS_NOUS['pct_centres_suivis_tir'], 1)} %** des centres adverses sont suivis d'un tir en 10 s "
+               f"({rang_txt(WS, 'pct_centres_suivis_tir', -1)}, moyenne {fmt(WS['pct_centres_suivis_tir'].mean(), 1)} %)."
+               if WS_OK else ""))
+    st.markdown("**Le profil recherché** : une équipe qui **subit peu de centres** (pression sur le porteur, latéral et "
+                "ailier qui ferment le couloir, défense à 4) et dont les centres concédés partent **dans de mauvaises "
+                "conditions** (de loin, sous pression, rarement reçus). Une équipe qui subit 50 centres et les défend bien "
+                "grâce à 5 défenseurs dans la surface **n'est pas** le modèle : elle est écartée.")
+    c1, c2 = st.columns(2)
+    def4 = c1.toggle("Seulement les équipes à 4 défenseurs (2 centraux)", True, key="p1_def4")
+    egal = c2.toggle("Volumes à possession égale (50/50)", False, key="p1_poss",
+                     help="Une équipe qui a 65 % du ballon subit mécaniquement moins de centres. Activé : le nombre de "
+                          "centres subis est ramené à ce qu'il serait si l'adversaire avait le ballon la moitié du temps.")
+
+    # ---------- A. LA SÉLECTION
+    titre("A. Peu de centres d'abord, des centres sans danger ensuite",
+          "carré vert = idéal ; ronds creux = défense à 3 / 5 ; pointillés = médianes")
+    eu = a_possession_egale(EQ, ["centres_adv_tentes_m"]) if egal else EQ
+    d_eu, refs_eu, txt_eu, ec_eu, med_eu = selection_profil(
+        eu, {"centres_adv_tentes_m": -1}, {"pct_centres_adv_reussis": -1, "xga_tete_par_centre_adv": -1},
+        "centres_adv_tentes_m", "xga_tete_par_centre_adv", def4=def4, unite="centres")
+    refs_l1 = []
+    lib_quad = ("IDÉAL : peu de centres, sans danger", "beaucoup, mais bien défendus\n(bloc bas, défense à 5)",
+                "peu, mais dangereux", "beaucoup et dangereux")
+    g, d = st.columns(2)
+    with g:
+        bloc("Europe (96 clubs) : volume et danger des centres subis",
+             lambda: matrice_profil(d_eu, "centres_adv_tentes_m", "xga_tete_par_centre_adv",
+                                    "← centres adverses par match" + (" (possession égale)" if egal else ""),
+                                    "← xG de la tête concédé par centre", refs_eu, med_eu, lib_quad, ligue_col="ligue"), "")
+        encadre_refs("Références Europe", refs_eu, txt_eu)
+        encadre_ecartes(ec_eu, d_eu, "beaucoup de centres subis", "Ils absorbent les centres (bloc bas, nombre dans la surface) au lieu de les empêcher")
+    with d:
+        if WS_OK:
+            l1 = avec_contexte(WS)
+            l1 = a_possession_egale(l1, ["centres_adv_match"]) if egal else l1
+            d_l1, refs_l1, txt_l1, ec_l1, med_l1 = selection_profil(
+                l1, {"centres_adv_match": -1},
+                {"pct_centres_reussis_adv": -1, "xg_par_centre_adv": -1, "pct_centres_de_loin": 1},
+                "centres_adv_match", "xg_par_centre_adv", def4=def4, unite="centres")
+            bloc(f"{LIGUE} : volume et danger des centres subis (dans le jeu)",
+                 lambda: matrice_profil(d_l1, "centres_adv_match", "xg_par_centre_adv",
+                                        "← centres adverses dans le jeu par match" + (" (possession égale)" if egal else ""),
+                                        "← xG dans les 10 s, par centre", refs_l1, med_l1, lib_quad, noms=True), "")
+            encadre_refs(f"Références {LIGUE}", refs_l1, txt_l1)
+            encadre_ecartes(ec_l1, d_l1, "beaucoup de centres subis", "Ils absorbent les centres (bloc bas, nombre dans la surface) au lieu de les empêcher")
+        else:
+            message_whoscored()
+    with st.expander("Le classement complet (score = 60 % volume, 40 % danger)"):
+        g, d = st.columns(2)
+        with g:
+            tableau_classement(d_eu.assign(Profil=d_eu["profil"]), refs_eu, {
+                "ligue": "Ligue", "centres_adv_tentes_m": "Centres subis /match", "pct_centres_adv_reussis": "% réussis",
+                "xga_tete_par_centre_adv": "xG tête / centre", "Profil": "Profil"}, n=12)
+        with d:
+            if WS_OK:
+                tableau_classement(d_l1.assign(Profil=d_l1["profil"]), refs_l1, {
+                    "centres_adv_match": "Centres /match", "pct_centres_reussis_adv": "% réussis",
+                    "pct_centres_de_loin": "% de loin (> 30 m)", "xg_par_centre_adv": "xG / centre",
+                    "Profil": "Profil"}, n=12)
+
+    # ---------- B. COMMENT ILS Y ARRIVENT
+    titre("B. Comment ils y arrivent : système, ballon, pressing",
+          "PPDA = passes adverses par action défensive : bas = pression haute")
+    profil_refs(list(dict.fromkeys(refs_l1 + refs_eu)),
+                {"pct_def4": "% matchs à 4 déf.", "centres_adv_tentes_m": "Centres subis /match",
+                 "pct_centres_adv_reussis": "% centres réussis", "xga_tete_par_centre_adv": "xG tête / centre",
+                 "tirs_contre_m": "Tirs concédés /match"},
+                {"centres_adv_match": "Centres dans le jeu /match (L1)", "pct_centres_de_loin": "% centres de loin (L1)"})
+    with st.expander("Pour info : défendre le centre une fois donné (ne sert plus à choisir les références)"):
+        if WS_OK:
+            duel_ok = WS_NOUS["pct_aeriens_surface_gagnes"] >= WS["pct_aeriens_surface_gagnes"].mean()
+            st.markdown(f"{EQUIPE} gagne **{fmt(WS_NOUS['pct_aeriens_surface_gagnes'], 0)} %** de ses duels aériens dans sa "
+                        f"surface (moyenne {fmt(WS['pct_aeriens_surface_gagnes'].mean(), 0)} %) : "
+                        + ("le premier duel n'est pas le problème. " if duel_ok else "le premier duel est un problème. ")
+                        + f"**{fmt(WS_NOUS['pct_interventions_suivies_tir'], 0)} %** de nos interventions dans la surface sont "
+                        f"suivies d'un tir adverse ({rang_txt(WS, 'pct_interventions_suivies_tir', -1)}) : le 2e ballon.")
+        else:
+            message_whoscored()
+
+    # ---------- C. PRESSION OU DISTANCE
+    titre("C. Pression sur le centreur ou distance du centre : ce que disent nos données",
+          f"centres adverses dans le jeu, {LIGUE} (WhoScored) ; xG = tirs dans les 10 s qui suivent le centre")
+    if WS_OK and WS_CENTRES_L1 is not None:
+        section_pression_distance()
+    else:
+        message_whoscored()
+
+    # ---------- D. LE SYSTÈME COLLECTIF
+    titre("D. Le système collectif : des attaques dangereuses sur centres, neutralisées par une défense à 4",
+          "match par match : ce que l'adversaire fait quand il arrive dans le couloir, ce que fait la défense")
+    if WS_OK and WS_AC is not None:
+        section_systeme_collectif()
+    else:
+        message_whoscored()
+    section_europe_centres()
+
+    # ---------- LATÉRAUX
+    titre("Les latéraux : centres subis de leur côté et qualité de ces centres",
+          f"{LIGUE}, ≥ 300 min ; centres adverses partis de son côté pendant qu'il était sur le terrain")
+    if WS_OK:
+        clubs = st.multiselect("Clubs comparés", sorted(WS["equipe"]), default=list(dict.fromkeys([NOM_WS] + refs_l1)),
+                               key="p1_clubs_lat")
+        tableau_lateraux(clubs)
+    else:
+        message_whoscored()
+    st.markdown("**Radar : jusqu'à 4 latéraux**")
+    radar_joueurs("p1_radar", ["Latéral / piston"],
+                  [("centres_adv_cote_90", "Centres subis de son côté /90", -1),
+                   ("pct_centres_cote_reussis", "% de ces centres réussis", -1),
+                   ("xg_apres_centres_adv_cote_90", "xG après ces centres /90", -1),
+                   ("temps_centreur_cote_s", "Temps laissé au centreur (s)", -1),
+                   ("pct_duels_30m", "% duels gagnés (30 m)", 1),
+                   ("dribble_subi_30m_90", "Dribblé (30 m) /90", -1)],
+                  [("% duels au sol gagnés", "% duels au sol gagnés", 1),
+                   ("% duels aériens gagnés", "% duels aériens gagnés", 1),
+                   ("Dribblé /90", "Dribblé /90", -1),
+                   ("Tacles /90 (ajusté poss.)", "Tacles /90 (aj.)", 1),
+                   ("Interceptions /90 (ajusté poss.)", "Interceptions /90 (aj.)", 1),
+                   ("Duels perdus /90", "Duels perdus /90", -1)],
+                  refs_l1 + refs_eu)
+
+    # ---------- VIDÉO
+    titre("Exemples à analyser en vidéo", "match et minute ; pour les clubs étrangers, le match le plus parlant")
+    exemples("Centres", refs_l1, refs_eu, match_peu_de_centres,
+             lambda r: f"{int(r['centres_adv'])} centres subis face à une attaque au-dessus de la moyenne, "
+                       f"{fmt(r['xga_tete'], 2)} xG de la tête concédé : regarder la pression sur le porteur côté")
+
+    # ---------- ENTRAÎNEMENT
+    consignes("Pistes pour l'entraînement", [
+        "**Avant le centre** — duel 1 contre 1 côté : le latéral cadre le porteur en moins de 2 s et ferme l'angle de "
+        "centre (pied extérieur) ; l'ailier revient fermer l'intérieur. Mesure : nombre de centres « libres ».",
+        "**Centres longs (ballons longs)** : chez nous ils trouvent preneur bien plus souvent qu'ailleurs (partie C) : "
+        "travailler la fermeture du 2e poteau et la hauteur de la ligne quand le ballon est loin, pas seulement la sortie "
+        "sur le centreur.",
+        "**Ne pas laisser de temps au centreur** : sur les centres où le centreur a eu plus de 3 s, nous concédons plus "
+        "que la moyenne (partie C) : l'ailier ferme l'intérieur, le latéral sort, on oblige à centrer vite ou à ressortir.",
+        "**Dans la surface** — 3 contre 3 + gardien sur centres : marquage du 1er poteau et du point de penalty, "
+        "le latéral opposé ferme le 2e poteau, contact avant le saut.",
+        "**2e ballon** : sur chaque centre, un milieu fixé à l'entrée de surface (zone de reprise) ; consigne de "
+        "dégagement « haut et large », jamais dans l'axe.",
+        "**Vidéo** : montrer côte à côte une séquence « à reproduire » d'une référence et une séquence « à corriger » "
+        "de chez nous, même type de centre."])
+    note("decision_piste_centres", "✎ Décisions et exercices retenus", zone=True, hauteur=90)
+
+
+# ------------------------------------------------------------------ PISTE 2 : PROTÉGER LA ZONE DE VÉRITÉ
+def page_piste_zone():
+    entete(PAGES_TITRES.index("Piste 2 · Protéger la zone de vérité"))
+    o = NOUS
+    lecture(f"On concède **{fmt(o['tirs_contre_m'], 1)} tirs par match** dont **{fmt(o['tirs_surface_contre_m'], 1)} dans la "
+            f"surface** ({rang_txt(EQ, 'tirs_surface_contre_m', -1)}) et **{fmt(o['xga_cote_Axe_m'], 2)} xG face au but** "
+            f"({rang_txt(EQ, 'xga_cote_Axe_m', -1)}). "
+            + (f"En {LIGUE}, l'adversaire entre **{fmt(WS_NOUS['entrees_surface_match'], 1)} fois par match** dans notre "
+               f"surface et **{fmt(WS_NOUS['pct_entrees_suivies_tir'], 0)} %** de ces entrées finissent en tir en 10 s "
+               f"({rang_txt(WS, 'pct_entrees_suivies_tir', -1)})." if WS_OK else ""))
+    st.markdown("**Le profil recherché** : une équipe qui **concède peu de tirs** — on empêche l'adversaire d'arriver en "
+                "position de frapper — plutôt qu'une équipe qui en concède beaucoup mais de loin (bloc bas qui laisse frapper). "
+                "**L'idéal combine les deux** : peu de frappes et, quand il y en a, peu de xG par frappe.")
+    c1, c2 = st.columns(2)
+    def4 = c1.toggle("Seulement les équipes à 4 défenseurs (2 centraux)", True, key="p2_def4")
+    egal = c2.toggle("Volumes à possession égale (50/50)", False, key="p2_poss",
+                     help="Activé : les tirs concédés sont ramenés à ce qu'ils seraient si l'adversaire avait le ballon "
+                          "la moitié du temps (neutralise l'effet « on a toujours le ballon »).")
+
+    # ---------- A. LA SÉLECTION
+    titre("A. Peu de tirs d'abord, des tirs peu dangereux ensuite",
+          "carré vert = idéal ; ronds creux = défense à 3 / 5 ; pointillés = médianes")
+    base = a_possession_egale(EQ, ["tirs_contre_m", "tirs_surface_contre_m"]) if egal else EQ
+    lib_quad = ("IDÉAL : peu de tirs, peu dangereux", "beaucoup de tirs, mais de loin\n(bloc bas qui laisse frapper)",
+                "peu de tirs, mais dangereux", "beaucoup et dangereux")
+    vol, qual = {"tirs_contre_m": -1, "tirs_surface_contre_m": -1}, {"xga_par_tir": -1, "xga_pied_surface_par_tir": -1}
+    d_eu, refs_eu, txt_eu, ec_eu, med_eu = selection_profil(base, vol, qual, "tirs_contre_m", "xga_par_tir",
+                                                            def4=def4, unite="tirs")
+    d_l1, refs_l1, txt_l1, ec_l1, med_l1 = selection_profil(base[base["ligue"] == LIGUE], vol, qual, "tirs_contre_m",
+                                                            "xga_par_tir", def4=def4, unite="tirs")
+    lx = "← tirs concédés par match" + (" (possession égale)" if egal else "")
+    g, d = st.columns(2)
+    with g:
+        bloc("Europe (96 clubs) : nombre et danger des tirs concédés",
+             lambda: matrice_profil(d_eu, "tirs_contre_m", "xga_par_tir", lx, "← xG par tir concédé", refs_eu, med_eu,
+                                    lib_quad, ligue_col="ligue"), "")
+        encadre_refs("Références Europe", refs_eu, txt_eu)
+        encadre_ecartes(ec_eu, d_eu, "beaucoup de tirs concédés", "Ils laissent frapper, souvent de loin, au lieu d'empêcher la frappe")
+    with d:
+        bloc(f"{LIGUE} : nombre et danger des tirs concédés",
+             lambda: matrice_profil(d_l1, "tirs_contre_m", "xga_par_tir", lx, "← xG par tir concédé", refs_l1, med_l1,
+                                    lib_quad, noms=True), "")
+        encadre_refs(f"Références {LIGUE}", refs_l1, txt_l1)
+        encadre_ecartes(ec_l1, d_l1, "beaucoup de tirs concédés", "Ils laissent frapper, souvent de loin, au lieu d'empêcher la frappe")
+    with st.expander("Le classement complet (score = 60 % volume, 40 % danger)"):
+        g, d = st.columns(2)
+        for col, dd, rr in ((g, d_eu, refs_eu), (d, d_l1, refs_l1)):
+            with col:
+                tableau_classement(dd.assign(Profil=dd["profil"]), rr, {
+                    "ligue": "Ligue", "tirs_contre_m": "Tirs /match", "tirs_surface_contre_m": "Tirs surface /match",
+                    "xga_par_tir": "xG / tir", "Profil": "Profil"}, n=12)
+
+    # ---------- B. COMMENT ILS Y ARRIVENT
+    titre("B. Comment ils y arrivent : système, ballon, pressing, accès à la surface",
+          "PPDA = passes adverses par action défensive : bas = pression haute")
+    profil_refs(list(dict.fromkeys(refs_l1 + refs_eu)),
+                {"pct_def4": "% matchs à 4 déf.", "tirs_contre_m": "Tirs concédés /match",
+                 "tirs_surface_contre_m": "Tirs surface /match", "xga_par_tir": "xG / tir",
+                 "touches_surface_contre_m": "Ballons adv. dans notre surface /match", "xga_cote_Axe_m": "xG face au but /match"},
+                {"entrees_surface_match": "Entrées surface /match (L1)", "pct_entrees_suivies_tir": "% entrées → tir (L1)"})
+
+    # ---------- C. LA ZONE DE VÉRITÉ
+    titre("C. La zone de vérité : combien d'entrées, et combien finissent en tir",
+          f"{LIGUE} ; un % élevé avec peu d'entrées pèse moins qu'un % moyen avec beaucoup d'entrées")
+    if WS_OK:
+        section_zone_score(refs_l1)
+    else:
+        message_whoscored()
+
+    # ---------- D. CE QUI REND UN TIR DANGEREUX
+    titre("D. Pourquoi leurs tirs sont moins dangereux : les indicateurs qui font la différence",
+          "lien avec le danger = corrélation r entre l'indicateur et le xG par tir concédé, sur les clubs du championnat")
+    if WS_OK:
+        section_discriminants(refs_l1, refs_eu)
+    else:
+        message_whoscored()
+
+    # ---------- JOUEURS
+    titre("Les joueurs : radars jusqu'à 4 joueurs, 6 indicateurs",
+          "percentile parmi les joueurs du même poste ; plus loin du centre = mieux")
+    st.markdown("**Défenseurs centraux**")
+    radar_joueurs("p2_dc", ["Défenseur central"],
+                  [("pct_duels_30m", "% duels gagnés (30 m)", 1),
+                   ("pct_aeriens_surface", "% aériens gagnés (surface)", 1),
+                   ("tirs_contres_90", "Tirs contrés /90", 1),
+                   ("interventions_surface_90", "Interventions dans la surface /90", 1),
+                   ("dribble_subi_30m_90", "Dribblé (30 m) /90", -1),
+                   ("duels_perdus_tir_90", "Duels perdus → tir /90", -1)],
+                  [("% duels aériens gagnés", "% duels aériens gagnés", 1),
+                   ("% duels au sol gagnés", "% duels au sol gagnés", 1),
+                   ("Interceptions /90 (ajusté poss.)", "Interceptions /90 (aj.)", 1),
+                   ("Tirs contrés /90", "Tirs contrés /90", 1),
+                   ("Dribblé /90", "Dribblé /90", -1),
+                   ("Dégagements /90", "Dégagements /90", 1)],
+                  refs_l1 + refs_eu)
+    st.markdown("**Milieux de terrain**")
+    radar_joueurs("p2_mil", ["Milieu défensif / central"],
+                  [("actions_z14_90", "Ballons gagnés en zone 14 /90", 1),
+                   ("interventions_surface_90", "Redescentes : interventions dans la surface /90", 1),
+                   ("recuperations_90", "Récupérations /90", 1),
+                   ("pct_duels_30m", "% duels gagnés (30 m)", 1),
+                   ("dribble_subi_30m_90", "Dribblé (30 m) /90", -1),
+                   ("pertes_punies_90", "Pertes punies d'un tir /90", -1)],
+                  [("Récupérations /90 (ajusté poss.)", "Récupérations /90 (aj.)", 1),
+                   ("Interceptions /90 (ajusté poss.)", "Interceptions /90 (aj.)", 1),
+                   ("Tacles /90 (ajusté poss.)", "Tacles /90 (aj.)", 1),
+                   ("% duels au sol gagnés", "% duels au sol gagnés", 1),
+                   ("Dribblé /90", "Dribblé /90", -1),
+                   ("Duels perdus /90", "Duels perdus /90", -1)],
+                  refs_l1 + refs_eu)
+    st.caption("Zone 14 = axe devant notre surface (17 à 30 m de notre but). « Redescentes » = interventions défensives dans "
+               "notre surface (dégagement, interception, contre, duel gagné) : pour un milieu, c'est la trace d'un retour "
+               "dans la surface. Indicateurs Ligue 1 : WhoScored ; 5 championnats : FotMob.")
+
+    # ---------- LES BUTS CITÉS
+    if WS_OK:
+        titre("Les buts du Havre et du Mans : ce qu'ils montrent")
+        e = WS_ENTREES
+        cas = e[e["adversaire"].isin(["Le Havre", "Le Mans"]) & e["tir_10s"]].sort_values(["but_10s", "xg_10s"],
+                                                                                          ascending=False)
+        st.dataframe(cas[["adversaire", "minute", "mode", "joueur", "receveur", "zone_depart", "tireur", "xg_10s", "but_10s"]]
+                     .rename(columns={"adversaire": "Adversaire", "minute": "Min.", "mode": "Entrée", "joueur": "Qui entre",
+                                      "receveur": "Pour qui", "zone_depart": "Départ", "tireur": "Tireur",
+                                      "xg_10s": "xG", "but_10s": "But"}).style.format({"xG": "{:.2f}"}), hide_index=True)
+        st.markdown(
+            "- **Le Havre, 85'** : combinaison au bord de la surface sur notre droite (Mosengo → Nakamura), **Mizuta "
+            "élimine Kamissoko balle au pied dans la surface**, sert Nakamura : arrêt de De Lange, **N'Diaye reprend de la "
+            "tête**. Trois problèmes en une séquence : pas de pression sur la combinaison, duel perdu dans la surface, "
+            "2e ballon non couvert.\n"
+            "- **Le Mans, 94'** : jeu en triangle sur notre gauche jusqu'à la ligne de but (Traoré, Colas, Bretelle), "
+            "**remise en retrait de Bamba depuis la surface** pour Vercruysse, seul au point de penalty. Le bloc recule "
+            "vers le but au lieu de protéger la zone de remise.\n"
+            "- **Le Mans, 83'** : changement d'aile, centre de Calodat depuis notre droite, arrêt de De Lange, **Colas "
+            "suit et marque** : 2e ballon.")
+
+    # ---------- VIDÉO
+    titre("Exemples à analyser en vidéo", "match et minute ; pour les clubs étrangers, le match le plus parlant")
+    exemples("Zone de vérité", refs_l1, refs_eu, match_zone_parlant,
+             lambda r: f"face à une attaque au-dessus de la moyenne : {int(r['tirs_surface_contre'])} tirs dans la surface, "
+                       f"{fmt(r['xga'], 2)} xG concédés, {int(r['touches_surface_contre'])} ballons touchés dans la surface")
+
+    # ---------- ENTRAÎNEMENT
+    consignes("Pistes pour l'entraînement", [
+        "**Pression sur la zone 14** : jeu réduit devant la surface (4 contre 4 + 2 appuis) ; dès qu'un adversaire reçoit "
+        "dans l'axe face au jeu, le milieu le plus proche sort sur lui en moins de 2 s, le défenseur central ne sort pas.",
+        "**Défendre balle au pied dans la surface** : 1 contre 1 en entrée de surface, consigne « pas de tacle, on oriente "
+        "vers l'extérieur », couverture du 2e défenseur à 3-4 m.",
+        "**Remises en retrait** : quand le ballon arrive à la ligne, un milieu redescend au point de penalty (zone de "
+        "remise) au lieu de suivre le porteur. À travailler sur des débordements à 2 contre 2 + 1 milieu.",
+        "**Combinaisons au bord de la surface** : sortir sur le passeur et fermer la ligne de passe vers l'intérieur "
+        "(les deux buts cités partent de combinaisons non pressées).",
+        "**Références à regarder** : la distance entre nos lignes et la sortie des milieux chez les clubs retenus (vidéo "
+        "ci-dessus)."])
+    note("decision_piste_zone", "✎ Décisions et exercices retenus", zone=True, hauteur=90)
+
+
 def page_detail():
-    entete(8)
+    entete(10)
     m = MATCHS.copy()
     m["date"] = m["date"].dt.strftime("%d/%m")
     tab = m[["date", "adversaire", "lieu", "bp", "bc", "score_mt", "resultat", "xg", "xga", "xga_1mt", "xga_2mt",
@@ -1791,5 +2954,6 @@ with st.sidebar:
     if not WS_OK:
         st.warning("Événements WhoScored absents : transitions et vrai PPDA indisponibles (voir page 5).")
 
-PAGES_F = [page_synthese, page_1, page_2, page_3, page_4, page_5, page_6, page_7, page_detail]
+PAGES_F = [page_synthese, page_1, page_2, page_3, page_piste_centres, page_piste_zone, page_4, page_5, page_6, page_7,
+           page_detail]
 PAGES_F[[p[0] for p in PAGES].index(choix)]()

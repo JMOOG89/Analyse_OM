@@ -104,6 +104,7 @@ def famille_poste(code, usuel=None):
 D = json.loads(BRUT.read_text(encoding="utf-8"))
 SK = {k: str(i) for i, k in enumerate(D["statKeys"])}
 PK = D["pKeys"]
+IDX_CENTRES = str(PK.index("Accurate crosses")) if "Accurate crosses" in PK else "x"
 
 
 def stat_equipe(m, cle, cote):
@@ -134,6 +135,7 @@ def horloge(minute, mi_temps):
 # 4. BOUCLE SUR LES MATCHS
 # =====================================================================================
 E = defaultdict(lambda: defaultdict(float))       # cumul par équipe
+LIGNES_EQ_MATCH = []                               # une ligne par équipe et par match (exemples de matchs à visionner)
 NOMS, LIGUES = {}, {}
 LIGNES_MATCHS, LIGNES_TIRS = [], []
 
@@ -172,6 +174,8 @@ for m in D["matches"]:
     xg_etat = [Counter(), Counter()]
     xg_sit = [Counter(), Counter()]
     tirs_n, tirs_surf, gros = [0, 0], [0, 0], [0, 0]
+    # contexte des tirs (hors penalty) : distance au but, contrés, de la tête, face au but
+    dist_np, n_np, contres_np, tetes_np, axe_np = [0.0, 0.0], [0, 0], [0, 0], [0, 0], [0, 0]
     xg_type, n_type = [Counter(), Counter()], [Counter(), Counter()]
     xg_cote, n_cote = [Counter(), Counter()], [Counter(), Counter()]   # côté vu par l'équipe qui TIRE
     for s in m["shots"]:
@@ -193,6 +197,11 @@ for m in D["matches"]:
         xg_type[cote][cat] += xg
         n_type[cote][cat] += 1
         if situation != "Penalty":
+            dist_np[cote] += float(np.hypot(105 - x, 34 - y))
+            n_np[cote] += 1
+            contres_np[cote] += bool(contre)
+            tetes_np[cote] += type_tir == "Header"
+            axe_np[cote] += cote_attaquant(y) == "Axe"
             c_att = cote_attaquant(y)
             xg_cote[cote][c_att] += xg
             n_cote[cote][c_att] += 1
@@ -208,6 +217,14 @@ for m in D["matches"]:
                 categorie=categorie_tir(situation, type_tir, surface),
                 # côté vu par NOUS : notre côté d'attaque (pour) ou notre côté défensif (contre)
                 cote_nous=cote_attaquant(y) if cote == nous else INVERSE[cote_attaquant(y)]))
+
+    # --- centres tentés / réussis par équipe (somme des statistiques joueurs du match) --------------
+    cr_ok, cr_tot = Counter(), Counter()
+    for _pid, _nom, _eq, _code, _us, _gk, _st in m["players"]:
+        _v = _st.get(IDX_CENTRES)
+        if isinstance(_v, list):
+            cr_ok[str(_eq)] += _v[0] or 0
+            cr_tot[str(_eq)] += _v[1] or 0
 
     # --- cumul par équipe -------------------------------------------------------------
     for cote in (0, 1):
@@ -263,9 +280,26 @@ for m in D["matches"]:
             e[f"xg_cote_{c}"] += xg_cote[cote][c]                  # notre côté d'attaque
             e[f"xga_cote_{c}"] += xg_cote[adv][INVERSE[c]]         # notre côté défensif
             e[f"tirsc_cote_{c}"] += n_cote[adv][INVERSE[c]]
+        LIGNES_EQ_MATCH.append(dict(
+            equipe_id=t, adversaire=m[("h", "a")[adv]][1], date=m["date"], lieu="Dom." if cote == 0 else "Ext.",
+            score=f"{buts[cote]}-{buts[adv]}", centres_adv=cr_tot[ids[adv]], centres_adv_reussis=cr_ok[ids[adv]],
+            xga=sum(xg_tr[adv]), xga_tete=xg_type[adv]["Tête"], tetes_contre=n_type[adv]["Tête"],
+            tirs_surface_contre=tirs_surf[adv], xga_face_au_but=xg_cote[adv]["Axe"],
+            touches_surface_contre=np.nan_to_num(stat_equipe(m, "touches_opp_box", adv)[0]),
+            tirs_contre=tirs_n[adv], centres=cr_tot[t],
+            systeme=(m["lineup"][("h", "a")[cote]] or {}).get("f"), systeme_adv=(m["lineup"][("h", "a")[adv]] or {}).get("f")))
+        e["centres_tentes"] += cr_tot[t]
+        e["centres_reussis"] += cr_ok[t]
+        e["centres_tentes_contre"] += cr_tot[ids[adv]]
+        e["centres_reussis_contre"] += cr_ok[ids[adv]]
         e["tirs_shotmap"] += tirs_n[cote]
         e["tirs_shotmap_contre"] += tirs_n[adv]
         e["tirs_surface_contre"] += tirs_surf[adv]
+        e["dist_tirs_contre"] += dist_np[adv]
+        e["tirs_np_contre"] += n_np[adv]
+        e["contres_contre"] += contres_np[adv]
+        e["tetes_np_contre"] += tetes_np[adv]
+        e["axe_np_contre"] += axe_np[adv]
         e["occ_xg03_contre"] += gros[adv]
         e["occ_xg03"] += gros[cote]
         e["xg_shotmap"] += sum(xg_tr[cote])
@@ -337,6 +371,20 @@ eq["buts_contre_moins_xga"] = (eq["bc"] - eq["xg_contre"]) / mj
 eq["ppda_approx"] = eq["passes_adv_camp_adverse"] / (eq["tacles"] + eq["interceptions"] + eq["fautes"]).replace(0, np.nan)
 eq["pts_perdus_en_menant_m"] = eq["pts_perdus_en_menant"] / mj
 eq["xg_diff_m"] = eq["xg_m"] - eq["xg_contre_m"]
+# Centres adverses (toutes situations, d'après les statistiques joueurs) : volume, précision, danger de la tête
+eq["centres_adv_tentes_m"] = eq["centres_tentes_contre"] / mj
+eq["centres_adv_reussis_m"] = eq["centres_reussis_contre"] / mj
+eq["pct_centres_adv_reussis"] = eq["centres_reussis_contre"] / eq["centres_tentes_contre"].replace(0, np.nan) * 100
+eq["xga_tete_par_centre_adv"] = eq["xga_type_Tête"] / eq["centres_tentes_contre"].replace(0, np.nan)
+eq["tirs_surface_contre_m"] = eq["tirs_surface_contre"] / mj
+# Contexte des tirs concédés (hors penalty)
+eq["dist_tirs_contre_m"] = eq["dist_tirs_contre"] / eq["tirs_np_contre"]
+eq["pct_tirs_contres_contre"] = eq["contres_contre"] / eq["tirs_np_contre"] * 100
+eq["pct_tirs_tete_contre"] = eq["tetes_np_contre"] / eq["tirs_np_contre"] * 100
+eq["pct_tirs_axe_contre"] = eq["axe_np_contre"] / eq["tirs_np_contre"] * 100
+eq["pct_tirs_surface_contre"] = eq["tirs_surface_contre"] / eq["tirs_shotmap_contre"] * 100
+eq["pct_grosses_occ_contre"] = eq["grosses_occ_contre"] / eq["tirs_contre"] * 100
+eq["xga_pied_surface_par_tir"] = eq["xga_type_Pied dans la surface"] / eq["tirsc_type_Pied dans la surface"].replace(0, np.nan)
 # Système le plus utilisé (compositions de départ FotMob) : « 4-2-3-1 (7), 4-1-4-1 (3) »
 SYSTEMES = defaultdict(Counter)
 for m in D["matches"]:
@@ -344,7 +392,14 @@ for m in D["matches"]:
         if m["lineup"][c] and m["lineup"][c].get("f"):
             SYSTEMES[m[c][0]][m["lineup"][c]["f"]] += 1
 eq["systeme"] = eq["equipe_id"].map(lambda i: ", ".join(f"{f} ({n})" for f, n in SYSTEMES[i].most_common(2)))
+# Part des matchs avec une défense à 4 (2 défenseurs centraux) — sert à écarter les blocs à 3 / 5
+eq["pct_def4"] = eq["equipe_id"].map(lambda i: 100 * sum(n for f, n in SYSTEMES[i].items() if f.split("-")[0] == "4")
+                                     / max(sum(SYSTEMES[i].values()), 1))
 ecrire(eq.round(4), "equipes.csv")
+em = pd.DataFrame(LIGNES_EQ_MATCH)
+em.insert(1, "equipe", em["equipe_id"].map(NOMS))
+em["date"] = pd.to_datetime(em["date"].str.replace(" UTC", ""), format="%a, %b %d, %Y, %H:%M").dt.strftime("%d/%m/%Y")
+ecrire(em.round(3), "equipes_matchs.csv")
 
 # =====================================================================================
 # 6. MATCHS ET TIRS DE NOTRE ÉQUIPE
@@ -557,6 +612,28 @@ if FICHIER_WS.exists():
         jl.loc[manque, col] = fam.map(uniques[col]).values
     print(f"    joueurs WhoScored rattachés à FotMob : {jl['poste'].notna().mean() * 100:.0f} %")
     ecrire(jl.drop(columns=["cle_nom", "cle_eq"]).round(4), "ws_joueurs_l1.csv")
+    # Centres : ce que font les défenses dans leurs couloirs, match par match (système de jeu : FotMob)
+    form_l1 = defaultdict(list)
+    for m in D["matches"]:
+        if m["lg"] == LIGUES[EQUIPE_ID] and m.get("lineup"):
+            d_ = pd.to_datetime(m["date"].replace(" UTC", ""), format="%a, %b %d, %Y, %H:%M")
+            for c, o in (("h", "a"), ("a", "h")):
+                if m["lineup"].get(c):
+                    form_l1[(transitions.sans_accents(m[c][1]), transitions.sans_accents(m[o][1]))].append(
+                        (d_, m["lineup"][c].get("f")))
+
+    def systeme_match(date, equipe, adversaire):
+        cands = form_l1.get((transitions.sans_accents(equipe), transitions.sans_accents(adversaire)), [])
+        if not cands:
+            return None
+        d_ = pd.Timestamp(date)
+        return min(cands, key=lambda x: abs((x[0] - d_).total_seconds()))[1]
+
+    postes_ws = {(r["equipe"], r["joueur"]): r["poste"] for _, r in jl.iterrows() if pd.notna(r["poste"])}
+    ac, ac_seq = transitions.anti_centres(transitions.lire_evenements(FICHIER_WS), postes_ws, systeme_match)
+    print(f"    anti-centres : {len(ac)} lignes match × équipe, systèmes trouvés {ac['systeme_defense'].notna().mean() * 100:.0f} %")
+    ecrire(ac.round(3), "ws_anti_centres.csv")
+    ecrire(ac_seq, "ws_anti_centres_sequences.csv")
 else:
     print("  (pas de donnees/whoscored_ligue1.csv : lance export_whoscored.py pour les transitions et le pressing)")
 
