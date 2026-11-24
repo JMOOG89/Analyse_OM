@@ -1,0 +1,192 @@
+﻿game_id;date;adversaire;minute;mode;joueur;receveur;zone_depart;tir_10s;xg_10s;tireur;but_10s
+1984061;2026-08-30;Monaco;8'29;Passe;Lamine Camara;Aleksandr Golovin;Côté droit (vu par nous);False;0,0;;False
+1984061;2026-08-30;Monaco;12'36;Passe;Aleksandr Golovin;Paris Brunner;Côté gauche (vu par nous);True;0,12808839627165716;Paris Brunner;True
+1984061;2026-08-30;Monaco;21'45;Passe;Denis Zakaria;Stanis Idumbo;Zone 14 (axe, devant la surface);True;0,2533842441913936;Paris Brunner;False
+1984061;2026-08-30;Monaco;46'29;Passe;Mamadou Coulibaly;;Côté gauche (vu par nous);False;0,0;;False
+1984061;2026-08-30;Monaco;46'55;Passe;Paris Brunner;;Côté gauche (vu par nous);True;0,05075363177018186;Paris Brunner;False
+1984061;2026-08-30;Monaco;64'39;Passe;Mamadou Coulibaly;Vanderson;Côté gauche (vu par nous);False;0,0;;False
+1984061;2026-08-30;Monaco;71'31;Passe;Mamadou Coulibaly;Aleksandr Golovin;Côté gauche (vu par nous);False;0,0;;False
+1984061;2026-08-30;Monaco;71'40;Passe;Mamadou Coulibaly;Stanis Idumbo;Côté gauche (vu par nous);True;0,20499672132437485;Stanis Idumbo;False
+1984061;2026-08-30;Monaco;92'18;Passe;Matthis Abline;Mathys Detourbet;Côté gauche (vu par nous);False;0,0;;False
+1984072;2026-09-06;Paris FC;0'20;Passe;Pablo Pagis;Luca Koleosho;Côté droit (vu par nous);True;0,4022452354964925;Lassine Sinayoko;True
+1984072;2026-09-06;Paris FC;18'46;Passe;Pablo Pagis;Lassine Sinayoko;Côté droit (vu par nous);True;0,09889163479454434;Lassine Sinayoko;True
+1984072;2026-09-06;Paris FC;25'02;Passe;Adama Camara;Ilan Kebbal;Zone 14 (axe, devant la surface);False;0,0;;False
+1984072;2026-09-06;Paris FC;32'20;Passe;Adama Camara;Lassine Sinayoko;Côté droit (vu par nous);False;0,0;;False
+1984072;2026-09-06;Paris FC;43'33;Passe;Pablo Pagis;Adama Camara;Zone 14 (axe, devant la surface);True;0,08050800793082363;Adama Camara;False
+1984072;2026-09-06;Paris FC;45'37;Passe;Luca Koleosho;;Côté droit (vu par nous);True;0,6355342030610123;Ilan Kebbal;False
+1984072;2026-09-06;Paris FC;45'53;Passe;Ilan Kebbal;;Zone 14 (axe, devant la surface);True;0,12264621043653864;Luca Koleosho;False
+1984072;2026-09-06;Paris FC;78'38;Passe;Maxime Lopez;Lassine Sinayoko;Côté droit (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;11'23;Passe;Casper Tengstedt;Jacen Russell-Rowe;Côté droit (vu par nous);True;0,27789962189300665;Thomas Jørgensen;False
+1984088;2026-11-01;Toulouse;15'48;Passe;Cristian Cásseres;Casper Tengstedt;Côté axe (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;16'28;Passe;Niko Sigur;Aron Dønnum;Côté gauche (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;32'47;Passe;Thomas Jørgensen;Jacen Russell-Rowe;Côté gauche (vu par nous);True;0,09188662743061381;Jacen Russell-Rowe;False
+1984088;2026-11-01;Toulouse;38'30;Passe;Casper Tengstedt;Thomas Jørgensen;Zone 14 (axe, devant la surface);True;0,31858563318034644;Jacen Russell-Rowe;False
+1984088;2026-11-01;Toulouse;45'46;Passe;Cristian Cásseres;Jacen Russell-Rowe;Côté gauche (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;47'06;Passe;Thomas Jørgensen;;Côté gauche (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;56'53;Passe;Christ Tapé;Ismaïl Diallo;Côté droit (vu par nous);True;0,10671009640456093;Cristian Cásseres;False
+1984088;2026-11-01;Toulouse;65'48;Passe;Christ Tapé;Thomas Jørgensen;Côté droit (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;66'48;Passe;Thomas Jørgensen;Niko Sigur;Côté gauche (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;71'26;Passe;Christ Tapé;Sion Oppong;Côté droit (vu par nous);True;0,07185893659560284;Sion Oppong;False
+1984088;2026-11-01;Toulouse;80'50;Passe;Casper Tengstedt;Christ Tapé;Côté droit (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;82'58;Passe;Christ Tapé;Casper Tengstedt;Côté droit (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;92'49;Passe;Cristian Cásseres;Julián Vignolo;Côté axe (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;6'22;Passe;Khvicha Kvaratskhelia;Nuno Mendes;Côté droit (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;22'41;Passe;Khvicha Kvaratskhelia;Fabián Ruiz;Côté droit (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;36'04;Passe;Désiré Doué;Fabián Ruiz;Côté droit (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;41'29;Passe;Khvicha Kvaratskhelia;Désiré Doué;Côté droit (vu par nous);True;0,3813905558075062;Warren Zaïre-Emery;False
+1984103;2026-09-20;Paris Saint-Germain;41'50;Passe;Ousmane Dembélé;Khvicha Kvaratskhelia;Côté gauche (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;44'15;Passe;Désiré Doué;Fabián Ruiz;Côté droit (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;47'08;Passe;Désiré Doué;João Neves;Côté gauche (vu par nous);True;0,06253173134412783;João Neves;False
+1984103;2026-09-20;Paris Saint-Germain;47'41;Passe;Ousmane Dembélé;Vitinha;Côté gauche (vu par nous);True;0,10651260899991714;Vitinha;False
+1984103;2026-09-20;Paris Saint-Germain;51'41;Passe;Nuno Mendes;Ousmane Dembélé;Côté droit (vu par nous);True;0,29598356838596795;Khvicha Kvaratskhelia;False
+1984103;2026-09-20;Paris Saint-Germain;52'42;Passe;Nuno Mendes;Ousmane Dembélé;Côté droit (vu par nous);True;0,22894724162003494;Ousmane Dembélé;False
+1984103;2026-09-20;Paris Saint-Germain;55'35;Passe;Désiré Doué;Nuno Mendes;Zone 14 (axe, devant la surface);True;0,3668617464394643;João Neves;False
+1984103;2026-09-20;Paris Saint-Germain;60'22;Passe;Warren Zaïre-Emery;Ousmane Dembélé;Côté gauche (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;60'46;Passe;Ferran Torres;Ousmane Dembélé;Zone 14 (axe, devant la surface);True;0,0655265602998338;Ousmane Dembélé;False
+1984103;2026-09-20;Paris Saint-Germain;65'10;Passe;Désiré Doué;Ferran Torres;Côté droit (vu par nous);True;0,13122022262816255;Ferran Torres;True
+1984103;2026-09-20;Paris Saint-Germain;68'43;Passe;Désiré Doué;Ferran Torres;Côté gauche (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;70'30;Passe;Ousmane Dembélé;Nuno Mendes;Zone 14 (axe, devant la surface);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;73'07;Passe;Désiré Doué;Ferran Torres;Côté droit (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;73'45;Passe;Nuno Mendes;Marquinhos;Côté droit (vu par nous);True;1,082103431305586;Marquinhos;True
+1984103;2026-09-20;Paris Saint-Germain;82'29;Passe;João Neves;Nuno Mendes;Côté gauche (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;85'21;Passe;Warren Zaïre-Emery;João Neves;Côté gauche (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;87'05;Passe;Mika Godts;João Neves;Côté droit (vu par nous);False;0,0;;False
+1984138;2026-10-11;Troyes;4'50;Passe;Antoine Mille;Adrien Monfray;Côté droit (vu par nous);True;0,05543274346309687;Adrien Monfray;False
+1984138;2026-10-11;Troyes;22'45;Passe;Lucas Maronnier;Jérémy Le Douaron;Côté gauche (vu par nous);True;0,06518369893457983;Jérémy Le Douaron;False
+1984138;2026-10-11;Troyes;41'42;Passe;Iron Gomis;Jérémy Le Douaron;Côté droit (vu par nous);True;0,0419834049324406;Jérémy Le Douaron;False
+1984138;2026-10-11;Troyes;54'32;Passe;Adrien Monfray;Paolo Gozzi;Côté droit (vu par nous);False;0,0;;False
+1984138;2026-10-11;Troyes;60'36;Passe;Lucas Maronnier;Jérémy Le Douaron;Côté gauche (vu par nous);True;0,04004204856680145;Jérémy Le Douaron;False
+1984138;2026-10-11;Troyes;71'46;Passe;Antoine Mille;Renaud Ripart;Côté gauche (vu par nous);True;0,05751815284184719;Renaud Ripart;False
+1984138;2026-10-11;Troyes;79'03;Passe;Lucas Maronnier;Christ Batola;Côté gauche (vu par nous);True;0,03343343820860876;Christ Batola;False
+1984138;2026-10-11;Troyes;90'18;Passe;Lucas Maronnier;Renaud Ripart;Côté gauche (vu par nous);True;0,23362742155669286;Renaud Ripart;False
+1984138;2026-10-11;Troyes;91'25;Passe;Paolo Gozzi;Christ Batola;Côté droit (vu par nous);True;0,10503114751983345;Christ Batola;False
+1984140;2026-11-08;Lens;5'02;Passe;Florian Sotoca;Florian Thauvin;Côté droit (vu par nous);True;0,14689403519330937;Florian Thauvin;False
+1984140;2026-11-08;Lens;6'40;Passe;Matthieu Udol;Florian Thauvin;Côté droit (vu par nous);True;0,03609226385983866;Florian Thauvin;False
+1984140;2026-11-08;Lens;10'09;Passe;Florian Thauvin;Florian Sotoca;Côté gauche (vu par nous);True;0,07563131537043616;Matthieu Udol;False
+1984140;2026-11-08;Lens;10'13;Passe;Florian Thauvin;Matthieu Udol;Côté gauche (vu par nous);True;0,07563131537043616;Matthieu Udol;False
+1984140;2026-11-08;Lens;19'11;Passe;Florian Sotoca;Florian Thauvin;Côté gauche (vu par nous);True;0,3094084609321542;Florian Thauvin;True
+1984140;2026-11-08;Lens;23'23;Passe;Amadou Haidara;Thorgan Hazard;Côté droit (vu par nous);True;0,053210179392709916;Yacine Titraoui;False
+1984140;2026-11-08;Lens;40'28;Passe;Florian Sotoca;Amadou Haidara;Côté droit (vu par nous);True;0,029103575431614646;Saud Abdulhamid;False
+1984140;2026-11-08;Lens;45'39;Passe;Thorgan Hazard;Saud Abdulhamid;Zone 14 (axe, devant la surface);True;0,04136658446917625;Yacine Titraoui;False
+1984140;2026-11-08;Lens;60'50;Passe;Florian Sotoca;Matthieu Udol;Côté droit (vu par nous);True;0,09385378297343334;Matthieu Udol;False
+1984140;2026-11-08;Lens;71'41;Passe;Michaël Cuisance;Matthieu Udol;Côté gauche (vu par nous);True;0,09077234699533158;Matthieu Udol;False
+1984140;2026-11-08;Lens;75'23;Passe;Florian Thauvin;Michaël Cuisance;Zone 14 (axe, devant la surface);False;0,0;;False
+1984140;2026-11-08;Lens;86'07;Passe;Junior Kadile;Florian Thauvin;Côté gauche (vu par nous);False;0,0;;False
+1984143;2026-10-18;Angers;6'51;Passe;Lilian Raolisoa;Louis Mouton;Côté droit (vu par nous);False;0,0;;False
+1984143;2026-10-18;Angers;64'35;Passe;Jim Allevinah;Prosper Peter;Côté gauche (vu par nous);True;0,06813765115922622;Prosper Peter;False
+1984143;2026-10-18;Angers;65'50;Passe;Jim Allevinah;Prosper Peter;Côté gauche (vu par nous);True;0,16206578624663057;Prosper Peter;False
+1984143;2026-10-18;Angers;77'45;Passe;Joseph Kalulu;Harouna Djibirin;Côté droit (vu par nous);True;0,03183353579671574;Harouna Djibirin;False
+1984154;2026-11-22;Le Mans;2'43;Passe;Lucas Buadés;;Côté gauche (vu par nous);False;0,0;;False
+1984154;2026-11-22;Le Mans;21'24;Passe;Antoine Rabillard;Lucas Buadés;Côté gauche (vu par nous);True;0,056131747249176224;Daouda Traoré;False
+1984154;2026-11-22;Le Mans;26'45;Passe;Lucas Calodat;Dame Gueye;Côté droit (vu par nous);True;0,06518907468684117;Dame Gueye;False
+1984154;2026-11-22;Le Mans;36'05;Passe;Rayan Bamba;Dame Gueye;Côté gauche (vu par nous);True;0,07012333569362356;Dame Gueye;False
+1984154;2026-11-22;Le Mans;45'20;Passe;Louis Mafouta;;Côté droit (vu par nous);True;1,4116858640755223;Dame Gueye;False
+1984154;2026-11-22;Le Mans;46'57;Passe;Daouda Traoré;Rayan Bamba;Côté droit (vu par nous);False;0,0;;False
+1984154;2026-11-22;Le Mans;60'55;Passe;Louis Mafouta;Lucas Calodat;Zone 14 (axe, devant la surface);False;0,0;;False
+1984154;2026-11-22;Le Mans;63'23;Passe;Erwan Colas;Lucas Calodat;Côté axe (vu par nous);False;0,0;;False
+1984154;2026-11-22;Le Mans;76'55;Passe;Erwan Colas;Lucas Bretelle;Côté gauche (vu par nous);True;0,04005377358156209;Daouda Traoré;False
+1984154;2026-11-22;Le Mans;83'45;Passe;Lucas Calodat;Erwan Colas;Côté droit (vu par nous);True;0,895346230402692;Erwan Colas;True
+1984154;2026-11-22;Le Mans;89'07;Passe;Raúl Torrente;William Harhouz;Côté droit (vu par nous);False;0,0;;False
+1984154;2026-11-22;Le Mans;94'27;Passe;Erwan Colas;Rayan Bamba;Côté gauche (vu par nous);True;0,11755267550913863;Jean Vercruysse;True
+1984197;2026-10-25;Le Havre;11'24;Passe;Djibril Ouziad;Mbwana Samatta;Côté gauche (vu par nous);True;0,10119569575766403;Mbwana Samatta;False
+1984197;2026-10-25;Le Havre;31'26;Passe;Enzo Koffi;Rayan Fofana;Zone 14 (axe, devant la surface);True;0,09071948622146879;Rayan Fofana;False
+1984197;2026-10-25;Le Havre;40'25;Passe;Rassoul Ndiaye;Djibril Ouziad;Côté droit (vu par nous);True;0,12382474570925578;Djibril Ouziad;False
+1984197;2026-10-25;Le Havre;45'58;Passe;Mbwana Samatta;;Côté droit (vu par nous);False;0,0;;False
+1984197;2026-10-25;Le Havre;79'21;Passe;Lamine N'Diaye;Rayan Fofana;Côté droit (vu par nous);True;0,140295890279762;Rayan Fofana;False
+1984197;2026-10-25;Le Havre;100'01;Passe;Lamine N'Diaye;Josh Maja;Côté droit (vu par nous);True;0,025749795548903155;Ayumu Seko;False
+1984197;2026-10-25;Le Havre;101'51;Passe;Ahmed Touba;Josh Maja;Côté droit (vu par nous);True;0,18646683354646326;Simon Ebonog;False
+1984273;2026-08-21;Strasbourg;11'07;Passe;Samir El Mourabet;Guéla Doué;Côté gauche (vu par nous);True;0,043876393988245374;Guéla Doué;False
+1984273;2026-08-21;Strasbourg;31'19;Passe;Sebastian Nanasi;Gessime Yassine;Côté droit (vu par nous);True;0,07973879201226003;Gessime Yassine;False
+1984273;2026-08-21;Strasbourg;73'27;Passe;Gessime Yassine;Guéla Doué;Côté gauche (vu par nous);False;0,0;;False
+1984275;2026-09-11;Rennes;19'25;Passe;Estéban Lepaul;Adrien Thomasson;Zone 14 (axe, devant la surface);True;0,04170396117040597;Valentin Rongier;False
+1984275;2026-09-11;Rennes;22'10;Passe;Valentin Rongier;Aboubakar Nagida;Côté gauche (vu par nous);False;0,0;;False
+1984275;2026-09-11;Rennes;22'44;Passe;Mahdi Camara;Adrien Thomasson;Côté droit (vu par nous);False;0,0;;False
+1984275;2026-09-11;Rennes;24'51;Passe;Przemyslaw Frankowski;Ludovic Blas;Côté gauche (vu par nous);True;0,054249918817339565;Issa Soumaré;False
+1984275;2026-09-11;Rennes;40'08;Passe;Mahdi Camara;Estéban Lepaul;Côté droit (vu par nous);False;0,0;;False
+1984275;2026-09-11;Rennes;51'53;Passe;Ludovic Blas;Mousa Al Tamari;Côté gauche (vu par nous);True;0,6932631769382187;Mousa Al Tamari;True
+1984275;2026-09-11;Rennes;54'26;Passe;Przemyslaw Frankowski;Valentin Rongier;Côté gauche (vu par nous);False;0,0;;False
+1984275;2026-09-11;Rennes;55'54;Passe;Adrien Thomasson;Ludovic Blas;Côté gauche (vu par nous);True;0,047242013083205865;Ludovic Blas;False
+1984275;2026-09-11;Rennes;59'33;Passe;Ludovic Blas;Mousa Al Tamari;Zone 14 (axe, devant la surface);False;0,0;;False
+1984275;2026-09-11;Rennes;61'05;Passe;Aboubakar Nagida;Estéban Lepaul;Côté droit (vu par nous);True;0,09072803941375537;Estéban Lepaul;False
+1984275;2026-09-11;Rennes;67'17;Passe;Valentin Rongier;Adrien Thomasson;Côté droit (vu par nous);False;0,0;;False
+1984275;2026-09-11;Rennes;67'19;Passe;Adrien Thomasson;Aboubakar Nagida;Zone 14 (axe, devant la surface);False;0,0;;False
+1984275;2026-09-11;Rennes;89'42;Passe;Aboubakar Nagida;Boulaye Dia;Côté droit (vu par nous);True;0,06720235888569479;Eliezer Mayenda;False
+1984061;2026-08-30;Monaco;7'45;Balle au pied;Stanis Idumbo;;Zone 14 (axe, devant la surface);False;0,0;;False
+1984061;2026-08-30;Monaco;26'08;Balle au pied;Stanis Idumbo;;Côté droit (vu par nous);True;0,08478063118385433;Stanis Idumbo;False
+1984061;2026-08-30;Monaco;36'59;Balle au pied;Mamadou Coulibaly;;Côté gauche (vu par nous);True;0,05504792524405862;Stanis Idumbo;False
+1984061;2026-08-30;Monaco;52'44;Balle au pied;Paris Brunner;;Côté gauche (vu par nous);True;0,24049532834008178;Paris Brunner;True
+1984061;2026-08-30;Monaco;63'00;Balle au pied;Paris Brunner;;Côté droit (vu par nous);False;0,0;;False
+1984061;2026-08-30;Monaco;67'17;Balle au pied;Flávio Nazinho;;Côté droit (vu par nous);False;0,0;;False
+1984072;2026-09-06;Paris FC;18'12;Balle au pied;Pablo Pagis;;Zone 14 (axe, devant la surface);True;0,030662817744288546;Pablo Pagis;False
+1984072;2026-09-06;Paris FC;29'50;Balle au pied;Hamari Traoré;;Côté gauche (vu par nous);False;0,0;;False
+1984072;2026-09-06;Paris FC;41'13;Balle au pied;Pablo Pagis;;Côté droit (vu par nous);False;0,0;;False
+1984072;2026-09-06;Paris FC;45'16;Balle au pied;Lassine Sinayoko;;Zone 14 (axe, devant la surface);True;0,08264774273853068;Lassine Sinayoko;False
+1984072;2026-09-06;Paris FC;56'50;Balle au pied;Pablo Pagis;;Zone 14 (axe, devant la surface);False;0,0;;False
+1984072;2026-09-06;Paris FC;63'04;Balle au pied;Ilan Kebbal;;Côté gauche (vu par nous);True;0,07106759171945148;Ilan Kebbal;False
+1984072;2026-09-06;Paris FC;77'40;Balle au pied;Moses Simon;;Zone 14 (axe, devant la surface);True;0,07030014453055829;Moses Simon;False
+1984072;2026-09-06;Paris FC;78'46;Balle au pied;Lassine Sinayoko;;Zone 14 (axe, devant la surface);False;0,0;;False
+1984072;2026-09-06;Paris FC;79'39;Balle au pied;Patrick Zabi;;Côté gauche (vu par nous);False;0,0;;False
+1984072;2026-09-06;Paris FC;82'39;Balle au pied;Moses Simon;;Côté droit (vu par nous);True;0,12567007493208046;Moses Simon;False
+1984072;2026-09-06;Paris FC;89'11;Balle au pied;Moses Simon;;Côté droit (vu par nous);True;0,16481656443739465;Moses Simon;False
+1984088;2026-11-01;Toulouse;4'04;Balle au pied;Jacen Russell-Rowe;;Côté gauche (vu par nous);True;0,041660751404140675;Jacen Russell-Rowe;False
+1984088;2026-11-01;Toulouse;47'14;Balle au pied;Christ Tapé;;Côté droit (vu par nous);True;0,1640637153614721;Jacen Russell-Rowe;False
+1984088;2026-11-01;Toulouse;59'10;Balle au pied;Santiago Hidalgo;;Côté droit (vu par nous);True;0,3884178453149633;Casper Tengstedt;False
+1984088;2026-11-01;Toulouse;75'43;Balle au pied;Santiago Hidalgo;;Côté gauche (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;88'05;Balle au pied;Sion Oppong;;Côté droit (vu par nous);False;0,0;;False
+1984088;2026-11-01;Toulouse;91'16;Balle au pied;Christ Tapé;;Côté droit (vu par nous);True;0,03126118292380662;Cristian Cásseres;False
+1984103;2026-09-20;Paris Saint-Germain;7'25;Balle au pied;Désiré Doué;;Côté gauche (vu par nous);True;0,10942309174218844;Désiré Doué;False
+1984103;2026-09-20;Paris Saint-Germain;9'09;Balle au pied;Khvicha Kvaratskhelia;;Côté droit (vu par nous);True;0,1932303881707205;Nuno Mendes;False
+1984103;2026-09-20;Paris Saint-Germain;11'02;Balle au pied;Khvicha Kvaratskhelia;;Côté droit (vu par nous);True;0,11907057860360261;Fabián Ruiz;False
+1984103;2026-09-20;Paris Saint-Germain;11'06;Balle au pied;Désiré Doué;;Côté droit (vu par nous);True;0,07981242145429163;Désiré Doué;False
+1984103;2026-09-20;Paris Saint-Germain;11'40;Balle au pied;Ousmane Dembélé;;Côté droit (vu par nous);True;0,09179627170212229;Ousmane Dembélé;False
+1984103;2026-09-20;Paris Saint-Germain;17'38;Balle au pied;Warren Zaïre-Emery;;Côté gauche (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;21'23;Balle au pied;Khvicha Kvaratskhelia;;Côté droit (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;42'18;Balle au pied;Ousmane Dembélé;;Côté gauche (vu par nous);True;0,040135313383755256;Fabián Ruiz;False
+1984103;2026-09-20;Paris Saint-Germain;46'37;Balle au pied;Désiré Doué;;Côté gauche (vu par nous);True;0,04747081957286329;Désiré Doué;False
+1984103;2026-09-20;Paris Saint-Germain;48'27;Balle au pied;Désiré Doué;;Côté gauche (vu par nous);True;0,08745393914337722;Khvicha Kvaratskhelia;False
+1984103;2026-09-20;Paris Saint-Germain;54'41;Balle au pied;Vitinha;;Côté gauche (vu par nous);True;0,06447732673079816;Vitinha;False
+1984103;2026-09-20;Paris Saint-Germain;57'32;Balle au pied;Ousmane Dembélé;;Côté gauche (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;69'14;Balle au pied;Désiré Doué;;Côté gauche (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;69'54;Balle au pied;Ferran Torres;;Zone 14 (axe, devant la surface);True;0,09916299862015808;Ferran Torres;False
+1984103;2026-09-20;Paris Saint-Germain;73'12;Balle au pied;Ferran Torres;;Côté droit (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;81'25;Balle au pied;Nuno Mendes;;Côté droit (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;82'49;Balle au pied;Beraldo;;Zone 14 (axe, devant la surface);True;0,060413163783088523;Ferran Torres;False
+1984103;2026-09-20;Paris Saint-Germain;82'52;Balle au pied;Ferran Torres;;Zone 14 (axe, devant la surface);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;85'35;Balle au pied;Nuno Mendes;;Côté droit (vu par nous);True;0,5500990108745458;Maghnes Akliouche;False
+1984103;2026-09-20;Paris Saint-Germain;88'05;Balle au pied;Mika Godts;;Côté droit (vu par nous);False;0,0;;False
+1984103;2026-09-20;Paris Saint-Germain;89'05;Balle au pied;Nuno Mendes;;Côté droit (vu par nous);True;0,16796098884542598;Maghnes Akliouche;False
+1984138;2026-10-11;Troyes;15'04;Balle au pied;Jérémy Le Douaron;;Côté gauche (vu par nous);False;0,0;;False
+1984138;2026-10-11;Troyes;75'51;Balle au pied;Renaud Ripart;;Zone 14 (axe, devant la surface);True;0,07808050010685748;Renaud Ripart;False
+1984138;2026-10-11;Troyes;78'59;Balle au pied;Renaud Ripart;;Côté gauche (vu par nous);True;0,03343343820860876;Christ Batola;False
+1984138;2026-10-11;Troyes;81'28;Balle au pied;Antoine Mille;;Côté gauche (vu par nous);False;0,0;;False
+1984138;2026-10-11;Troyes;85'06;Balle au pied;Renaud Ripart;;Côté gauche (vu par nous);False;0,0;;False
+1984138;2026-10-11;Troyes;95'26;Balle au pied;Timothé Nkada;;Côté droit (vu par nous);False;0,0;;False
+1984140;2026-11-08;Lens;8'33;Balle au pied;Florian Thauvin;;Côté gauche (vu par nous);True;0,09685601762858265;Florian Thauvin;False
+1984140;2026-11-08;Lens;15'32;Balle au pied;Florian Thauvin;;Côté gauche (vu par nous);False;0,0;;False
+1984140;2026-11-08;Lens;19'07;Balle au pied;Florian Thauvin;;Côté gauche (vu par nous);True;0,3094084609321542;Florian Thauvin;True
+1984143;2026-10-18;Angers;6'27;Balle au pied;Amine Sbaï;;Côté droit (vu par nous);False;0,0;;False
+1984143;2026-10-18;Angers;25'36;Balle au pied;Amine Sbaï;;Côté droit (vu par nous);False;0,0;;False
+1984143;2026-10-18;Angers;34'14;Balle au pied;Amine El Ouazzani;;Côté gauche (vu par nous);False;0,0;;False
+1984143;2026-10-18;Angers;62'09;Balle au pied;Amine Sbaï;;Côté droit (vu par nous);False;0,0;;False
+1984143;2026-10-18;Angers;72'31;Balle au pied;Joseph Kalulu;;Côté droit (vu par nous);False;0,0;;False
+1984143;2026-10-18;Angers;87'19;Balle au pied;Amine Sbaï;;Zone 14 (axe, devant la surface);True;0,2168757890334197;Prosper Peter;False
+1984154;2026-11-22;Le Mans;8'19;Balle au pied;Daouda Traoré;;Côté droit (vu par nous);False;0,0;;False
+1984154;2026-11-22;Le Mans;11'06;Balle au pied;Louis Mafouta;;Zone 14 (axe, devant la surface);True;0,1577347749675959;Louis Mafouta;False
+1984154;2026-11-22;Le Mans;16'24;Balle au pied;Lucas Calodat;;Côté droit (vu par nous);False;0,0;;False
+1984154;2026-11-22;Le Mans;51'12;Balle au pied;Antoine Rabillard;;Zone 14 (axe, devant la surface);False;0,0;;False
+1984154;2026-11-22;Le Mans;77'02;Balle au pied;Daouda Traoré;;Côté gauche (vu par nous);True;0,04005377358156209;Daouda Traoré;False
+1984154;2026-11-22;Le Mans;83'11;Balle au pied;William Harhouz;;Côté gauche (vu par nous);False;0,0;;False
+1984197;2026-10-25;Le Havre;23'37;Balle au pied;Simon Ebonog;;Côté gauche (vu par nous);False;0,0;;False
+1984197;2026-10-25;Le Havre;60'46;Balle au pied;Sota Nakamura;;Côté droit (vu par nous);False;0,0;;False
+1984197;2026-10-25;Le Havre;62'07;Balle au pied;Sota Nakamura;;Côté droit (vu par nous);True;0,2579417506271082;Josh Maja;False
+1984197;2026-10-25;Le Havre;69'07;Balle au pied;Sota Nakamura;;Côté droit (vu par nous);True;0,09268615800775758;Sota Nakamura;False
+1984197;2026-10-25;Le Havre;74'23;Balle au pied;Rayan Fofana;;Zone 14 (axe, devant la surface);False;0,0;;False
+1984197;2026-10-25;Le Havre;85'30;Balle au pied;Kaito Mizuta;;Côté droit (vu par nous);True;0,3144579433823058;Sota Nakamura;True
+1984273;2026-08-21;Strasbourg;48'00;Balle au pied;Sam Amo-Ameyaw;;Côté gauche (vu par nous);False;0,0;;False
+1984275;2026-09-11;Rennes;35'39;Balle au pied;Przemyslaw Frankowski;;Côté gauche (vu par nous);True;0,07500876639936158;Przemyslaw Frankowski;False
+1984275;2026-09-11;Rennes;49'34;Balle au pied;Mousa Al Tamari;;Côté droit (vu par nous);False;0,0;;False
+1984275;2026-09-11;Rennes;58'04;Balle au pied;Mousa Al Tamari;;Côté droit (vu par nous);True;0,08037095097543946;Mousa Al Tamari;False
+1984275;2026-09-11;Rennes;63'56;Balle au pied;Estéban Lepaul;;Côté droit (vu par nous);True;0,0741223133146951;Estéban Lepaul;False
+1984275;2026-09-11;Rennes;67'10;Balle au pied;Mousa Al Tamari;;Côté gauche (vu par nous);True;0,08659284345262167;Mousa Al Tamari;False
+1984275;2026-09-11;Rennes;71'18;Balle au pied;Mousa Al Tamari;;Côté droit (vu par nous);True;0,2329954866340479;Adrien Thomasson;False
+1984275;2026-09-11;Rennes;80'48;Balle au pied;Mousa Al Tamari;;Côté droit (vu par nous);False;0,0;;False

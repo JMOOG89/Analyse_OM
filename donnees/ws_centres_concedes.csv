@@ -1,0 +1,161 @@
+﻿game_id;date;adversaire;minute;centreur;cote_nous;distance_but_m;reussi;notre_action;notre_joueur;action_reussie;tir_10s;xg_10s;but_10s;tireur;temps_centreur_s;contact;centreur_a_dribble;long
+1984061;2026-08-30;Monaco;5'28;Vanderson;Gauche;25,649758205488023;False;KeeperPickup;Jeffrey de Lange;True;False;0,0;False;;;True;False;False
+1984061;2026-08-30;Monaco;7'38;Mamadou Coulibaly;Gauche;31,81898986454473;True;;;False;True;0,03772884779761574;False;Stanis Idumbo;5,0;False;False;True
+1984061;2026-08-30;Monaco;8'29;Lamine Camara;Droite;34,488630604881955;True;;;False;False;0,0;False;;2,0;False;False;True
+1984061;2026-08-30;Monaco;12'36;Aleksandr Golovin;Gauche;35,86895661989627;True;;;False;True;0,12808839627165716;True;Paris Brunner;6,0;False;False;True
+1984061;2026-08-30;Monaco;21'48;Stanis Idumbo;Droite;17,823837998590545;True;;;False;True;0,2533842441913936;False;Paris Brunner;3,0;False;False;False
+1984061;2026-08-30;Monaco;29'45;Flávio Nazinho;Droite;23,258878068384977;False;Clearance;Timothy Weah;True;False;0,0;False;;1,0;False;False;False
+1984061;2026-08-30;Monaco;48'29;Vanderson;Gauche;32,496399800593295;False;KeeperPickup;Jeffrey de Lange;True;False;0,0;False;;7,0;False;False;False
+1984061;2026-08-30;Monaco;49'19;Aleksandr Golovin;Droite;31,565246015198426;False;Clearance;Geoffrey Kondogbia;True;False;0,0;False;;4,0;False;False;False
+1984061;2026-08-30;Monaco;71'40;Mamadou Coulibaly;Gauche;25,94553379678283;True;;;False;True;0,20499672132437485;False;Stanis Idumbo;7,0;False;False;True
+1984072;2026-09-06;Paris FC;18'46;Pablo Pagis;Droite;25,855908435017323;True;;;False;True;0,09889163479454434;True;Lassine Sinayoko;1,0;False;False;False
+1984072;2026-09-06;Paris FC;56'54;Luca Koleosho;Droite;29,343502875423724;False;Clearance;Nayef Aguerd;True;False;0,0;False;;4,0;False;False;False
+1984072;2026-09-06;Paris FC;79'40;Patrick Zabi;Gauche;29,426764161218955;False;;;False;False;0,0;False;;6,0;False;False;False
+1984088;2026-11-01;Toulouse;12'03;Ismaïl Diallo;Gauche;31,811882701280034;False;BallTouch;Tochukwu Nnadi;True;False;0,0;False;;3,0;False;False;False
+1984088;2026-11-01;Toulouse;16'14;Christ Tapé;Droite;32,51177411338852;False;Clearance;Nayef Aguerd;True;False;0,0;False;;4,0;False;False;False
+1984088;2026-11-01;Toulouse;38'47;Ismaïl Diallo;Gauche;32,90413349413718;False;Pass;Timothy Weah;False;False;0,0;False;;;False;False;True
+1984088;2026-11-01;Toulouse;45'46;Cristian Cásseres;Gauche;36,07325049118807;True;KeeperPickup;Jeffrey de Lange;True;False;0,0;False;;3,0;False;False;False
+1984088;2026-11-01;Toulouse;53'43;Ismaïl Diallo;Gauche;27,710894626482204;False;BallTouch;Ulisses Garcia;True;False;0,0;False;;4,0;False;False;False
+1984088;2026-11-01;Toulouse;54'09;Niko Sigur;Gauche;28,15266326655437;False;Clearance;Amine Gouiri;True;False;0,0;False;;2,0;False;False;False
+1984088;2026-11-01;Toulouse;56'53;Christ Tapé;Droite;28,564108965623277;True;;;False;True;0,10671009640456093;False;Cristian Cásseres;1,0;False;False;True
+1984088;2026-11-01;Toulouse;63'43;Niko Sigur;Droite;35,69833644583456;False;Aerial;Nayef Aguerd;True;True;0,1518413552107092;False;Thomas Jørgensen;4,0;False;False;False
+1984088;2026-11-01;Toulouse;63'53;Niko Sigur;Droite;35,06938242969214;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;3,0;False;False;False
+1984088;2026-11-01;Toulouse;64'03;Christ Tapé;Droite;31,091538656039525;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;3,0;False;False;False
+1984088;2026-11-01;Toulouse;66'51;Niko Sigur;Gauche;19,115175149602997;False;Clearance;Igor Paixão;True;False;0,0;False;;3,0;False;False;False
+1984088;2026-11-01;Toulouse;66'58;Thomas Jørgensen;Gauche;29,395491150855094;False;Clearance;Timothy Weah;True;False;0,0;False;;7,0;False;False;False
+1984088;2026-11-01;Toulouse;80'51;Christ Tapé;Droite;17,770294426373468;False;Interception;CJ Egan-Riley;True;False;0,0;False;;1,0;False;False;False
+1984088;2026-11-01;Toulouse;81'07;Cristian Cásseres;Droite;39,83693061720494;False;;;False;False;0,0;False;;3,0;False;False;True
+1984088;2026-11-01;Toulouse;83'53;Niklas Schmidt;Gauche;32,57989619381866;False;Clearance;Pierre-Emile Højbjerg;True;False;0,0;False;;2,0;False;False;False
+1984088;2026-11-01;Toulouse;85'21;Thomas Jørgensen;Gauche;28,05349889051275;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;8,0;False;False;False
+1984088;2026-11-01;Toulouse;89'31;Niklas Schmidt;Gauche;26,162465957932945;False;;;False;False;0,0;False;;3,0;False;False;False
+1984088;2026-11-01;Toulouse;94'21;Niklas Schmidt;Gauche;42,32506502062341;False;Claim;Jeffrey de Lange;True;False;0,0;False;;3,0;False;False;True
+1984103;2026-09-20;Paris Saint-Germain;8'28;Nuno Mendes;Droite;30,094439370089617;False;;;False;False;0,0;False;;3,0;False;False;True
+1984103;2026-09-20;Paris Saint-Germain;15'36;Warren Zaïre-Emery;Gauche;23,569576661450668;False;Pass;Nayef Aguerd;True;False;0,0;False;;2,0;False;False;False
+1984103;2026-09-20;Paris Saint-Germain;18'05;Ousmane Dembélé;Gauche;27,631990228718596;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;1,0;False;False;False
+1984103;2026-09-20;Paris Saint-Germain;45'56;Warren Zaïre-Emery;Gauche;23,07821416401191;False;Clearance;Emerson;True;False;0,0;False;;2,0;False;False;False
+1984103;2026-09-20;Paris Saint-Germain;47'08;Désiré Doué;Gauche;24,716730386521597;True;Save;Jeffrey de Lange;True;True;0,06253173134412783;False;João Neves;7,0;False;False;False
+1984103;2026-09-20;Paris Saint-Germain;51'41;Nuno Mendes;Droite;36,652415800326175;True;;;False;True;0,29598356838596795;False;Khvicha Kvaratskhelia;4,0;False;False;True
+1984103;2026-09-20;Paris Saint-Germain;52'42;Nuno Mendes;Droite;42,367024393978866;True;;;False;True;0,22894724162003494;False;Ousmane Dembélé;4,0;False;False;True
+1984103;2026-09-20;Paris Saint-Germain;55'03;Ousmane Dembélé;Gauche;26,502144234004916;False;Clearance;Pierre-Emile Højbjerg;True;False;0,0;False;;2,0;False;False;False
+1984103;2026-09-20;Paris Saint-Germain;63'43;Ousmane Dembélé;Gauche;24,257434406795785;False;BallTouch;Amine Gouiri;True;False;0,0;False;;5,0;False;False;False
+1984103;2026-09-20;Paris Saint-Germain;65'10;Désiré Doué;Droite;33,69287188709209;True;;;False;True;0,13122022262816255;True;Ferran Torres;5,0;False;False;False
+1984103;2026-09-20;Paris Saint-Germain;68'19;Ousmane Dembélé;Gauche;30,65468722724145;False;Clearance;Keyliane Abdallah;True;False;0,0;False;;2,0;False;False;False
+1984103;2026-09-20;Paris Saint-Germain;73'45;Nuno Mendes;Droite;38,30590601982937;True;Save;Jeffrey de Lange;True;True;1,082103431305586;True;Marquinhos;5,0;False;False;True
+1984103;2026-09-20;Paris Saint-Germain;82'29;João Neves;Gauche;32,53367984105088;True;;;False;False;0,0;False;;3,0;False;False;True
+1984103;2026-09-20;Paris Saint-Germain;88'05;Mika Godts;Droite;17,175258979124592;False;;;False;False;0,0;False;;8,0;False;False;True
+1984138;2026-10-11;Troyes;4'50;Antoine Mille;Droite;25,87818393937256;True;Aerial;Igor Paixão;False;True;0,05543274346309687;False;Adrien Monfray;2,0;False;False;False
+1984138;2026-10-11;Troyes;5'37;Lucas Maronnier;Gauche;26,233875066409844;False;Claim;Jeffrey de Lange;True;False;0,0;False;;3,0;False;False;False
+1984138;2026-10-11;Troyes;14'27;Jérémy Le Douaron;Gauche;29,05069644604067;False;Clearance;Kelyann Bezahaf;True;False;0,0;False;;6,0;False;False;False
+1984138;2026-10-11;Troyes;22'45;Lucas Maronnier;Gauche;31,011695229380805;True;Aerial;Nayef Aguerd;False;True;0,06518369893457983;False;Jérémy Le Douaron;1,0;False;False;False
+1984138;2026-10-11;Troyes;32'46;Antoine Mille;Gauche;36,59725892741149;False;;;False;False;0,0;False;;2,0;False;False;True
+1984138;2026-10-11;Troyes;41'42;Iron Gomis;Droite;31,61450314333598;True;;;False;True;0,0419834049324406;False;Jérémy Le Douaron;5,0;False;False;False
+1984138;2026-10-11;Troyes;54'32;Adrien Monfray;Droite;34,3614487616573;True;BlockedPass;Kelyann Bezahaf;True;False;0,0;False;;6,0;False;False;False
+1984138;2026-10-11;Troyes;55'05;Kandet Diawara;Droite;25,770201415588506;False;Claim;Jeffrey de Lange;True;False;0,0;False;;4,0;False;False;False
+1984138;2026-10-11;Troyes;60'29;Kandet Diawara;Droite;31,127709584869887;False;;;False;True;0,04004204856680145;False;Jérémy Le Douaron;1,0;False;False;True
+1984138;2026-10-11;Troyes;60'36;Lucas Maronnier;Gauche;29,730268818159043;True;Aerial;Nayef Aguerd;False;True;0,04004204856680145;False;Jérémy Le Douaron;7,0;False;False;False
+1984138;2026-10-11;Troyes;71'46;Antoine Mille;Gauche;37,34842198808405;True;;;False;True;0,05751815284184719;False;Renaud Ripart;3,0;False;False;True
+1984138;2026-10-11;Troyes;76'18;Hugo Picard;Droite;33,16160725899756;False;Clearance;Keyliane Abdallah;True;False;0,0;False;;4,0;False;False;False
+1984138;2026-10-11;Troyes;78'55;Timothé Nkada;Gauche;30,920066122180273;False;BallTouch;Himad Abdelli;True;False;0,0;False;;3,0;False;False;False
+1984138;2026-10-11;Troyes;79'03;Lucas Maronnier;Gauche;31,835682119282453;True;Aerial;CJ Egan-Riley;False;True;0,03343343820860876;False;Christ Batola;2,0;False;False;True
+1984138;2026-10-11;Troyes;81'26;Renaud Ripart;Gauche;29,729334267689218;False;BallTouch;Emerson;True;False;0,0;False;;3,0;False;False;False
+1984138;2026-10-11;Troyes;85'03;Lucas Maronnier;Gauche;36,26112518938154;False;BallTouch;Emerson;True;False;0,0;False;;3,0;False;False;False
+1984138;2026-10-11;Troyes;88'17;Paolo Gozzi;Droite;25,773639634324056;False;Clearance;Kelyann Bezahaf;True;False;0,0;False;;3,0;False;False;False
+1984138;2026-10-11;Troyes;90'18;Lucas Maronnier;Gauche;27,474855431830754;True;;;False;True;0,23362742155669286;False;Renaud Ripart;2,0;False;False;False
+1984138;2026-10-11;Troyes;91'06;Lucas Maronnier;Gauche;21,963126576150312;False;Clearance;Geoffrey Kondogbia;True;False;0,0;False;;3,0;False;False;False
+1984138;2026-10-11;Troyes;91'09;Antoine Mille;Gauche;30,755932907326997;False;Clearance;Geoffrey Kondogbia;True;False;0,0;False;;3,0;False;False;False
+1984138;2026-10-11;Troyes;91'25;Paolo Gozzi;Droite;28,8968289090689;True;;;False;True;0,10503114751983345;False;Christ Batola;2,0;False;False;False
+1984140;2026-11-08;Lens;6'40;Matthieu Udol;Droite;40,85081252557897;True;Aerial;Nayef Aguerd;False;True;0,03609226385983866;False;Florian Thauvin;7,0;False;False;False
+1984140;2026-11-08;Lens;9'47;Saud Abdulhamid;Gauche;29,758616164062467;False;Clearance;Pierre-Emile Højbjerg;True;False;0,0;False;;2,0;False;False;False
+1984140;2026-11-08;Lens;9'54;Saud Abdulhamid;Gauche;29,226895302101454;False;BallTouch;Ulisses Garcia;True;False;0,0;False;;9,0;False;False;False
+1984140;2026-11-08;Lens;10'13;Florian Thauvin;Gauche;27,69087221450419;True;Aerial;CJ Egan-Riley;False;True;0,07563131537043616;False;Matthieu Udol;2,0;False;False;False
+1984140;2026-11-08;Lens;12'04;Florian Thauvin;Gauche;21,80959651162763;False;Clearance;Tochukwu Nnadi;True;False;0,0;False;;6,0;False;False;False
+1984140;2026-11-08;Lens;19'11;Florian Sotoca;Gauche;20,138280363526576;True;;;False;True;0,3094084609321542;True;Florian Thauvin;3,0;False;False;False
+1984140;2026-11-08;Lens;26'31;Saud Abdulhamid;Gauche;34,31726568361763;False;Clearance;Himad Abdelli;True;False;0,0;False;;6,0;False;False;False
+1984140;2026-11-08;Lens;26'39;Florian Thauvin;Droite;26,327605303179407;False;Interception;Amine Harit;True;False;0,0;False;;4,0;False;False;False
+1984140;2026-11-08;Lens;60'50;Florian Sotoca;Droite;32,553059595067246;True;Aerial;Nayef Aguerd;False;True;0,09385378297343334;False;Matthieu Udol;7,0;False;False;False
+1984140;2026-11-08;Lens;69'10;Saud Abdulhamid;Gauche;26,978825493338288;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;2,0;False;False;False
+1984140;2026-11-08;Lens;69'26;Yacine Titraoui;Droite;26,658213162175745;False;Claim;Jeffrey de Lange;True;False;0,0;False;;4,0;False;False;False
+1984140;2026-11-08;Lens;72'06;Florian Sotoca;Droite;27,742648828113005;False;BallRecovery;CJ Egan-Riley;True;False;0,0;False;;4,0;False;False;False
+1984143;2026-10-18;Angers;1'48;Louis Mouton;Droite;31,666143197427754;False;Clearance;Geoffrey Kondogbia;True;False;0,0;False;;3,0;False;False;False
+1984143;2026-10-18;Angers;6'38;Lilian Raolisoa;Droite;32,80800586747082;False;Clearance;Tochukwu Nnadi;True;False;0,0;False;;3,0;False;False;False
+1984143;2026-10-18;Angers;9'15;Amine El Ouazzani;Droite;29,34443429340563;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;8,0;False;False;False
+1984143;2026-10-18;Angers;13'22;Amine Sbaï;Droite;24,264509906445664;False;Clearance;Geoffrey Kondogbia;True;True;0,3195414650181614;True;Lilian Raolisoa;5,0;False;False;False
+1984143;2026-10-18;Angers;18'15;Yassin Belkhdim;Gauche;33,79763910393742;False;Clearance;Tochukwu Nnadi;True;False;0,0;False;;1,0;False;False;False
+1984143;2026-10-18;Angers;25'36;Amine Sbaï;Droite;17,642074736266142;False;Clearance;Geoffrey Kondogbia;True;False;0,0;False;;9,0;False;True;False
+1984143;2026-10-18;Angers;31'43;Carlens Arcus;Gauche;26,221237575675183;False;Clearance;Emerson;True;False;0,0;False;;2,0;False;False;False
+1984143;2026-10-18;Angers;38'52;Amine Sbaï;Droite;32,58641213757661;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;7,0;False;False;False
+1984143;2026-10-18;Angers;40'30;Carlens Arcus;Gauche;34,64919463710521;False;;;False;False;0,0;False;;1,0;False;False;False
+1984143;2026-10-18;Angers;57'33;Lilian Raolisoa;Droite;28,709184749832236;False;Clearance;Nouhoum Kamissoko;True;False;0,0;False;;1,0;False;False;False
+1984143;2026-10-18;Angers;61'35;Lilian Raolisoa;Droite;45,53689713847443;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;3,0;False;False;True
+1984143;2026-10-18;Angers;64'35;Jim Allevinah;Gauche;32,679673743781464;True;Aerial;CJ Egan-Riley;False;True;0,06813765115922622;False;Prosper Peter;5,0;False;False;False
+1984143;2026-10-18;Angers;65'50;Jim Allevinah;Gauche;30,517716887080528;True;;;False;True;0,16206578624663057;False;Prosper Peter;4,0;False;False;False
+1984143;2026-10-18;Angers;72'31;Joseph Kalulu;Droite;24,828691648977397;False;BallTouch;Timothy Weah;True;False;0,0;False;;3,0;False;False;False
+1984143;2026-10-18;Angers;77'33;Joseph Kalulu;Droite;31,00701896345407;False;Clearance;Nouhoum Kamissoko;True;False;0,0;False;;3,0;False;False;False
+1984143;2026-10-18;Angers;77'45;Joseph Kalulu;Droite;31,852333603678083;True;;;False;True;0,03183353579671574;False;Harouna Djibirin;1,0;False;False;True
+1984143;2026-10-18;Angers;79'47;Harouna Djibirin;Gauche;31,326935694382883;False;Clearance;Angel Gomes;True;False;0,0;False;;5,0;False;False;False
+1984143;2026-10-18;Angers;80'53;Yassin Belkhdim;Gauche;39,14596275479759;False;Aerial;Nayef Aguerd;True;False;0,0;False;;2,0;False;False;False
+1984143;2026-10-18;Angers;83'23;Harouna Djibirin;Gauche;23,173584638549126;False;;;False;False;0,0;False;;8,0;False;True;False
+1984154;2026-11-22;Le Mans;2'38;Dame Gueye;Droite;23,516905089743425;True;;;False;False;0,0;False;;6,0;False;False;True
+1984154;2026-11-22;Le Mans;2'43;Lucas Buadés;Gauche;25,8373404978144;True;;;False;False;0,0;False;;5,0;False;False;True
+1984154;2026-11-22;Le Mans;21'27;Lucas Buadés;Gauche;17,589502579663815;False;Aerial;Amine Harit;True;True;0,056131747249176224;False;Daouda Traoré;3,0;False;False;False
+1984154;2026-11-22;Le Mans;24'12;Lucas Calodat;Droite;27,93796143243097;False;Clearance;Timothy Weah;True;False;0,0;False;;6,0;False;False;False
+1984154;2026-11-22;Le Mans;26'45;Lucas Calodat;Droite;39,55659080355637;True;;;False;True;0,06518907468684117;False;Dame Gueye;5,0;False;False;False
+1984154;2026-11-22;Le Mans;36'05;Rayan Bamba;Gauche;40,80794216816133;True;;;False;True;0,07012333569362356;False;Dame Gueye;5,0;False;False;True
+1984154;2026-11-22;Le Mans;37'17;Antoine Rabillard;Gauche;21,274380860556203;False;;;False;False;0,0;False;;5,0;False;False;False
+1984154;2026-11-22;Le Mans;39'25;Lucas Calodat;Droite;28,306527321450087;False;;;False;False;0,0;False;;6,0;False;False;True
+1984154;2026-11-22;Le Mans;43'58;Antoine Rabillard;Gauche;25,523079927783012;False;;;False;False;0,0;False;;3,0;False;False;False
+1984154;2026-11-22;Le Mans;63'27;Lucas Calodat;Droite;18,835247834844118;False;KeeperPickup;Jeffrey de Lange;True;False;0,0;False;;4,0;False;False;False
+1984154;2026-11-22;Le Mans;67'51;Rayan Bamba;Gauche;30,06354796094433;False;Clearance;Ulisses Garcia;True;False;0,0;False;;2,0;False;False;False
+1984154;2026-11-22;Le Mans;70'30;Lucas Calodat;Droite;39,59881821468918;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;3,0;False;False;False
+1984154;2026-11-22;Le Mans;89'07;Raúl Torrente;Droite;37,59698392158605;True;;;False;False;0,0;False;;7,0;False;False;False
+1984197;2026-10-25;Le Havre;7'35;Djibril Ouziad;Gauche;24,45367720814193;False;Interception;Tochukwu Nnadi;True;False;0,0;False;;1,0;False;False;False
+1984197;2026-10-25;Le Havre;11'24;Djibril Ouziad;Gauche;32,283461028830224;True;Aerial;CJ Egan-Riley;False;True;0,10119569575766403;False;Mbwana Samatta;5,0;False;False;True
+1984197;2026-10-25;Le Havre;12'41;Enzo Koffi;Droite;27,690872214504193;False;Clearance;Nayef Aguerd;True;False;0,0;False;;2,0;False;False;False
+1984197;2026-10-25;Le Havre;25'09;Enzo Koffi;Droite;30,043632287058767;False;Clearance;Timothy Weah;True;False;0,0;False;;2,0;False;False;False
+1984197;2026-10-25;Le Havre;35'07;Djibril Ouziad;Gauche;38,803927752226315;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;6,0;False;False;True
+1984197;2026-10-25;Le Havre;36'24;Enzo Koffi;Droite;25,078923601303153;False;Aerial;CJ Egan-Riley;True;True;0,06909216837277023;False;Djibril Ouziad;3,0;False;False;False
+1984197;2026-10-25;Le Havre;40'12;Rassoul Ndiaye;Droite;24,888712381318566;False;Aerial;Nayef Aguerd;True;False;0,0;False;;2,0;False;False;False
+1984197;2026-10-25;Le Havre;40'25;Rassoul Ndiaye;Droite;35,52250267084233;True;;;False;True;0,12382474570925578;False;Djibril Ouziad;3,0;False;False;True
+1984197;2026-10-25;Le Havre;44'58;Enzo Koffi;Droite;31,602505612688375;False;Clearance;Nayef Aguerd;True;False;0,0;False;;2,0;False;False;False
+1984197;2026-10-25;Le Havre;46'04;Enzo Koffi;Droite;17,620765136622186;False;KeeperPickup;Jeffrey de Lange;True;False;0,0;False;;6,0;False;False;False
+1984197;2026-10-25;Le Havre;46'57;Djibril Ouziad;Gauche;27,486251272226994;False;Clearance;Nayef Aguerd;True;False;0,0;False;;4,0;False;False;False
+1984197;2026-10-25;Le Havre;47'17;Rassoul Ndiaye;Gauche;24,477172406142014;False;;;False;False;0,0;False;;5,0;False;False;True
+1984197;2026-10-25;Le Havre;48'00;Rassoul Ndiaye;Gauche;23,937381331298543;False;KeeperPickup;Jeffrey de Lange;True;False;0,0;False;;3,0;False;False;False
+1984197;2026-10-25;Le Havre;60'46;Sota Nakamura;Droite;21,640869691396418;False;Clearance;Tochukwu Nnadi;True;False;0,0;False;;3,0;False;False;False
+1984197;2026-10-25;Le Havre;65'23;Sota Nakamura;Droite;37,07256128189688;False;;;False;False;0,0;False;;4,0;False;False;True
+1984197;2026-10-25;Le Havre;73'35;Sota Nakamura;Droite;27,414078208103223;False;Clearance;Timothy Weah;True;False;0,0;False;;3,0;False;False;False
+1984197;2026-10-25;Le Havre;79'21;Lamine N'Diaye;Droite;34,72996682981428;True;Save;Emerson;True;True;0,140295890279762;False;Rayan Fofana;4,0;False;False;True
+1984197;2026-10-25;Le Havre;82'22;Ayumu Seko;Gauche;35,931253373630035;False;Clearance;Nayef Aguerd;True;False;0,0;False;;2,0;False;False;False
+1984197;2026-10-25;Le Havre;90'44;Sota Nakamura;Droite;21,575113464359816;False;Claim;Jeffrey de Lange;False;False;0,0;False;;5,0;False;False;False
+1984197;2026-10-25;Le Havre;93'09;Lamine N'Diaye;Droite;32,793887296263;False;;;False;False;0,0;False;;2,0;False;False;False
+1984197;2026-10-25;Le Havre;94'29;Lamine N'Diaye;Droite;33,400583288319986;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;1,0;False;False;False
+1984197;2026-10-25;Le Havre;94'41;Sota Nakamura;Droite;22,04553324372083;False;Clearance;Nouhoum Kamissoko;True;True;0,1285508120590026;False;Kaito Mizuta;2,0;False;False;False
+1984197;2026-10-25;Le Havre;94'58;Lamine N'Diaye;Droite;29,669613816158787;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;1,0;False;False;False
+1984273;2026-08-21;Strasbourg;6'53;Sam Amo-Ameyaw;Gauche;30,02543348563015;False;;;False;False;0,0;False;;4,0;False;False;True
+1984273;2026-08-21;Strasbourg;7'41;Sam Amo-Ameyaw;Gauche;23,03662581629524;False;Clearance;Geoffrey Kondogbia;True;False;0,0;False;;5,0;False;False;False
+1984273;2026-08-21;Strasbourg;9'59;Guéla Doué;Gauche;21,588978669682362;False;Interception;Geoffrey Kondogbia;True;False;0,0;False;;2,0;False;False;False
+1984273;2026-08-21;Strasbourg;11'07;Samir El Mourabet;Gauche;28,415288068221308;True;Aerial;Timothy Weah;False;True;0,043876393988245374;False;Guéla Doué;1,0;False;False;False
+1984273;2026-08-21;Strasbourg;31'11;Sam Amo-Ameyaw;Gauche;24,9827132433609;False;Clearance;Timothy Weah;True;True;0,07973879201226003;False;Gessime Yassine;8,0;False;False;False
+1984273;2026-08-21;Strasbourg;37'31;Sam Amo-Ameyaw;Gauche;27,230490263673182;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;;False;False;False
+1984273;2026-08-21;Strasbourg;68'54;Jacobo Ortega;Gauche;26,07603039191357;False;;;False;False;0,0;False;;;False;False;True
+1984273;2026-08-21;Strasbourg;81'03;Fabio Baldé;Droite;29,795842931523183;False;Clearance;Nayef Aguerd;True;False;0,0;False;;6,0;False;True;False
+1984273;2026-08-21;Strasbourg;81'36;Guéla Doué;Gauche;30,374226327595576;False;Aerial;Timothy Weah;True;True;0,10076552645551036;False;Gessime Yassine;2,0;False;False;False
+1984275;2026-09-11;Rennes;6'11;Issa Soumaré;Droite;27,501112704761606;False;;;False;False;0,0;False;;2,0;False;False;True
+1984275;2026-09-11;Rennes;14'38;Ludovic Blas;Droite;16,29880980317275;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;4,0;False;False;False
+1984275;2026-09-11;Rennes;16'02;Issa Soumaré;Droite;24,852473699815075;False;Clearance;Himad Abdelli;True;False;0,0;False;;2,0;False;False;False
+1984275;2026-09-11;Rennes;22'52;Aboubakar Nagida;Droite;41,847431474345;False;Clearance;Timothy Weah;True;False;0,0;False;;2,0;False;False;False
+1984275;2026-09-11;Rennes;32'43;Ludovic Blas;Gauche;28,546480273406743;False;Clearance;CJ Egan-Riley;True;False;0,0;False;;5,0;False;False;False
+1984275;2026-09-11;Rennes;34'12;Aboubakar Nagida;Droite;29,67848540609847;False;Clearance;Emerson;True;False;0,0;False;;2,0;False;False;False
+1984275;2026-09-11;Rennes;43'18;Adrien Thomasson;Gauche;33,55734941857;False;Clearance;Nayef Aguerd;True;True;0,05568010778797605;False;Valentin Rongier;5,0;False;False;False
+1984275;2026-09-11;Rennes;49'34;Mousa Al Tamari;Droite;18,64811585656846;False;BallTouch;Timothy Weah;True;False;0,0;False;;5,0;False;False;False
+1984275;2026-09-11;Rennes;51'53;Ludovic Blas;Gauche;31,681118414601467;True;Aerial;Timothy Weah;False;True;0,6932631769382187;True;Mousa Al Tamari;1,0;False;False;True
+1984275;2026-09-11;Rennes;54'36;Ludovic Blas;Gauche;24,019757201104266;False;Clearance;Emerson;True;False;0,0;False;;5,0;False;False;False
+1984275;2026-09-11;Rennes;55'49;Aboubakar Nagida;Droite;44,21436603639139;True;;;False;True;0,047242013083205865;False;Ludovic Blas;3,0;False;False;True
+1984275;2026-09-11;Rennes;55'54;Adrien Thomasson;Gauche;21,14934363047705;True;Save;Jeffrey de Lange;True;True;0,047242013083205865;False;Ludovic Blas;5,0;False;False;False
+1984275;2026-09-11;Rennes;59'35;Mousa Al Tamari;Droite;16,93973556464209;False;Claim;Jeffrey de Lange;True;False;0,0;False;;2,0;False;False;False
+1984275;2026-09-11;Rennes;61'05;Aboubakar Nagida;Droite;35,25538541840098;True;Aerial;Nayef Aguerd;False;True;0,09072803941375537;False;Estéban Lepaul;2,0;False;False;False
+1984275;2026-09-11;Rennes;65'23;Mahdi Camara;Gauche;29,886034347166234;False;BallTouch;Himad Abdelli;True;False;0,0;False;;2,0;False;False;False
+1984275;2026-09-11;Rennes;70'00;Bryan Reynolds;Gauche;36,17817994316464;False;Clearance;CJ Egan-Riley;True;True;0,0652778442140471;False;Mahdi Camara;7,0;False;True;False
+1984275;2026-09-11;Rennes;76'37;Mousa Al Tamari;Droite;29,7934137688181;False;Clearance;Nayef Aguerd;True;False;0,0;False;;;False;False;False
+1984275;2026-09-11;Rennes;80'50;Adrien Thomasson;Droite;17,809207618532614;True;Dispossessed;Neal Maupay;True;False;0,0;False;;2,0;False;False;False
+1984275;2026-09-11;Rennes;86'27;Sebastian Szymanski;Gauche;33,874326930582704;False;Clearance;Timothy Weah;True;False;0,0;False;;2,0;False;False;False

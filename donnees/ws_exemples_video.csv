@@ -1,0 +1,393 @@
+﻿equipe;theme;type;adversaire;date;minute;joueur;description;match_resume
+Angers;Centres;À reproduire;Lille;2026-08-23;1'14;Lilian Raolisoa;récupération dans notre couloir gauche, à 23 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 1 suivi(s) d'un tir
+Angers;Centres;À reproduire;Lille;2026-08-23;1'35;Ousmane Camara;récupération dans notre couloir droite, à 35 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 1 suivi(s) d'un tir
+Angers;Centres;À reproduire;Lille;2026-08-23;5'43;Yassin Belkhdim;interception dans notre couloir gauche, à 41 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 1 suivi(s) d'un tir
+Angers;Centres;À reproduire;Lille;2026-08-23;9'49;Yassin Belkhdim;interception dans notre couloir droite, à 28 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 1 suivi(s) d'un tir
+Angers;Centres;À reproduire;Lille;2026-08-23;10'09;Jacques Ekomié;tacle gagné dans notre couloir gauche, à 8 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 1 suivi(s) d'un tir
+Angers;Centres;À reproduire;Lille;2026-08-23;10'11;Yassin Belkhdim;récupération dans notre couloir gauche, à 20 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 1 suivi(s) d'un tir
+Angers;Centres;À corriger;Le Havre;2026-09-12;45'56;;centre de Djibril Ouziad depuis notre droite (31 m) → tir de Amir Richardson (1.15 xG) — aucune action de notre part;
+Angers;Centres;À corriger;Rennes;2026-09-06;4'45;Jordan Lefort;centre de Mousa Al Tamari depuis notre droite (17 m) → tir de Estéban Lepaul (0.35 xG) — 1re action : duel aérien gagné;
+Angers;Centres;À corriger;Brest;2026-10-10;8'24;;centre de Hugo Magnetti depuis notre gauche (31 m) → tir de Ludovic Ajorque (0.32 xG, BUT) — aucune action de notre part;
+Angers;Centres;À corriger;Lyon;2026-11-01;37'44;;centre de Abner Vinícius depuis notre droite (28 m) → tir de Ernest Nuamah (0.23 xG, BUT) — aucune action de notre part;
+Angers;Centres;À corriger;Marseille;2026-10-18;36'57;;centre de Timothy Weah depuis notre gauche (30 m) → tir de Himad Abdelli (0.23 xG, BUT) — aucune action de notre part;
+Angers;Centres;À corriger;Troyes;2026-09-19;28'56;;centre de Antoine Mille depuis notre gauche (31 m) → tir de Mouhamed Diop (0.21 xG) — aucune action de notre part;
+Angers;Zone de vérité;À reproduire;Lorient;2026-10-25;12'57;Carlens Arcus;interception à 8 m de notre but;10 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Angers;Zone de vérité;À reproduire;Lorient;2026-10-25;32'16;Branco van den Boomen;tacle gagné à 10 m de notre but dans l'axe;10 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Angers;Zone de vérité;À reproduire;Lorient;2026-10-25;32'20;Yassin Belkhdim;interception à 25 m de notre but dans l'axe;10 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Angers;Zone de vérité;À reproduire;Lorient;2026-10-25;51'07;Joseph Kalulu;passe contrée à 29 m de notre but dans l'axe;10 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Angers;Zone de vérité;À reproduire;Lorient;2026-10-25;57'16;Ousmane Camara;tacle gagné à 24 m de notre but;10 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Angers;Zone de vérité;À corriger;Paris FC;2026-11-22;64'14;Patrick Zabi;entrée balle au pied de Patrick Zabi depuis côté droit (vu par nous) → tir de Pierre Lees-Melou (1.04 xG, BUT);
+Angers;Zone de vérité;À corriger;Paris FC;2026-11-22;64'19;Pierre Lees-Melou;entrée passe de Pierre Lees-Melou depuis côté droit (vu par nous) pour Rudy Matondo → tir de Pierre Lees-Melou (1.04 xG, BUT);
+Angers;Zone de vérité;À corriger;Paris FC;2026-11-22;54'47;Ilan Kebbal;entrée passe de Ilan Kebbal depuis zone 14 (axe, devant la surface) pour Diego Coppola → tir de Diego Coppola (0.60 xG, BUT);
+Angers;Zone de vérité;À corriger;Nice;2026-11-08;1'47;Mohammed Amoura;entrée balle au pied de Mohammed Amoura depuis côté droit (vu par nous) → tir de Sofiane Diop (0.58 xG, BUT);
+Angers;Zone de vérité;À corriger;Paris FC;2026-11-22;46'41;Pablo Pagis;entrée passe de Pablo Pagis depuis côté droit (vu par nous) pour Diego Coppola → tir de Patrick Zabi (0.52 xG, BUT);
+Angers;Zone de vérité;À corriger;Brest;2026-10-10;94'39;Kenny Lala;entrée passe de Kenny Lala depuis côté gauche (vu par nous) pour Noah Edjouma → tir de Djylian N'Guessan (0.43 xG);
+Auxerre;Centres;À reproduire;Brest;2026-09-20;5'13;Arthur Piedfort;tacle gagné dans notre couloir droite, à 37 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Auxerre;Centres;À reproduire;Brest;2026-09-20;5'26;Danny Namaso;récupération dans notre couloir droite, à 28 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Auxerre;Centres;À reproduire;Brest;2026-09-20;8'12;Rémy Labeau Lascary;interception dans notre couloir gauche, à 41 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Auxerre;Centres;À reproduire;Brest;2026-09-20;9'19;Axel Tuanzebe;récupération dans notre couloir gauche, à 28 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Auxerre;Centres;À reproduire;Brest;2026-09-20;10'09;Fredrik Oppegård;récupération dans notre couloir gauche, à 18 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Auxerre;Centres;À reproduire;Brest;2026-09-20;15'07;Fredrik Oppegård;récupération dans notre couloir gauche, à 9 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Auxerre;Centres;À corriger;Lens;2026-08-22;40'22;;centre de Ismaëlo Ganiou depuis notre gauche (25 m) → tir de Michaël Cuisance (0.60 xG) — aucune action de notre part;
+Auxerre;Centres;À corriger;Le Mans;2026-10-25;9'29;;centre de Lucas Calodat depuis notre droite (36 m) → tir de Louis Mafouta (0.45 xG) — aucune action de notre part;
+Auxerre;Centres;À corriger;Monaco;2026-11-21;55'23;;centre de Paris Brunner depuis notre droite (32 m) → tir de Takumi Minamino (0.44 xG) — aucune action de notre part;
+Auxerre;Centres;À corriger;Strasbourg;2026-11-01;84'42;;centre de Oso depuis notre droite (26 m) → tir de Gessime Yassine (0.40 xG, BUT) — aucune action de notre part;
+Auxerre;Centres;À corriger;Strasbourg;2026-11-01;6'27;Paul Nardi;centre de Martial Godo depuis notre droite (20 m) → tir de Gessime Yassine (0.35 xG) — 1re action : arrêt;
+Auxerre;Centres;À corriger;Angers;2026-08-29;58'12;;centre de Jim Allevinah depuis notre gauche (29 m) → tir de Anthony Bermont (0.30 xG) — aucune action de notre part;
+Auxerre;Zone de vérité;À reproduire;Brest;2026-09-20;16'44;Kévin Danois;tacle gagné à 31 m de notre but dans l'axe;1 entrées adverses dans la surface, 0 suivie(s) d'un tir
+Auxerre;Zone de vérité;À reproduire;Brest;2026-09-20;18'45;Axel Tuanzebe;passe contrée à 7 m de notre but;1 entrées adverses dans la surface, 0 suivie(s) d'un tir
+Auxerre;Zone de vérité;À reproduire;Brest;2026-09-20;72'13;Axel Tuanzebe;interception à 13 m de notre but;1 entrées adverses dans la surface, 0 suivie(s) d'un tir
+Auxerre;Zone de vérité;À reproduire;Brest;2026-09-20;76'04;Naouirou Ahamada;interception à 29 m de notre but;1 entrées adverses dans la surface, 0 suivie(s) d'un tir
+Auxerre;Zone de vérité;À corriger;Lyon;2026-09-04;87'57;Loïs Openda;entrée passe de Loïs Openda depuis côté droit (vu par nous) pour Khalis Merah → tir de Kaïl Boudache (0.93 xG);
+Auxerre;Zone de vérité;À corriger;Monaco;2026-11-21;44'34;Takumi Minamino;entrée passe de Takumi Minamino depuis côté gauche (vu par nous) pour Paris Brunner → tir de Matthis Abline (0.61 xG);
+Auxerre;Zone de vérité;À corriger;Lens;2026-08-22;40'22;Ismaëlo Ganiou;entrée passe de Ismaëlo Ganiou depuis côté gauche (vu par nous) pour Michaël Cuisance → tir de Michaël Cuisance (0.60 xG);
+Auxerre;Zone de vérité;À corriger;Lens;2026-08-22;40'21;Saud Abdulhamid;entrée balle au pied de Saud Abdulhamid depuis côté gauche (vu par nous) → tir de Michaël Cuisance (0.60 xG);
+Auxerre;Zone de vérité;À corriger;Lens;2026-08-22;65'07;Florian Thauvin;entrée passe de Florian Thauvin depuis côté gauche (vu par nous) pour Michal Skóras → tir de Ismaëlo Ganiou (0.54 xG, BUT);
+Auxerre;Zone de vérité;À corriger;Rennes;2026-10-11;83'54;Ludovic Blas;entrée balle au pied de Ludovic Blas depuis côté droit (vu par nous) → tir de Mahdi Camara (0.48 xG);
+Brest;Centres;À reproduire;Auxerre;2026-09-20;1'18;Giovani Versini;récupération dans notre couloir droite, à 40 m de notre ligne de but : le centre n'a pas lieu;9 centres subis seulement, 0 suivi(s) d'un tir
+Brest;Centres;À reproduire;Auxerre;2026-09-20;2'05;Kenny Lala;passe contrée dans notre couloir droite, à 42 m de notre ligne de but : le centre n'a pas lieu;9 centres subis seulement, 0 suivi(s) d'un tir
+Brest;Centres;À reproduire;Auxerre;2026-09-20;2'23;Raphaël Le Guen;récupération dans notre couloir droite, à 6 m de notre ligne de but : le centre n'a pas lieu;9 centres subis seulement, 0 suivi(s) d'un tir
+Brest;Centres;À reproduire;Auxerre;2026-09-20;5'11;Hugo Magnetti;récupération dans notre couloir gauche, à 41 m de notre ligne de but : le centre n'a pas lieu;9 centres subis seulement, 0 suivi(s) d'un tir
+Brest;Centres;À reproduire;Auxerre;2026-09-20;8'57;Bradley Locko;récupération dans notre couloir gauche, à 29 m de notre ligne de but : le centre n'a pas lieu;9 centres subis seulement, 0 suivi(s) d'un tir
+Brest;Centres;À reproduire;Auxerre;2026-09-20;12'38;Bradley Locko;interception dans notre couloir gauche, à 20 m de notre ligne de but : le centre n'a pas lieu;9 centres subis seulement, 0 suivi(s) d'un tir
+Brest;Centres;À corriger;Angers;2026-10-10;46'27;;centre de Joseph Kalulu depuis notre droite (29 m) → tir de Prosper Peter (0.41 xG, BUT) — aucune action de notre part;
+Brest;Centres;À corriger;Lille;2026-10-17;92'16;Ludovic Ajorque;centre de Calvin Verdonk depuis notre droite (28 m) → tir de Tanguy Nianzou (0.26 xG) — 1re action : duel aérien gagné;
+Brest;Centres;À corriger;Lyon;2026-11-08;84'47;;centre de Abner Vinícius depuis notre droite (35 m) → tir de Corentin Tolisso (0.20 xG) — aucune action de notre part;
+Brest;Centres;À corriger;Le Mans;2026-08-22;45'55;Raphaël Le Guen;centre de Yasser Larouci depuis notre droite (34 m) → tir de Dame Gueye (0.19 xG, BUT) — 1re action : dégagement;
+Brest;Centres;À corriger;Angers;2026-10-10;25'49;Lucas Tousart;centre de Jim Allevinah depuis notre gauche (23 m) → tir de Prosper Peter (0.17 xG) — 1re action : duel aérien gagné;
+Brest;Centres;À corriger;Lorient;2026-11-02;44'37;;centre de Dembo Sylla depuis notre gauche (27 m) → tir de Ibrahima Baldé (0.17 xG) — aucune action de notre part;
+Brest;Zone de vérité;À reproduire;Nice;2026-10-23;6'54;Hugo Magnetti;interception à 27 m de notre but;8 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Brest;Zone de vérité;À reproduire;Nice;2026-10-23;25'39;Lucas Tousart;interception à 29 m de notre but dans l'axe;8 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Brest;Zone de vérité;À reproduire;Nice;2026-10-23;65'41;Lucas Tousart;interception à 23 m de notre but dans l'axe;8 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Brest;Zone de vérité;À reproduire;Nice;2026-10-23;82'44;Gautier Lloris;tacle gagné à 17 m de notre but;8 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Brest;Zone de vérité;À corriger;Le Havre;2026-09-05;99'00;Amir Richardson;entrée passe de Amir Richardson depuis côté gauche (vu par nous) pour Ahmed Touba → tir de Rayan Fofana (0.56 xG);
+Brest;Zone de vérité;À corriger;Angers;2026-10-10;46'27;Joseph Kalulu;entrée passe de Joseph Kalulu depuis côté droit (vu par nous) pour Prosper Peter → tir de Prosper Peter (0.41 xG, BUT);
+Brest;Zone de vérité;À corriger;Paris Saint-Germain;2026-09-13;70'41;Désiré Doué;entrée passe de Désiré Doué depuis côté droit (vu par nous) pour Maghnes Akliouche → tir de João Neves (0.34 xG);
+Brest;Zone de vérité;À corriger;Lille;2026-10-17;92'16;Calvin Verdonk;entrée passe de Calvin Verdonk depuis côté droit (vu par nous) pour Nathan Ngoy → tir de Tanguy Nianzou (0.26 xG);
+Brest;Zone de vérité;À corriger;Angers;2026-10-10;25'43;Joseph Kalulu;entrée passe de Joseph Kalulu depuis côté droit (vu par nous) pour Amine Sbaï → tir de Prosper Peter (0.26 xG);
+Brest;Zone de vérité;À corriger;Auxerre;2026-09-20;92'14;Lamine Sy;entrée balle au pied de Lamine Sy depuis côté gauche (vu par nous) → tir de Lamine Sy (0.24 xG);
+Le Havre;Centres;À reproduire;Auxerre;2026-10-18;0'11;Simon Ebonog;récupération dans notre couloir droite, à 36 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Havre;Centres;À reproduire;Auxerre;2026-10-18;1'48;Simon Ebonog;récupération dans notre couloir droite, à 29 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Havre;Centres;À reproduire;Auxerre;2026-10-18;4'18;Gauthier Gallon;récupération dans notre couloir droite, à 15 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Havre;Centres;À reproduire;Auxerre;2026-10-18;9'50;Junior Mwanga;récupération dans notre couloir droite, à 4 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Havre;Centres;À reproduire;Auxerre;2026-10-18;19'48;Ahmed Touba;récupération dans notre couloir gauche, à 7 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Havre;Centres;À reproduire;Auxerre;2026-10-18;22'10;Sota Nakamura;tacle gagné dans notre couloir droite, à 35 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Havre;Centres;À corriger;Lille;2026-10-10;44'48;;centre de Dilane Bakwa depuis notre droite (23 m) → tir de Maurits Kjærgaard (0.28 xG) — aucune action de notre part;
+Le Havre;Centres;À corriger;Monaco;2026-08-23;7'34;;centre de Vanderson depuis notre gauche (36 m) → tir de Paris Brunner (0.23 xG) — aucune action de notre part;
+Le Havre;Centres;À corriger;Monaco;2026-08-23;3'22;;centre de Stanis Idumbo depuis notre droite (29 m) → tir de Paris Brunner (0.20 xG) — aucune action de notre part;
+Le Havre;Centres;À corriger;Lyon;2026-08-29;32'41;Ahmed Touba;centre de Zachary Athekame depuis notre gauche (26 m) → tir de Corentin Tolisso (0.19 xG) — 1re action : dégagement;
+Le Havre;Centres;À corriger;Toulouse;2026-09-19;47'16;Elias Jelert;centre de Ilyas Azizi depuis notre droite (17 m) → tir de Rafik Messali (0.17 xG) — 1re action : dégagement;
+Le Havre;Centres;À corriger;Marseille;2026-10-25;54'24;Junior Mwanga;centre de Amine Gouiri depuis notre droite (18 m) → tir de Himad Abdelli (0.16 xG, BUT) — 1re action : dégagement;
+Le Havre;Zone de vérité;À reproduire;Lille;2026-10-10;2'05;Amir Richardson;passe contrée à 29 m de notre but;7 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Havre;Zone de vérité;À reproduire;Lille;2026-10-10;49'07;Rassoul Ndiaye;tacle gagné à 25 m de notre but dans l'axe;7 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Havre;Zone de vérité;À reproduire;Lille;2026-10-10;66'02;Ahmed Touba;tacle gagné à 11 m de notre but;7 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Havre;Zone de vérité;À reproduire;Lille;2026-10-10;86'33;Rassoul Ndiaye;tacle gagné à 12 m de notre but;7 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Havre;Zone de vérité;À corriger;Auxerre;2026-10-18;39'38;Kévin Danois;entrée passe de Kévin Danois depuis côté droit (vu par nous) pour Danny Namaso → tir de Danny Namaso (0.53 xG, BUT);
+Le Havre;Zone de vérité;À corriger;Lyon;2026-08-29;59'38;Zachary Athekame;entrée passe de Zachary Athekame depuis côté gauche (vu par nous) pour Ernest Nuamah → tir de Corentin Tolisso (0.41 xG);
+Le Havre;Zone de vérité;À corriger;Lyon;2026-08-29;59'36;Zachary Athekame;entrée passe de Zachary Athekame depuis côté gauche (vu par nous) pour Corentin Tolisso → tir de Corentin Tolisso (0.41 xG);
+Le Havre;Zone de vérité;À corriger;Troyes;2026-11-20;17'09;Kandet Diawara;entrée passe de Kandet Diawara depuis côté droit (vu par nous) pour Anis Ouzenadji → tir de Antoine Mille (0.40 xG);
+Le Havre;Zone de vérité;À corriger;Paris Saint-Germain;2026-10-30;68'44;Mika Godts;entrée passe de Mika Godts depuis côté droit (vu par nous) pour Achraf Hakimi → tir de Achraf Hakimi (0.39 xG, BUT);
+Le Havre;Zone de vérité;À corriger;Lorient;2026-11-08;94'32;Dembo Sylla;entrée balle au pied de Dembo Sylla depuis côté droit (vu par nous) → tir de Jean-Victor Makengo (0.37 xG, BUT);
+Le Mans;Centres;À reproduire;Marseille;2026-11-22;1'40;Lucas Calodat;récupération dans notre couloir gauche, à 37 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Mans;Centres;À reproduire;Marseille;2026-11-22;2'20;Daouda Traoré;tacle gagné dans notre couloir gauche, à 34 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Mans;Centres;À reproduire;Marseille;2026-11-22;10'57;Dame Gueye;tacle gagné dans notre couloir gauche, à 32 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Mans;Centres;À reproduire;Marseille;2026-11-22;42'53;Harold Voyer;récupération dans notre couloir gauche, à 33 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Mans;Centres;À reproduire;Marseille;2026-11-22;43'48;Harold Voyer;tacle gagné dans notre couloir droite, à 42 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Mans;Centres;À reproduire;Marseille;2026-11-22;45'23;Samuel Yohou;récupération dans notre couloir droite, à 37 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 0 suivi(s) d'un tir
+Le Mans;Centres;À corriger;Brest;2026-08-22;78'19;Théo Eyoum;centre de Kenny Lala depuis notre gauche (24 m) → tir de Ludovic Ajorque (0.30 xG) — 1re action : duel aérien gagné;
+Le Mans;Centres;À corriger;Troyes;2026-10-31;72'25;Lucas Bretelle;centre de Lucas Maronnier depuis notre gauche (27 m) → tir de Mouhamed Diop (0.19 xG) — 1re action : dégagement;
+Le Mans;Centres;À corriger;Rennes;2026-08-30;88'10;;centre de Przemyslaw Frankowski depuis notre gauche (30 m) → tir de Estéban Lepaul (0.16 xG) — aucune action de notre part;
+Le Mans;Centres;À corriger;Lorient;2026-09-19;4'58;;centre de Panos Katseris depuis notre gauche (19 m) → tir de Ibrahima Baldé (0.15 xG) — aucune action de notre part;
+Le Mans;Centres;À corriger;Lens;2026-09-13;46'32;Lucas Calodat;centre de Florian Thauvin depuis notre gauche (33 m) → tir de Abdallah Sima (0.13 xG, BUT) — 1re action : contrôle raté / déviation;
+Le Mans;Centres;À corriger;Lorient;2026-09-19;90'22;Harold Voyer;centre de Souleymane Faye depuis notre droite (24 m) → tir de Noah Cadiou (0.11 xG) — 1re action : duel aérien gagné;
+Le Mans;Zone de vérité;À reproduire;Monaco;2026-11-08;5'49;Rayan Bamba;interception à 23 m de notre but;14 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Mans;Zone de vérité;À reproduire;Monaco;2026-11-08;13'23;Louis Mafouta;interception à 26 m de notre but dans l'axe;14 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Mans;Zone de vérité;À reproduire;Monaco;2026-11-08;16'34;Samuel Yohou;passe contrée à 2 m de notre but;14 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Mans;Zone de vérité;À reproduire;Monaco;2026-11-08;21'11;Harold Voyer;interception à 14 m de notre but;14 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Mans;Zone de vérité;À reproduire;Monaco;2026-11-08;44'40;Samuel Yohou;tacle gagné à 14 m de notre but dans l'axe;14 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Mans;Zone de vérité;À reproduire;Monaco;2026-11-08;45'16;Lucas Bretelle;tacle gagné à 13 m de notre but;14 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Le Mans;Zone de vérité;À corriger;Paris Saint-Germain;2026-10-10;60'42;Khvicha Kvaratskhelia;entrée balle au pied de Khvicha Kvaratskhelia depuis zone 14 (axe, devant la surface) → tir de Khvicha Kvaratskhelia (0.52 xG, BUT);
+Le Mans;Zone de vérité;À corriger;Toulouse;2026-10-16;86'47;Cristian Cásseres;entrée passe de Cristian Cásseres depuis côté gauche (vu par nous) pour Casper Tengstedt → tir de Casper Tengstedt (0.49 xG, BUT);
+Le Mans;Zone de vérité;À corriger;Paris Saint-Germain;2026-10-10;11'25;Maghnes Akliouche;entrée balle au pied de Maghnes Akliouche depuis côté gauche (vu par nous) → tir de Achraf Hakimi (0.39 xG);
+Le Mans;Zone de vérité;À corriger;Rennes;2026-08-30;91'07;Mahdi Camara;entrée passe de Mahdi Camara depuis côté gauche (vu par nous) pour Eliezer Mayenda → tir de Przemyslaw Frankowski (0.34 xG);
+Le Mans;Zone de vérité;À corriger;Brest;2026-08-22;42'58;Pathé Mboup;entrée passe de Pathé Mboup depuis côté droit (vu par nous) pour Ludovic Ajorque → tir de Ludovic Ajorque (0.33 xG);
+Le Mans;Zone de vérité;À corriger;Brest;2026-08-22;78'19;Kenny Lala;entrée passe de Kenny Lala depuis côté gauche (vu par nous) pour Ludovic Ajorque → tir de Ludovic Ajorque (0.30 xG);
+Lens;Centres;À reproduire;Lorient;2026-09-05;3'20;Ismaëlo Ganiou;récupération dans notre couloir droite, à 23 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Lens;Centres;À reproduire;Lorient;2026-09-05;7'32;Florian Thauvin;interception dans notre couloir droite, à 40 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Lens;Centres;À reproduire;Lorient;2026-09-05;7'51;Kyllian Antonio;récupération dans notre couloir droite, à 10 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Lens;Centres;À reproduire;Lorient;2026-09-05;10'07;Yacine Titraoui;tacle gagné dans notre couloir gauche, à 37 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Lens;Centres;À reproduire;Lorient;2026-09-05;27'45;Ruben Aguilar;récupération dans notre couloir droite, à 6 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Lens;Centres;À reproduire;Lorient;2026-09-05;45'12;Ruben Aguilar;interception dans notre couloir droite, à 34 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Lens;Centres;À corriger;Le Mans;2026-09-13;31'06;Robin Risser;centre de Rayan Bamba depuis notre gauche (23 m) → tir de Jean Vercruysse (2.15 xG, BUT) — 1re action : dégagement;
+Lens;Centres;À corriger;Troyes;2026-10-17;25'57;Kyllian Antonio;centre de Mouhamed Diop depuis notre droite (25 m) → tir de Timothé Nkada (0.48 xG, BUT) — 1re action : contrôle raté / déviation;
+Lens;Centres;À corriger;Marseille;2026-11-08;24'32;;centre de Igor Paixão depuis notre droite (34 m) → tir de Amine Gouiri (0.37 xG) — aucune action de notre part;
+Lens;Centres;À corriger;Le Mans;2026-09-13;18'28;;centre de Lucas Calodat depuis notre droite (35 m) → tir de Dame Gueye (0.27 xG) — aucune action de notre part;
+Lens;Centres;À corriger;Lyon;2026-10-09;84'33;Samson Baidoo;centre de Zachary Athekame depuis notre gauche (37 m) → tir de Khalis Merah (0.24 xG, BUT) — 1re action : contrôle raté / déviation;
+Lens;Centres;À corriger;Lille;2026-10-30;72'49;Samson Baidoo;centre de Romain Perraud depuis notre droite (22 m) → tir de Olivier Giroud (0.23 xG) — 1re action : arrêt;
+Lens;Zone de vérité;À reproduire;Paris FC;2026-10-24;2'43;Amadou Haidara;interception à 16 m de notre but dans l'axe;6 entrées adverses dans la surface, 4 suivie(s) d'un tir
+Lens;Zone de vérité;À reproduire;Paris FC;2026-10-24;5'41;Jean-Clair Todibo;tacle gagné à 15 m de notre but;6 entrées adverses dans la surface, 4 suivie(s) d'un tir
+Lens;Zone de vérité;À corriger;Auxerre;2026-08-22;68'50;Rayan Mandengue;entrée balle au pied de Rayan Mandengue depuis côté droit (vu par nous) → tir de Lamine Sy (0.68 xG, BUT);
+Lens;Zone de vérité;À corriger;Marseille;2026-11-08;81'09;Angel Gomes;entrée passe de Angel Gomes depuis zone 14 (axe, devant la surface) pour Igor Paixão → tir de Amine Gouiri (0.60 xG, BUT);
+Lens;Zone de vérité;À corriger;Toulouse;2026-11-21;38'06;Santiago Hidalgo;entrée balle au pied de Santiago Hidalgo depuis côté droit (vu par nous) → tir de Casper Tengstedt (0.50 xG, BUT);
+Lens;Zone de vérité;À corriger;Troyes;2026-10-17;25'57;Mouhamed Diop;entrée passe de Mouhamed Diop depuis côté droit (vu par nous) → tir de Timothé Nkada (0.48 xG, BUT);
+Lens;Zone de vérité;À corriger;Strasbourg;2026-08-29;84'02;Sam Amo-Ameyaw;entrée passe de Sam Amo-Ameyaw depuis côté droit (vu par nous) pour Sebastian Nanasi → tir de Gessime Yassine (0.47 xG, BUT);
+Lens;Zone de vérité;À corriger;Toulouse;2026-11-21;38'10;Jacen Russell-Rowe;entrée balle au pied de Jacen Russell-Rowe depuis zone 14 (axe, devant la surface) → tir de Jacen Russell-Rowe (0.46 xG, BUT);
+Lille;Centres;À reproduire;Brest;2026-10-17;2'57;Dilane Bakwa;récupération dans notre couloir gauche, à 15 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Lille;Centres;À reproduire;Brest;2026-10-17;3'13;Benjamin André;récupération dans notre couloir gauche, à 29 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Lille;Centres;À reproduire;Brest;2026-10-17;4'47;Maxima Goffi;interception dans notre couloir droite, à 17 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Lille;Centres;À reproduire;Brest;2026-10-17;24'57;Orlando Gill;récupération dans notre couloir gauche, à 15 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Lille;Centres;À reproduire;Brest;2026-10-17;51'41;Maxima Goffi;récupération dans notre couloir droite, à 23 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Lille;Centres;À reproduire;Brest;2026-10-17;54'57;Calvin Verdonk;récupération dans notre couloir gauche, à 27 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Lille;Centres;À corriger;Toulouse;2026-09-03;67'44;Tiago Santos;centre de Ismaïl Diallo depuis notre gauche (25 m) → tir de Christ Tapé (0.60 xG) — 1re action : tacle gagné;
+Lille;Centres;À corriger;Angers;2026-08-23;63'47;Berke Özer;centre de Amine Sbaï depuis notre droite (25 m) → tir de Prosper Peter (0.49 xG) — 1re action : arrêt;
+Lille;Centres;À corriger;Rennes;2026-11-08;30'37;;centre de Aboubakar Nagida depuis notre droite (31 m) → tir de Abdelhamid Aït Boudlal (0.41 xG, BUT) — aucune action de notre part;
+Lille;Centres;À corriger;Le Havre;2026-10-10;11'54;;centre de Lamine N'Diaye depuis notre droite (29 m) → tir de Josh Maja (0.31 xG) — aucune action de notre part;
+Lille;Centres;À corriger;Troyes;2026-09-13;51'03;;centre de Dermane Karim depuis notre gauche (27 m) → tir de Adrien Monfray (0.22 xG) — aucune action de notre part;
+Lille;Centres;À corriger;Le Havre;2026-10-10;74'42;;centre de Simon Ebonog depuis notre gauche (34 m) → tir de Rassoul Ndiaye (0.20 xG) — aucune action de notre part;
+Lille;Zone de vérité;À reproduire;Brest;2026-10-17;34'53;Hákon Haraldsson;passe contrée à 28 m de notre but dans l'axe;5 entrées adverses dans la surface, 3 suivie(s) d'un tir
+Lille;Zone de vérité;À reproduire;Brest;2026-10-17;59'25;Ngal'ayel Mukau;interception à 23 m de notre but;5 entrées adverses dans la surface, 3 suivie(s) d'un tir
+Lille;Zone de vérité;À reproduire;Brest;2026-10-17;62'18;Nathan Ngoy;interception à 27 m de notre but;5 entrées adverses dans la surface, 3 suivie(s) d'un tir
+Lille;Zone de vérité;À corriger;Toulouse;2026-09-03;37'19;Rafik Messali;entrée passe de Rafik Messali depuis côté gauche (vu par nous) pour Santiago Hidalgo → tir de Santiago Hidalgo (0.90 xG);
+Lille;Zone de vérité;À corriger;Monaco;2026-10-25;64'43;Vanderson;entrée passe de Vanderson depuis côté gauche (vu par nous) pour Matthis Abline → tir de Paris Brunner (0.74 xG);
+Lille;Zone de vérité;À corriger;Angers;2026-08-23;63'47;Amine Sbaï;entrée passe de Amine Sbaï depuis côté droit (vu par nous) pour Prosper Peter → tir de Prosper Peter (0.49 xG);
+Lille;Zone de vérité;À corriger;Paris Saint-Germain;2026-08-28;87'15;Mika Godts;entrée passe de Mika Godts depuis côté gauche (vu par nous) pour Dro Fernández → tir de Warren Zaïre-Emery (0.44 xG);
+Lille;Zone de vérité;À corriger;Rennes;2026-11-08;30'37;Aboubakar Nagida;entrée passe de Aboubakar Nagida depuis côté droit (vu par nous) pour Abdelhamid Aït Boudlal → tir de Abdelhamid Aït Boudlal (0.41 xG, BUT);
+Lille;Zone de vérité;À corriger;Le Havre;2026-10-10;11'54;Lamine N'Diaye;entrée passe de Lamine N'Diaye depuis côté droit (vu par nous) pour Josh Maja → tir de Josh Maja (0.31 xG);
+Lorient;Centres;À reproduire;Le Mans;2026-09-19;11'23;Arsène Kouassi;interception dans notre couloir gauche, à 30 m de notre ligne de but : le centre n'a pas lieu;11 centres subis seulement, 1 suivi(s) d'un tir
+Lorient;Centres;À reproduire;Le Mans;2026-09-19;11'24;Arsène Kouassi;récupération dans notre couloir gauche, à 34 m de notre ligne de but : le centre n'a pas lieu;11 centres subis seulement, 1 suivi(s) d'un tir
+Lorient;Centres;À reproduire;Le Mans;2026-09-19;20'24;Noah Cadiou;récupération dans notre couloir gauche, à 35 m de notre ligne de but : le centre n'a pas lieu;11 centres subis seulement, 1 suivi(s) d'un tir
+Lorient;Centres;À reproduire;Le Mans;2026-09-19;21'28;Nathaniel Adjei;récupération dans notre couloir gauche, à 15 m de notre ligne de but : le centre n'a pas lieu;11 centres subis seulement, 1 suivi(s) d'un tir
+Lorient;Centres;À reproduire;Le Mans;2026-09-19;25'26;Arsène Kouassi;récupération dans notre couloir gauche, à 28 m de notre ligne de but : le centre n'a pas lieu;11 centres subis seulement, 1 suivi(s) d'un tir
+Lorient;Centres;À reproduire;Le Mans;2026-09-19;29'49;Dembo Sylla;récupération dans notre couloir droite, à 22 m de notre ligne de but : le centre n'a pas lieu;11 centres subis seulement, 1 suivi(s) d'un tir
+Lorient;Centres;À corriger;Brest;2026-11-02;67'37;;centre de Pathé Mboup depuis notre droite (29 m) → tir de Joris Chotard (0.31 xG) — aucune action de notre part;
+Lorient;Centres;À corriger;Troyes;2026-08-29;37'24;;centre de Hugo Picard depuis notre droite (19 m) → tir de Lucas Maronnier (0.30 xG, BUT) — aucune action de notre part;
+Lorient;Centres;À corriger;Le Mans;2026-09-19;96'47;Dembo Sylla;centre de Rayan Bamba depuis notre gauche (30 m) → tir de Antoine Rabillard (0.25 xG) — 1re action : dégagement;
+Lorient;Centres;À corriger;Nice;2026-08-22;14'25;;centre de Sofiane Diop depuis notre gauche (29 m) → tir de Gauthier Hein (0.24 xG) — aucune action de notre part;
+Lorient;Centres;À corriger;Troyes;2026-08-29;73'40;Noah Cadiou;centre de Lucas Maronnier depuis notre gauche (27 m) → tir de Renaud Ripart (0.22 xG) — 1re action : contrôle raté / déviation;
+Lorient;Centres;À corriger;Toulouse;2026-09-12;13'03;;centre de Rafik Messali depuis notre gauche (22 m) → tir de Jacen Russell-Rowe (0.20 xG) — aucune action de notre part;
+Lorient;Zone de vérité;À reproduire;Angers;2026-10-25;47'46;Noah Cadiou;tacle gagné à 22 m de notre but dans l'axe;6 entrées adverses dans la surface, 4 suivie(s) d'un tir
+Lorient;Zone de vérité;À reproduire;Angers;2026-10-25;74'10;Gabin Bernardeau;passe contrée à 29 m de notre but;6 entrées adverses dans la surface, 4 suivie(s) d'un tir
+Lorient;Zone de vérité;À corriger;Brest;2026-11-02;91'37;Giovani Versini;entrée balle au pied de Giovani Versini depuis côté droit (vu par nous) → tir de Noah Edjouma (0.52 xG, BUT);
+Lorient;Zone de vérité;À corriger;Brest;2026-11-02;67'37;Pathé Mboup;entrée passe de Pathé Mboup depuis côté droit (vu par nous) pour Joris Chotard → tir de Joris Chotard (0.31 xG);
+Lorient;Zone de vérité;À corriger;Troyes;2026-08-29;37'23;Renaud Ripart;entrée passe de Renaud Ripart depuis côté gauche (vu par nous) pour Hugo Picard → tir de Lucas Maronnier (0.30 xG, BUT);
+Lorient;Zone de vérité;À corriger;Nice;2026-08-22;14'25;Sofiane Diop;entrée passe de Sofiane Diop depuis côté gauche (vu par nous) pour Gauthier Hein → tir de Gauthier Hein (0.24 xG);
+Lorient;Zone de vérité;À corriger;Rennes;2026-11-22;26'45;Mousa Al Tamari;entrée passe de Mousa Al Tamari depuis côté droit (vu par nous) pour Boulaye Dia → tir de Boulaye Dia (0.24 xG, BUT);
+Lorient;Zone de vérité;À corriger;Toulouse;2026-09-12;80'37;Thomas Jørgensen;entrée balle au pied de Thomas Jørgensen depuis côté gauche (vu par nous) → tir de Thomas Jørgensen (0.22 xG);
+Lyon;Centres;À reproduire;Brest;2026-11-08;1'21;Khalis Merah;récupération dans notre couloir gauche, à 29 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Lyon;Centres;À reproduire;Brest;2026-11-08;5'42;Zachary Athekame;passe contrée dans notre couloir droite, à 39 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Lyon;Centres;À reproduire;Brest;2026-11-08;6'21;Moussa Niakhaté;tacle gagné dans notre couloir gauche, à 13 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Lyon;Centres;À reproduire;Brest;2026-11-08;6'22;Moussa Niakhaté;récupération dans notre couloir gauche, à 13 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Lyon;Centres;À reproduire;Brest;2026-11-08;7'08;Keito Nakamura;récupération dans notre couloir gauche, à 21 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Lyon;Centres;À reproduire;Brest;2026-11-08;12'31;Keito Nakamura;récupération dans notre couloir gauche, à 10 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Lyon;Centres;À corriger;Nice;2026-10-18;73'06;Rémy Descamps;centre de Niels Nkounkou depuis notre droite (32 m) → tir de Elye Wahi (0.33 xG) — 1re action : ballon capté;
+Lyon;Centres;À corriger;Lens;2026-10-09;11'29;Ruben Kluivert;centre de Ruben Aguilar depuis notre gauche (29 m) → tir de Florian Sotoca (0.26 xG) — 1re action : contrôle raté / déviation;
+Lyon;Centres;À corriger;Nice;2026-10-18;17'13;;centre de Jonathan Clauss depuis notre gauche (38 m) → tir de Elye Wahi (0.25 xG, BUT) — aucune action de notre part;
+Lyon;Centres;À corriger;Rennes;2026-09-19;77'16;;centre de Aboubakar Nagida depuis notre droite (26 m) → tir de Estéban Lepaul (0.22 xG) — aucune action de notre part;
+Lyon;Centres;À corriger;Le Havre;2026-08-29;73'16;Zachary Athekame;centre de Fodé Doucouré depuis notre gauche (30 m) → tir de Mbwana Samatta (0.19 xG, BUT) — 1re action : duel aérien gagné;
+Lyon;Centres;À corriger;Auxerre;2026-09-04;71'08;;centre de Lamine Sy depuis notre gauche (26 m) → tir de Cameron Archer (0.16 xG) — aucune action de notre part;
+Lyon;Zone de vérité;À reproduire;Angers;2026-11-01;90'53;Nicolás Tagliafico;interception à 20 m de notre but dans l'axe;7 entrées adverses dans la surface, 4 suivie(s) d'un tir
+Lyon;Zone de vérité;À corriger;Toulouse;2026-08-22;25'00;Cristian Cásseres;entrée passe de Cristian Cásseres depuis côté gauche (vu par nous) pour Julián Vignolo → tir de Julián Vignolo (0.68 xG);
+Lyon;Zone de vérité;À corriger;Nice;2026-10-18;73'06;Niels Nkounkou;entrée passe de Niels Nkounkou depuis côté droit (vu par nous) pour Elye Wahi → tir de Elye Wahi (0.33 xG);
+Lyon;Zone de vérité;À corriger;Toulouse;2026-08-22;59'44;Thomas Jørgensen;entrée balle au pied de Thomas Jørgensen depuis côté gauche (vu par nous) → tir de Thomas Jørgensen (0.29 xG);
+Lyon;Zone de vérité;À corriger;Nice;2026-10-18;17'13;Jonathan Clauss;entrée passe de Jonathan Clauss depuis côté gauche (vu par nous) pour Elye Wahi → tir de Elye Wahi (0.25 xG, BUT);
+Lyon;Zone de vérité;À corriger;Paris FC;2026-09-12;49'20;Luca Koleosho;entrée balle au pied de Luca Koleosho depuis côté droit (vu par nous) → tir de Luca Koleosho (0.23 xG);
+Lyon;Zone de vérité;À corriger;Rennes;2026-09-19;77'16;Aboubakar Nagida;entrée passe de Aboubakar Nagida depuis côté droit (vu par nous) pour Estéban Lepaul → tir de Estéban Lepaul (0.22 xG);
+Marseille;Centres;À reproduire;Paris FC;2026-09-06;13'43;Emerson;récupération dans notre couloir gauche, à 42 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Marseille;Centres;À reproduire;Paris FC;2026-09-06;29'53;Emerson;récupération dans notre couloir gauche, à 12 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Marseille;Centres;À reproduire;Paris FC;2026-09-06;34'26;Timothy Weah;récupération dans notre couloir droite, à 30 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Marseille;Centres;À reproduire;Paris FC;2026-09-06;60'30;Igor Paixão;récupération dans notre couloir gauche, à 41 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Marseille;Centres;À reproduire;Paris FC;2026-09-06;79'45;Keyliane Abdallah;récupération dans notre couloir droite, à 31 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Marseille;Centres;À reproduire;Paris FC;2026-09-06;88'36;Jeffrey de Lange;récupération dans notre couloir gauche, à 17 m de notre ligne de but : le centre n'a pas lieu;3 centres subis seulement, 1 suivi(s) d'un tir
+Marseille;Centres;À corriger;Paris Saint-Germain;2026-09-20;73'45;Jeffrey de Lange;centre de Nuno Mendes depuis notre droite (38 m) → tir de Marquinhos (1.08 xG, BUT) — 1re action : arrêt;
+Marseille;Centres;À corriger;Rennes;2026-09-11;51'53;Timothy Weah;centre de Ludovic Blas depuis notre gauche (32 m) → tir de Mousa Al Tamari (0.69 xG, BUT) — 1re action : duel aérien gagné;
+Marseille;Centres;À corriger;Angers;2026-10-18;13'22;Geoffrey Kondogbia;centre de Amine Sbaï depuis notre droite (24 m) → tir de Lilian Raolisoa (0.32 xG, BUT) — 1re action : dégagement;
+Marseille;Centres;À corriger;Lens;2026-11-08;19'11;;centre de Florian Sotoca depuis notre gauche (20 m) → tir de Florian Thauvin (0.31 xG, BUT) — aucune action de notre part;
+Marseille;Centres;À corriger;Paris Saint-Germain;2026-09-20;51'41;;centre de Nuno Mendes depuis notre droite (37 m) → tir de Khvicha Kvaratskhelia (0.30 xG) — aucune action de notre part;
+Marseille;Centres;À corriger;Monaco;2026-08-30;21'48;;centre de Stanis Idumbo depuis notre droite (18 m) → tir de Paris Brunner (0.25 xG) — aucune action de notre part;
+Marseille;Zone de vérité;À reproduire;Strasbourg;2026-08-21;0'52;Emerson;interception à 3 m de notre but;4 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Marseille;Zone de vérité;À reproduire;Strasbourg;2026-08-21;10'00;Geoffrey Kondogbia;interception à 8 m de notre but;4 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Marseille;Zone de vérité;À reproduire;Strasbourg;2026-08-21;35'22;CJ Egan-Riley;interception à 21 m de notre but dans l'axe;4 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Marseille;Zone de vérité;À reproduire;Strasbourg;2026-08-21;35'53;Geoffrey Kondogbia;interception à 27 m de notre but;4 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Marseille;Zone de vérité;À reproduire;Strasbourg;2026-08-21;37'55;Pierre-Emile Højbjerg;passe contrée à 21 m de notre but;4 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Marseille;Zone de vérité;À reproduire;Strasbourg;2026-08-21;49'11;Geoffrey Kondogbia;interception à 15 m de notre but dans l'axe;4 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Marseille;Zone de vérité;À corriger;Le Mans;2026-11-22;45'20;Louis Mafouta;entrée passe de Louis Mafouta depuis côté droit (vu par nous) → tir de Dame Gueye (1.41 xG);
+Marseille;Zone de vérité;À corriger;Paris Saint-Germain;2026-09-20;73'45;Nuno Mendes;entrée passe de Nuno Mendes depuis côté droit (vu par nous) pour Marquinhos → tir de Marquinhos (1.08 xG, BUT);
+Marseille;Zone de vérité;À corriger;Le Mans;2026-11-22;83'45;Lucas Calodat;entrée passe de Lucas Calodat depuis côté droit (vu par nous) pour Erwan Colas → tir de Erwan Colas (0.90 xG, BUT);
+Marseille;Zone de vérité;À corriger;Rennes;2026-09-11;51'53;Ludovic Blas;entrée passe de Ludovic Blas depuis côté gauche (vu par nous) pour Mousa Al Tamari → tir de Mousa Al Tamari (0.69 xG, BUT);
+Marseille;Zone de vérité;À corriger;Paris FC;2026-09-06;45'37;Luca Koleosho;entrée passe de Luca Koleosho depuis côté droit (vu par nous) → tir de Ilan Kebbal (0.64 xG);
+Marseille;Zone de vérité;À corriger;Paris Saint-Germain;2026-09-20;85'35;Nuno Mendes;entrée balle au pied de Nuno Mendes depuis côté droit (vu par nous) → tir de Maghnes Akliouche (0.55 xG);
+Monaco;Centres;À reproduire;Lille;2026-10-25;0'53;Vanderson;récupération dans notre couloir droite, à 9 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Monaco;Centres;À reproduire;Lille;2026-10-25;3'32;Lamine Camara;tacle gagné dans notre couloir droite, à 30 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Monaco;Centres;À reproduire;Lille;2026-10-25;3'32;Lamine Camara;récupération dans notre couloir droite, à 31 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Monaco;Centres;À reproduire;Lille;2026-10-25;10'23;Sadibou Sané;récupération dans notre couloir droite, à 9 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Monaco;Centres;À reproduire;Lille;2026-10-25;14'51;Flávio Nazinho;passe contrée dans notre couloir gauche, à 38 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Monaco;Centres;À reproduire;Lille;2026-10-25;20'11;Flávio Nazinho;interception dans notre couloir gauche, à 37 m de notre ligne de but : le centre n'a pas lieu;1 centres subis seulement, 0 suivi(s) d'un tir
+Monaco;Centres;À corriger;Marseille;2026-08-30;92'59;Vanderson;centre de Keyliane Abdallah depuis notre gauche (23 m) → tir de Faris Moumbagna (0.59 xG) — 1re action : arrêt;
+Monaco;Centres;À corriger;Le Havre;2026-08-23;77'57;Lukás Hrádecky;centre de Rassoul Ndiaye depuis notre gauche (26 m) → tir de Sota Nakamura (0.30 xG) — 1re action : dégagement;
+Monaco;Centres;À corriger;Paris FC;2026-11-01;27'51;Vanderson;centre de Moses Simon depuis notre droite (20 m) → tir de Lassine Sinayoko (0.29 xG) — 1re action : contrôle raté / déviation;
+Monaco;Centres;À corriger;Le Mans;2026-11-08;41'30;;centre de Lucas Calodat depuis notre droite (27 m) → tir de Dame Gueye (0.28 xG) — aucune action de notre part;
+Monaco;Centres;À corriger;Lens;2026-09-18;59'37;Eric Dier;centre de Junior Kadile depuis notre droite (28 m) → tir de Thorgan Hazard (0.27 xG) — 1re action : duel aérien gagné;
+Monaco;Centres;À corriger;Toulouse;2026-10-10;58'51;;centre de Casper Tengstedt depuis notre droite (21 m) → tir de Sion Oppong (0.22 xG, BUT) — aucune action de notre part;
+Monaco;Zone de vérité;À reproduire;Auxerre;2026-11-21;90'13;Lamine Camara;passe contrée à 31 m de notre but;6 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Monaco;Zone de vérité;À reproduire;Auxerre;2026-11-21;92'34;Sadibou Sané;interception à 29 m de notre but dans l'axe;6 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Monaco;Zone de vérité;À corriger;Paris Saint-Germain;2026-09-04;11'06;Désiré Doué;entrée passe de Désiré Doué depuis côté gauche (vu par nous) pour Achraf Hakimi → tir de Achraf Hakimi (0.84 xG);
+Monaco;Zone de vérité;À corriger;Marseille;2026-08-30;92'59;Keyliane Abdallah;entrée passe de Keyliane Abdallah depuis côté gauche (vu par nous) pour Faris Moumbagna → tir de Faris Moumbagna (0.59 xG);
+Monaco;Zone de vérité;À corriger;Paris Saint-Germain;2026-09-04;30'36;Fabián Ruiz;entrée balle au pied de Fabián Ruiz depuis côté droit (vu par nous) → tir de Marquinhos (0.53 xG, BUT);
+Monaco;Zone de vérité;À corriger;Lorient;2026-10-18;82'22;Isaak Touré;entrée passe de Isaak Touré depuis côté droit (vu par nous) pour Arsène Kouassi → tir de Arsène Kouassi (0.48 xG);
+Monaco;Zone de vérité;À corriger;Le Mans;2026-11-08;89'35;Adnane Kharroubi;entrée passe de Adnane Kharroubi depuis zone 14 (axe, devant la surface) pour Rayan Bamba → tir de Erwan Colas (0.33 xG, BUT);
+Monaco;Zone de vérité;À corriger;Lorient;2026-10-18;27'59;Dembo Sylla;entrée balle au pied de Dembo Sylla depuis côté gauche (vu par nous) → tir de Gabin Bernardeau (0.31 xG);
+Nice;Centres;À reproduire;Paris Saint-Germain;2026-11-21;1'28;Youssouf Ndayishimiye;récupération dans notre couloir droite, à 21 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 0 suivi(s) d'un tir
+Nice;Centres;À reproduire;Paris Saint-Germain;2026-11-21;3'39;Xavier Mandza;récupération dans notre couloir gauche, à 23 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 0 suivi(s) d'un tir
+Nice;Centres;À reproduire;Paris Saint-Germain;2026-11-21;4'31;Jonathan Clauss;tacle gagné dans notre couloir droite, à 42 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 0 suivi(s) d'un tir
+Nice;Centres;À reproduire;Paris Saint-Germain;2026-11-21;12'29;Hicham Boudaoui;tacle gagné dans notre couloir gauche, à 10 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 0 suivi(s) d'un tir
+Nice;Centres;À reproduire;Paris Saint-Germain;2026-11-21;12'30;Hicham Boudaoui;récupération dans notre couloir gauche, à 12 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 0 suivi(s) d'un tir
+Nice;Centres;À reproduire;Paris Saint-Germain;2026-11-21;14'54;Alidu Seidu;récupération dans notre couloir droite, à 12 m de notre ligne de but : le centre n'a pas lieu;7 centres subis seulement, 0 suivi(s) d'un tir
+Nice;Centres;À corriger;Lille;2026-09-20;35'50;Niels Nkounkou;centre de Romain Perraud depuis notre droite (24 m) → tir de Hákon Haraldsson (0.55 xG) — 1re action : interception;
+Nice;Centres;À corriger;Strasbourg;2026-10-11;70'39;Hicham Boudaoui;centre de Gessime Yassine depuis notre gauche (27 m) → tir de Dário Essugo (0.41 xG) — 1re action : duel aérien gagné;
+Nice;Centres;À corriger;Angers;2026-11-08;41'10;;centre de Amine Sbaï depuis notre droite (32 m) → tir de Jim Allevinah (0.31 xG) — aucune action de notre part;
+Nice;Centres;À corriger;Lorient;2026-08-22;24'14;;centre de Gabin Bernardeau depuis notre droite (31 m) → tir de Jean-Victor Makengo (0.28 xG) — aucune action de notre part;
+Nice;Centres;À corriger;Brest;2026-10-23;36'04;;centre de Mama Baldé depuis notre gauche (29 m) → tir de Kamory Doumbia (0.22 xG) — aucune action de notre part;
+Nice;Centres;À corriger;Lorient;2026-08-22;91'00;;centre de Arthur Avom depuis notre gauche (30 m) → tir de Aiyegun Tosin (0.19 xG) — aucune action de notre part;
+Nice;Zone de vérité;À reproduire;Le Mans;2026-09-05;34'47;Youssouf Ndayishimiye;interception à 18 m de notre but dans l'axe;11 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Nice;Zone de vérité;À reproduire;Le Mans;2026-09-05;51'26;Niels Nkounkou;interception à 19 m de notre but;11 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Nice;Zone de vérité;À reproduire;Le Mans;2026-09-05;56'02;Youssouf Ndayishimiye;interception à 22 m de notre but dans l'axe;11 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Nice;Zone de vérité;À reproduire;Le Mans;2026-09-05;61'58;Niels Nkounkou;interception à 8 m de notre but;11 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Nice;Zone de vérité;À reproduire;Le Mans;2026-09-05;71'39;Mohammed Amoura;tacle gagné à 22 m de notre but;11 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Nice;Zone de vérité;À corriger;Lyon;2026-10-18;31'57;Julien Duranville;entrée balle au pied de Julien Duranville depuis côté droit (vu par nous) → tir de Julien Duranville (0.94 xG, BUT);
+Nice;Zone de vérité;À corriger;Paris Saint-Germain;2026-11-21;31'35;Achraf Hakimi;entrée balle au pied de Achraf Hakimi depuis côté gauche (vu par nous) → tir de Désiré Doué (0.48 xG, BUT);
+Nice;Zone de vérité;À corriger;Lorient;2026-08-22;60'04;Mamadou Koné;entrée balle au pied de Mamadou Koné depuis côté droit (vu par nous) → tir de Théo Le Bris (0.46 xG);
+Nice;Zone de vérité;À corriger;Strasbourg;2026-10-11;70'39;Gessime Yassine;entrée passe de Gessime Yassine depuis côté gauche (vu par nous) pour Dário Essugo → tir de Dário Essugo (0.41 xG);
+Nice;Zone de vérité;À corriger;Lorient;2026-08-22;60'10;Jean-Victor Makengo;entrée balle au pied de Jean-Victor Makengo depuis zone 14 (axe, devant la surface) → tir de Jean-Victor Makengo (0.31 xG);
+Nice;Zone de vérité;À corriger;Angers;2026-11-08;41'10;Amine Sbaï;entrée passe de Amine Sbaï depuis côté droit (vu par nous) pour Jim Allevinah → tir de Jim Allevinah (0.31 xG);
+Paris FC;Centres;À reproduire;Auxerre;2026-11-07;0'29;Otávio;récupération dans notre couloir gauche, à 19 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Paris FC;Centres;À reproduire;Auxerre;2026-11-07;3'45;Rudy Matondo;récupération dans notre couloir droite, à 34 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Paris FC;Centres;À reproduire;Auxerre;2026-11-07;11'54;Rudy Matondo;interception dans notre couloir droite, à 14 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Paris FC;Centres;À reproduire;Auxerre;2026-11-07;12'01;Rudy Matondo;récupération dans notre couloir droite, à 10 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Paris FC;Centres;À reproduire;Auxerre;2026-11-07;18'04;Ilan Kebbal;récupération dans notre couloir droite, à 33 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Paris FC;Centres;À reproduire;Auxerre;2026-11-07;47'26;Hamari Traoré;récupération dans notre couloir droite, à 8 m de notre ligne de but : le centre n'a pas lieu;6 centres subis seulement, 0 suivi(s) d'un tir
+Paris FC;Centres;À corriger;Monaco;2026-11-01;64'55;;centre de Vanderson depuis notre gauche (19 m) → tir de Folarin Balogun (0.65 xG, BUT) — aucune action de notre part;
+Paris FC;Centres;À corriger;Lens;2026-10-24;82'49;Otávio;centre de Florian Thauvin depuis notre droite (35 m) → tir de Thorgan Hazard (0.24 xG, BUT) — 1re action : dribblé;
+Paris FC;Centres;À corriger;Lorient;2026-10-10;67'53;Maxime Lopez;centre de Jean-Victor Makengo depuis notre droite (27 m) → tir de Gabin Bernardeau (0.18 xG, BUT) — 1re action : contrôle raté / déviation;
+Paris FC;Centres;À corriger;Marseille;2026-09-06;28'49;Samir Chergui;centre de Timothy Weah depuis notre gauche (25 m) → tir de Pierre-Emile Højbjerg (0.12 xG) — 1re action : duel aérien gagné;
+Paris FC;Centres;À corriger;Nice;2026-08-30;78'44;Adama Camara;centre de Jonathan Clauss depuis notre gauche (23 m) → tir de Elye Wahi (0.09 xG) — 1re action : duel aérien gagné;
+Paris FC;Centres;À corriger;Troyes;2026-08-22;14'58;Diego Coppola;centre de Hugo Picard depuis notre gauche (32 m) → tir de Iron Gomis (0.09 xG) — 1re action : duel aérien gagné;
+Paris FC;Zone de vérité;À reproduire;Lyon;2026-09-12;15'55;Lassine Sinayoko;tacle gagné à 30 m de notre but dans l'axe;8 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Paris FC;Zone de vérité;À reproduire;Lyon;2026-09-12;17'33;Samir Chergui;passe contrée à 26 m de notre but;8 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Paris FC;Zone de vérité;À reproduire;Lyon;2026-09-12;17'45;Adama Camara;passe contrée à 23 m de notre but;8 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Paris FC;Zone de vérité;À reproduire;Lyon;2026-09-12;46'21;Maxime Lopez;interception à 26 m de notre but dans l'axe;8 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Paris FC;Zone de vérité;À reproduire;Lyon;2026-09-12;49'06;Maxime Lopez;interception à 16 m de notre but;8 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Paris FC;Zone de vérité;À reproduire;Lyon;2026-09-12;71'07;Lassine Sinayoko;interception à 28 m de notre but;8 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Paris FC;Zone de vérité;À corriger;Monaco;2026-11-01;64'55;Vanderson;entrée balle au pied de Vanderson depuis côté gauche (vu par nous) → tir de Folarin Balogun (0.65 xG, BUT);
+Paris FC;Zone de vérité;À corriger;Auxerre;2026-11-07;76'27;Kévin Danois;entrée passe de Kévin Danois depuis zone 14 (axe, devant la surface) pour Cameron Archer → tir de Cameron Archer (0.48 xG);
+Paris FC;Zone de vérité;À corriger;Lyon;2026-09-12;14'36;Loïs Openda;entrée passe de Loïs Openda depuis côté droit (vu par nous) pour Pavel Sulc → tir de Ernest Nuamah (0.46 xG);
+Paris FC;Zone de vérité;À corriger;Marseille;2026-09-06;52'52;Amine Harit;entrée balle au pied de Amine Harit depuis côté gauche (vu par nous) → tir de Amine Gouiri (0.24 xG, BUT);
+Paris FC;Zone de vérité;À corriger;Lens;2026-10-24;82'49;Florian Thauvin;entrée passe de Florian Thauvin depuis côté droit (vu par nous) pour Thorgan Hazard → tir de Thorgan Hazard (0.24 xG, BUT);
+Paris FC;Zone de vérité;À corriger;Marseille;2026-09-06;8'44;Amine Harit;entrée balle au pied de Amine Harit depuis côté gauche (vu par nous) → tir de Amine Gouiri (0.21 xG);
+Paris Saint-Germain;Centres;À reproduire;Monaco;2026-09-04;9'16;Fabián Ruiz;récupération dans notre couloir gauche, à 27 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Paris Saint-Germain;Centres;À reproduire;Monaco;2026-09-04;15'08;Warren Zaïre-Emery;récupération dans notre couloir gauche, à 23 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Paris Saint-Germain;Centres;À reproduire;Monaco;2026-09-04;21'47;Willian Pacho;tacle gagné dans notre couloir gauche, à 40 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Paris Saint-Germain;Centres;À reproduire;Monaco;2026-09-04;33'11;Khvicha Kvaratskhelia;récupération dans notre couloir gauche, à 30 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Paris Saint-Germain;Centres;À reproduire;Monaco;2026-09-04;35'17;Fabián Ruiz;récupération dans notre couloir gauche, à 12 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Paris Saint-Germain;Centres;À reproduire;Monaco;2026-09-04;36'10;Warren Zaïre-Emery;récupération dans notre couloir gauche, à 38 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Paris Saint-Germain;Centres;À corriger;Le Mans;2026-10-10;53'18;;centre de Lucas Calodat depuis notre droite (32 m) → tir de Louis Mafouta (0.33 xG, BUT) — aucune action de notre part;
+Paris Saint-Germain;Centres;À corriger;Marseille;2026-09-20;95'32;;centre de Ulisses Garcia depuis notre droite (26 m) → tir de Nayef Aguerd (0.31 xG) — aucune action de notre part;
+Paris Saint-Germain;Centres;À corriger;Marseille;2026-09-20;95'39;;centre de Faris Moumbagna depuis notre gauche (24 m) → tir de Nayef Aguerd (0.31 xG) — aucune action de notre part;
+Paris Saint-Germain;Centres;À corriger;Rennes;2026-08-23;24'59;;centre de Aboubakar Nagida depuis notre droite (38 m) → tir de Estéban Lepaul (0.16 xG) — aucune action de notre part;
+Paris Saint-Germain;Centres;À corriger;Lille;2026-08-28;70'29;Marquinhos;centre de Tiago Santos depuis notre gauche (20 m) → tir de Olivier Giroud (0.15 xG) — 1re action : duel aérien gagné;
+Paris Saint-Germain;Centres;À corriger;Rennes;2026-08-23;85'21;;centre de Quentin Merlin depuis notre droite (22 m) → tir de Ludovic Blas (0.14 xG) — aucune action de notre part;
+Paris Saint-Germain;Zone de vérité;À reproduire;Nice;2026-11-21;38'34;Fabián Ruiz;tacle gagné à 29 m de notre but;5 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Paris Saint-Germain;Zone de vérité;À reproduire;Nice;2026-11-21;48'37;João Neves;tacle gagné à 31 m de notre but;5 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Paris Saint-Germain;Zone de vérité;À reproduire;Nice;2026-11-21;90'48;Fabián Ruiz;interception à 24 m de notre but dans l'axe;5 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Paris Saint-Germain;Zone de vérité;À corriger;Le Havre;2026-10-30;17'38;Djibril Ouziad;entrée passe de Djibril Ouziad depuis côté gauche (vu par nous) pour Rayan Fofana → tir de Josh Maja (0.72 xG, BUT);
+Paris Saint-Germain;Zone de vérité;À corriger;Strasbourg;2026-10-17;46'15;Gessime Yassine;entrée passe de Gessime Yassine depuis côté gauche (vu par nous) pour Genesis Antwi → tir de Conrad Harder (0.36 xG);
+Paris Saint-Germain;Zone de vérité;À corriger;Nice;2026-11-21;94'01;Youssouf Ndayishimiye;entrée passe de Youssouf Ndayishimiye depuis côté gauche (vu par nous) pour Jonathan Clauss → tir de Ali Abdi (0.34 xG, BUT);
+Paris Saint-Germain;Zone de vérité;À corriger;Le Mans;2026-10-10;53'18;Lucas Calodat;entrée passe de Lucas Calodat depuis côté droit (vu par nous) pour Louis Mafouta → tir de Louis Mafouta (0.33 xG, BUT);
+Paris Saint-Germain;Zone de vérité;À corriger;Marseille;2026-09-20;95'39;Faris Moumbagna;entrée passe de Faris Moumbagna depuis côté gauche (vu par nous) pour Nayef Aguerd → tir de Nayef Aguerd (0.31 xG);
+Paris Saint-Germain;Zone de vérité;À corriger;Lille;2026-08-28;6'40;Ethan Mbappé;entrée balle au pied de Ethan Mbappé depuis côté gauche (vu par nous) → tir de Olivier Giroud (0.28 xG);
+Rennes;Centres;À reproduire;Lille;2026-11-08;0'54;Aboubakar Nagida;interception dans notre couloir gauche, à 23 m de notre ligne de but : le centre n'a pas lieu;2 centres subis seulement, 0 suivi(s) d'un tir
+Rennes;Centres;À reproduire;Lille;2026-11-08;0'55;Aboubakar Nagida;récupération dans notre couloir gauche, à 20 m de notre ligne de but : le centre n'a pas lieu;2 centres subis seulement, 0 suivi(s) d'un tir
+Rennes;Centres;À reproduire;Lille;2026-11-08;2'13;Charlie Cresswell;récupération dans notre couloir gauche, à 3 m de notre ligne de but : le centre n'a pas lieu;2 centres subis seulement, 0 suivi(s) d'un tir
+Rennes;Centres;À reproduire;Lille;2026-11-08;2'28;Mahdi Camara;récupération dans notre couloir gauche, à 24 m de notre ligne de but : le centre n'a pas lieu;2 centres subis seulement, 0 suivi(s) d'un tir
+Rennes;Centres;À reproduire;Lille;2026-11-08;4'01;Bryan Reynolds;récupération dans notre couloir droite, à 40 m de notre ligne de but : le centre n'a pas lieu;2 centres subis seulement, 0 suivi(s) d'un tir
+Rennes;Centres;À reproduire;Lille;2026-11-08;7'12;Charlie Cresswell;récupération dans notre couloir droite, à 16 m de notre ligne de but : le centre n'a pas lieu;2 centres subis seulement, 0 suivi(s) d'un tir
+Rennes;Centres;À corriger;Le Mans;2026-08-30;29'20;;centre de Lucas Calodat depuis notre droite (21 m) → tir de Louis Mafouta (0.78 xG, BUT) — aucune action de notre part;
+Rennes;Centres;À corriger;Paris FC;2026-10-18;75'46;Charlie Cresswell;centre de Ilan Kebbal depuis notre gauche (24 m) → tir de Lassine Sinayoko (0.41 xG, BUT) — 1re action : duel aérien gagné;
+Rennes;Centres;À corriger;Nice;2026-10-30;39'46;Charlie Cresswell;centre de Niels Nkounkou depuis notre droite (30 m) → tir de Elye Wahi (0.40 xG) — 1re action : arrêt;
+Rennes;Centres;À corriger;Angers;2026-09-06;19'22;Anthony Rouault;centre de Jim Allevinah depuis notre gauche (27 m) → tir de Anthony Bermont (0.35 xG) — 1re action : arrêt;
+Rennes;Centres;À corriger;Lyon;2026-09-19;60'03;Quentin Merlin;centre de Abner Vinícius depuis notre droite (21 m) → tir de Ernest Nuamah (0.28 xG) — 1re action : duel aérien gagné;
+Rennes;Centres;À corriger;Angers;2026-09-06;33'13;Charlie Cresswell;centre de Jim Allevinah depuis notre gauche (24 m) → tir de Amine El Ouazzani (0.26 xG) — 1re action : duel aérien gagné;
+Rennes;Zone de vérité;À reproduire;Le Mans;2026-08-30;17'26;Charlie Cresswell;interception à 21 m de notre but;9 entrées adverses dans la surface, 4 suivie(s) d'un tir
+Rennes;Zone de vérité;À reproduire;Le Mans;2026-08-30;67'35;Przemyslaw Frankowski;interception à 31 m de notre but dans l'axe;9 entrées adverses dans la surface, 4 suivie(s) d'un tir
+Rennes;Zone de vérité;À reproduire;Le Mans;2026-08-30;76'22;Abdelhamid Aït Boudlal;interception à 25 m de notre but;9 entrées adverses dans la surface, 4 suivie(s) d'un tir
+Rennes;Zone de vérité;À corriger;Lyon;2026-09-19;47'53;Loïs Openda;entrée balle au pied de Loïs Openda depuis côté droit (vu par nous) → tir de Zachary Athekame (0.93 xG, BUT);
+Rennes;Zone de vérité;À corriger;Le Mans;2026-08-30;29'20;Lucas Calodat;entrée balle au pied de Lucas Calodat depuis côté droit (vu par nous) → tir de Louis Mafouta (0.78 xG, BUT);
+Rennes;Zone de vérité;À corriger;Nice;2026-10-30;56'02;Jonathan Clauss;entrée balle au pied de Jonathan Clauss depuis côté gauche (vu par nous) → tir de Elye Wahi (0.52 xG);
+Rennes;Zone de vérité;À corriger;Paris FC;2026-10-18;75'45;Adama Camara;entrée passe de Adama Camara depuis côté gauche (vu par nous) pour Ilan Kebbal → tir de Lassine Sinayoko (0.41 xG, BUT);
+Rennes;Zone de vérité;À corriger;Nice;2026-10-30;39'46;Niels Nkounkou;entrée passe de Niels Nkounkou depuis côté droit (vu par nous) pour Elye Wahi → tir de Elye Wahi (0.40 xG);
+Rennes;Zone de vérité;À corriger;Marseille;2026-09-11;50'29;Pierre-Emile Højbjerg;entrée passe de Pierre-Emile Højbjerg depuis côté gauche (vu par nous) pour Amine Harit → tir de Amine Harit (0.36 xG);
+Strasbourg;Centres;À reproduire;Toulouse;2026-11-06;9'33;Oso;récupération dans notre couloir gauche, à 28 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Strasbourg;Centres;À reproduire;Toulouse;2026-11-06;14'27;Oso;récupération dans notre couloir gauche, à 42 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Strasbourg;Centres;À reproduire;Toulouse;2026-11-06;18'08;Karim Coulibaly;récupération dans notre couloir gauche, à 18 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Strasbourg;Centres;À reproduire;Toulouse;2026-11-06;19'08;Lucas Høgsberg;récupération dans notre couloir droite, à 17 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Strasbourg;Centres;À reproduire;Toulouse;2026-11-06;21'49;Gessime Yassine;passe contrée dans notre couloir droite, à 22 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Strasbourg;Centres;À reproduire;Toulouse;2026-11-06;21'51;Gessime Yassine;récupération dans notre couloir droite, à 26 m de notre ligne de but : le centre n'a pas lieu;5 centres subis seulement, 0 suivi(s) d'un tir
+Strasbourg;Centres;À corriger;Rennes;2026-10-25;79'16;Jeyland Mitchell;centre de Przemyslaw Frankowski depuis notre gauche (22 m) → tir de Ludovic Blas (0.30 xG) — 1re action : arrêt;
+Strasbourg;Centres;À corriger;Monaco;2026-09-12;41'59;;centre de Vanderson depuis notre gauche (34 m) → tir de Paris Brunner (0.27 xG) — aucune action de notre part;
+Strasbourg;Centres;À corriger;Paris Saint-Germain;2026-10-17;76'40;;centre de Ousmane Dembélé depuis notre gauche (22 m) → tir de Illia Zabarnyi (0.21 xG, BUT) — aucune action de notre part;
+Strasbourg;Centres;À corriger;Paris Saint-Germain;2026-10-17;10'53;;centre de Lucas Digne depuis notre droite (33 m) → tir de Ferran Torres (0.20 xG) — aucune action de notre part;
+Strasbourg;Centres;À corriger;Paris FC;2026-09-19;56'49;;centre de Maxime Lopez depuis notre gauche (27 m) → tir de Pablo Pagis (0.17 xG, BUT) — aucune action de notre part;
+Strasbourg;Centres;À corriger;Troyes;2026-09-06;79'23;;centre de Lucas Maronnier depuis notre gauche (28 m) → tir de Jérémy Le Douaron (0.16 xG) — aucune action de notre part;
+Strasbourg;Zone de vérité;À reproduire;Auxerre;2026-11-01;35'20;Filip Jörgensen;tacle gagné à 17 m de notre but dans l'axe;5 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Strasbourg;Zone de vérité;À reproduire;Auxerre;2026-11-01;53'41;Samir El Mourabet;passe contrée à 7 m de notre but;5 entrées adverses dans la surface, 2 suivie(s) d'un tir
+Strasbourg;Zone de vérité;À corriger;Lens;2026-08-29;25'20;Abdallah Sima;entrée balle au pied de Abdallah Sima depuis côté gauche (vu par nous) → tir de Matthieu Udol (0.76 xG);
+Strasbourg;Zone de vérité;À corriger;Troyes;2026-09-06;94'46;Kandet Diawara;entrée balle au pied de Kandet Diawara depuis côté gauche (vu par nous) → tir de Jérémy Le Douaron (0.71 xG, BUT);
+Strasbourg;Zone de vérité;À corriger;Nice;2026-10-11;52'10;Hicham Boudaoui;entrée passe de Hicham Boudaoui depuis côté droit (vu par nous) pour Gauthier Hein → tir de Mohammed Amoura (0.62 xG);
+Strasbourg;Zone de vérité;À corriger;Toulouse;2026-11-06;45'16;Casper Tengstedt;entrée balle au pied de Casper Tengstedt depuis côté gauche (vu par nous) → tir de Sion Oppong (0.43 xG, BUT);
+Strasbourg;Zone de vérité;À corriger;Rennes;2026-10-25;79'11;Przemyslaw Frankowski;entrée passe de Przemyslaw Frankowski depuis côté gauche (vu par nous) pour Abdelhamid Aït Boudlal → tir de Ludovic Blas (0.30 xG);
+Strasbourg;Zone de vérité;À corriger;Rennes;2026-10-25;33'02;Mousa Al Tamari;entrée balle au pied de Mousa Al Tamari depuis côté gauche (vu par nous) → tir de Boulaye Dia (0.30 xG, BUT);
+Toulouse;Centres;À reproduire;Marseille;2026-11-01;3'32;Mark McKenzie;tacle gagné dans notre couloir droite, à 22 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Toulouse;Centres;À reproduire;Marseille;2026-11-01;5'40;Ismaïl Diallo;récupération dans notre couloir droite, à 14 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Toulouse;Centres;À reproduire;Marseille;2026-11-01;7'50;Ismaïl Diallo;passe contrée dans notre couloir droite, à 17 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Toulouse;Centres;À reproduire;Marseille;2026-11-01;7'54;Thomas Jørgensen;récupération dans notre couloir droite, à 12 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Toulouse;Centres;À reproduire;Marseille;2026-11-01;14'24;Thomas Jørgensen;récupération dans notre couloir droite, à 39 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Toulouse;Centres;À reproduire;Marseille;2026-11-01;22'50;Cristian Cásseres;tacle gagné dans notre couloir gauche, à 5 m de notre ligne de but : le centre n'a pas lieu;4 centres subis seulement, 0 suivi(s) d'un tir
+Toulouse;Centres;À corriger;Le Havre;2026-09-19;7'10;;centre de Rayan Fofana depuis notre gauche (33 m) → tir de Josh Maja (0.67 xG) — aucune action de notre part;
+Toulouse;Centres;À corriger;Le Havre;2026-09-19;7'17;;centre de Mbwana Samatta depuis notre droite (25 m) → tir de Josh Maja (0.67 xG) — aucune action de notre part;
+Toulouse;Centres;À corriger;Le Havre;2026-09-19;87'37;Mark McKenzie;centre de Sota Nakamura depuis notre gauche (31 m) → tir de Mbwana Samatta (0.66 xG, BUT) — 1re action : duel aérien gagné;
+Toulouse;Centres;À corriger;Lille;2026-09-03;72'29;Mark McKenzie;centre de Romain Perraud depuis notre droite (19 m) → tir de Ayase Ueda (0.62 xG, BUT) — 1re action : dégagement;
+Toulouse;Centres;À corriger;Lens;2026-11-21;75'05;;centre de Florian Thauvin depuis notre droite (24 m) → tir de Matthieu Udol (0.38 xG) — aucune action de notre part;
+Toulouse;Centres;À corriger;Le Havre;2026-09-19;70'26;;centre de Sota Nakamura depuis notre gauche (36 m) → tir de Josh Maja (0.31 xG, BUT) — aucune action de notre part;
+Toulouse;Zone de vérité;À reproduire;Lorient;2026-09-12;26'08;Mark McKenzie;passe contrée à 29 m de notre but dans l'axe;8 entrées adverses dans la surface, 3 suivie(s) d'un tir
+Toulouse;Zone de vérité;À reproduire;Lorient;2026-09-12;43'05;Cristian Cásseres;interception à 5 m de notre but;8 entrées adverses dans la surface, 3 suivie(s) d'un tir
+Toulouse;Zone de vérité;À reproduire;Lorient;2026-09-12;87'07;Ismaïl Diallo;tacle gagné à 23 m de notre but;8 entrées adverses dans la surface, 3 suivie(s) d'un tir
+Toulouse;Zone de vérité;À reproduire;Lorient;2026-09-12;88'25;Mark McKenzie;tacle gagné à 11 m de notre but dans l'axe;8 entrées adverses dans la surface, 3 suivie(s) d'un tir
+Toulouse;Zone de vérité;À corriger;Le Havre;2026-09-19;7'17;Mbwana Samatta;entrée passe de Mbwana Samatta depuis côté droit (vu par nous) pour Josh Maja → tir de Josh Maja (0.67 xG);
+Toulouse;Zone de vérité;À corriger;Le Havre;2026-09-19;87'37;Sota Nakamura;entrée passe de Sota Nakamura depuis côté gauche (vu par nous) pour Mbwana Samatta → tir de Mbwana Samatta (0.66 xG, BUT);
+Toulouse;Zone de vérité;À corriger;Lille;2026-09-03;72'29;Romain Perraud;entrée balle au pied de Romain Perraud depuis côté droit (vu par nous) → tir de Ayase Ueda (0.62 xG, BUT);
+Toulouse;Zone de vérité;À corriger;Lens;2026-11-21;89'17;Yacine Titraoui;entrée passe de Yacine Titraoui depuis zone 14 (axe, devant la surface) pour Florian Sotoca → tir de Abdallah Sima (0.51 xG);
+Toulouse;Zone de vérité;À corriger;Lens;2026-11-21;75'05;Florian Thauvin;entrée passe de Florian Thauvin depuis côté droit (vu par nous) pour Matthieu Udol → tir de Matthieu Udol (0.38 xG);
+Toulouse;Zone de vérité;À corriger;Marseille;2026-11-01;59'48;Amine Harit;entrée balle au pied de Amine Harit depuis côté gauche (vu par nous) → tir de Amine Gouiri (0.36 xG);
+Troyes;Centres;À reproduire;Lille;2026-09-13;0'13;Anis Ouzenadji;récupération dans notre couloir gauche, à 26 m de notre ligne de but : le centre n'a pas lieu;0 centres subis seulement, 0 suivi(s) d'un tir
+Troyes;Centres;À reproduire;Lille;2026-09-13;6'03;Lucas Maronnier;récupération dans notre couloir droite, à 34 m de notre ligne de but : le centre n'a pas lieu;0 centres subis seulement, 0 suivi(s) d'un tir
+Troyes;Centres;À reproduire;Lille;2026-09-13;11'43;Hugo Picard;interception dans notre couloir gauche, à 39 m de notre ligne de but : le centre n'a pas lieu;0 centres subis seulement, 0 suivi(s) d'un tir
+Troyes;Centres;À reproduire;Lille;2026-09-13;11'44;Anis Ouzenadji;récupération dans notre couloir gauche, à 30 m de notre ligne de but : le centre n'a pas lieu;0 centres subis seulement, 0 suivi(s) d'un tir
+Troyes;Centres;À reproduire;Lille;2026-09-13;13'12;Hugo Picard;tacle gagné dans notre couloir gauche, à 11 m de notre ligne de but : le centre n'a pas lieu;0 centres subis seulement, 0 suivi(s) d'un tir
+Troyes;Centres;À reproduire;Lille;2026-09-13;20'06;Lucas Maronnier;tacle gagné dans notre couloir droite, à 32 m de notre ligne de but : le centre n'a pas lieu;0 centres subis seulement, 0 suivi(s) d'un tir
+Troyes;Centres;À corriger;Lens;2026-10-17;46'27;;centre de Florian Thauvin depuis notre droite (24 m) → tir de Odsonne Édouard (0.49 xG, BUT) — aucune action de notre part;
+Troyes;Centres;À corriger;Lens;2026-10-17;54'07;;centre de Florian Thauvin depuis notre droite (17 m) → tir de Ruben Aguilar (0.43 xG, BUT) — aucune action de notre part;
+Troyes;Centres;À corriger;Angers;2026-09-19;72'26;;centre de Harouna Djibirin depuis notre gauche (25 m) → tir de Usman Simbakoli (0.38 xG) — aucune action de notre part;
+Troyes;Centres;À corriger;Angers;2026-09-19;41'38;;centre de Amine Sbaï depuis notre droite (25 m) → tir de Prosper Peter (0.33 xG, BUT) — aucune action de notre part;
+Troyes;Centres;À corriger;Angers;2026-09-19;78'27;;centre de Amine Sbaï depuis notre droite (36 m) → tir de Harouna Djibirin (0.31 xG) — aucune action de notre part;
+Troyes;Centres;À corriger;Lorient;2026-08-29;9'57;Patrick Beach;centre de Gabin Bernardeau depuis notre gauche (21 m) → tir de Mamadou Koné (0.24 xG) — 1re action : arrêt;
+Troyes;Zone de vérité;À reproduire;Le Mans;2026-10-31;16'30;Adrien Monfray;interception à 11 m de notre but dans l'axe;4 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Troyes;Zone de vérité;À reproduire;Le Mans;2026-10-31;16'35;Dermane Karim;tacle gagné à 8 m de notre but;4 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Troyes;Zone de vérité;À reproduire;Le Mans;2026-10-31;45'17;Mouhamed Diop;interception à 26 m de notre but dans l'axe;4 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Troyes;Zone de vérité;À reproduire;Le Mans;2026-10-31;54'27;Mouhamed Diop;tacle gagné à 12 m de notre but;4 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Troyes;Zone de vérité;À reproduire;Le Mans;2026-10-31;62'38;Adrien Monfray;tacle gagné à 31 m de notre but;4 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Troyes;Zone de vérité;À reproduire;Le Mans;2026-10-31;93'30;Lucas Maronnier;passe contrée à 31 m de notre but;4 entrées adverses dans la surface, 1 suivie(s) d'un tir
+Troyes;Zone de vérité;À corriger;Strasbourg;2026-09-06;41'43;Sebastian Nanasi;entrée passe de Sebastian Nanasi depuis côté droit (vu par nous) pour Oso → tir de Giovanni Reyna (0.70 xG, BUT);
+Troyes;Zone de vérité;À corriger;Paris FC;2026-08-22;86'11;Ilan Kebbal;entrée passe de Ilan Kebbal depuis zone 14 (axe, devant la surface) pour Moses Simon → tir de Patrick Zabi (0.67 xG);
+Troyes;Zone de vérité;À corriger;Lens;2026-10-17;46'27;Florian Thauvin;entrée balle au pied de Florian Thauvin depuis côté droit (vu par nous) → tir de Odsonne Édouard (0.49 xG, BUT);
+Troyes;Zone de vérité;À corriger;Lens;2026-10-17;54'07;Florian Thauvin;entrée balle au pied de Florian Thauvin depuis côté droit (vu par nous) → tir de Ruben Aguilar (0.43 xG, BUT);
+Troyes;Zone de vérité;À corriger;Angers;2026-09-19;72'26;Harouna Djibirin;entrée passe de Harouna Djibirin depuis côté gauche (vu par nous) pour Usman Simbakoli → tir de Usman Simbakoli (0.38 xG);
+Troyes;Zone de vérité;À corriger;Angers;2026-09-19;41'38;Amine Sbaï;entrée passe de Amine Sbaï depuis côté droit (vu par nous) pour Prosper Peter → tir de Prosper Peter (0.33 xG, BUT);

@@ -1,0 +1,531 @@
+﻿game_id;date;defense;attaque;minute;cote_defense;joueur_1;joueur_2;actions;suite
+1984058;2026-08-23;Lille;Angers;25'37;Droite;Ngal'ayel Mukau (Milieu défensif / central);Ethan Mbappé (Ailier);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984058;2026-08-23;Angers;Lille;15'37;Droite;Lilian Raolisoa (nan);Anthony Bermont (Ailier);dégagement puis tacle gagné;pas de centre dans les 8 s
+1984058;2026-08-23;Angers;Lille;29'43;Droite;Lilian Raolisoa (nan);Branco van den Boomen (Milieu défensif / central);dribblé puis dribblé;centre quand même
+1984058;2026-08-23;Angers;Lille;10'11;Gauche;Jacques Ekomié (Latéral / piston);Yassin Belkhdim (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984058;2026-08-23;Angers;Lille;34'17;Gauche;Jacques Ekomié (Latéral / piston);Jordan Lefort (Défenseur central);dribblé puis faute;pas de centre dans les 8 s
+1984058;2026-08-23;Angers;Lille;71'55;Gauche;Jacques Ekomié (Latéral / piston);Amine Sbaï (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984059;2026-08-23;Monaco;Le Havre;49'11;Gauche;Denis Zakaria (Milieu défensif / central);Eric Dier (Défenseur central);duel aérien gagné puis dégagement;pas de centre dans les 8 s
+1984059;2026-08-23;Le Havre;Monaco;1'16;Droite;Timothée Pembélé (Latéral / piston);Rassoul Ndiaye (Milieu défensif / central);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984059;2026-08-23;Le Havre;Monaco;5'15;Gauche;Junior Mwanga (Défenseur central);Amir Richardson (Milieu défensif / central);passe contrée puis passe contrée;pas de centre dans les 8 s
+1984060;2026-08-22;Brest;Le Mans;45'07;Droite;Kenny Lala (Latéral / piston);Romain Del Castillo (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984060;2026-08-22;Brest;Le Mans;57'38;Droite;Joris Chotard (Milieu défensif / central);Joseph Nonge (nan);tacle gagné puis récupération;pas de centre dans les 8 s
+1984060;2026-08-22;Le Mans;Brest;9'40;Droite;Alexandre Lauray (Milieu défensif / central);Noa Boissé (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984060;2026-08-22;Le Mans;Brest;7'40;Gauche;Antoine Rabillard (Milieu défensif / central);Rayan Bamba (Ailier);interception puis dégagement;pas de centre dans les 8 s
+1984060;2026-08-22;Le Mans;Brest;54'36;Gauche;Rayan Bamba (Ailier);Dame Gueye (Attaquant);récupération puis duel aérien gagné;pas de centre dans les 8 s
+1984061;2026-08-30;Marseille;Monaco;45'35;Droite;Timothy Weah (Latéral / piston);Quinten Timber (Ailier);dégagement puis duel aérien gagné;pas de centre dans les 8 s
+1984061;2026-08-30;Monaco;Marseille;21'29;Droite;Vanderson (Latéral / piston);Sadibou Sané (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984062;2026-08-22;Lorient;Nice;26'07;Droite;Théo Le Bris (Latéral / piston);Gabin Bernardeau (Milieu offensif);dégagement puis récupération;pas de centre dans les 8 s
+1984062;2026-08-22;Lorient;Nice;34'36;Droite;Arthur Avom (Milieu défensif / central);Noah Cadiou (Milieu défensif / central);duel aérien gagné puis faute;pas de centre dans les 8 s
+1984062;2026-08-22;Lorient;Nice;4'41;Gauche;Montassar Talbi (Défenseur central);Nathaniel Adjei (Défenseur central);dégagement puis tacle gagné;pas de centre dans les 8 s
+1984062;2026-08-22;Lorient;Nice;72'47;Gauche;Souleymane Faye (Attaquant);Arthur Avom (Milieu défensif / central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984062;2026-08-22;Nice;Lorient;39'30;Droite;Jonathan Clauss (Latéral / piston);Antoine Mendy (Défenseur central);dégagement puis récupération;pas de centre dans les 8 s
+1984063;2026-09-06;Strasbourg;Troyes;57'57;Gauche;Oso (Latéral / piston);Giovanni Reyna (Milieu défensif / central);interception puis faute;pas de centre dans les 8 s
+1984064;2026-09-05;Lorient;Lens;40'15;Droite;Noah Cadiou (Milieu défensif / central);Gabin Bernardeau (Milieu offensif);récupération puis duel aérien gagné;pas de centre dans les 8 s
+1984064;2026-09-05;Lorient;Lens;40'19;Droite;Gabin Bernardeau (Milieu offensif);Mamadou Koné (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984064;2026-09-05;Lorient;Lens;47'25;Droite;Dembo Sylla (Latéral / piston);Panos Katseris (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984064;2026-09-05;Lorient;Lens;84'44;Droite;Théo Le Bris (Latéral / piston);Isak Jensen (Attaquant);tacle gagné puis faute;pas de centre dans les 8 s
+1984064;2026-09-05;Lens;Lorient;7'51;Droite;Ruben Aguilar (Latéral / piston);Kyllian Antonio (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984064;2026-09-05;Lens;Lorient;45'13;Droite;Ruben Aguilar (Latéral / piston);Kyllian Antonio (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984064;2026-09-05;Lens;Lorient;57'42;Droite;Ruben Aguilar (Latéral / piston);Florian Thauvin (Milieu offensif);tacle gagné puis faute;pas de centre dans les 8 s
+1984065;2026-08-30;Nice;Paris FC;61'17;Gauche;Xavier Mandza (Défenseur central);Melvin Bard (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984065;2026-08-30;Paris FC;Nice;91'20;Gauche;Diego Coppola (Défenseur central);Hamari Traoré (Latéral / piston);dégagement puis récupération;pas de centre dans les 8 s
+1984066;2026-08-23;Paris Saint-Germain;Rennes;83'58;Droite;Achraf Hakimi (Latéral / piston);Marquinhos (Défenseur central);dribblé puis faute;pas de centre dans les 8 s
+1984066;2026-08-23;Rennes;Paris Saint-Germain;17'10;Droite;Adrien Thomasson (Milieu défensif / central);Sebastian Szymanski (Milieu défensif / central);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984066;2026-08-23;Rennes;Paris Saint-Germain;46'28;Gauche;Adrien Thomasson (Milieu défensif / central);Aboubakar Nagida (Latéral / piston);passe contrée puis récupération;pas de centre dans les 8 s
+1984067;2026-09-12;Nice;Auxerre;23'10;Droite;Jonathan Clauss (Latéral / piston);Mohamed Abdelmonem (Défenseur central);dégagement puis dribblé;pas de centre dans les 8 s
+1984067;2026-09-12;Nice;Auxerre;47'34;Droite;Djibril Coulibaly (Milieu défensif / central);Jonathan Clauss (Latéral / piston);duel aérien gagné puis interception;pas de centre dans les 8 s
+1984067;2026-09-12;Nice;Auxerre;92'19;Droite;Hicham Boudaoui (Milieu défensif / central);Nathan Ngoumou (nan);interception puis récupération;pas de centre dans les 8 s
+1984067;2026-09-12;Nice;Auxerre;64'10;Gauche;Djibril Coulibaly (Milieu défensif / central);Niels Nkounkou (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984067;2026-09-12;Auxerre;Nice;21'15;Droite;Christ Makosso (Défenseur central);Danny Namaso (Ailier);dégagement puis duel aérien gagné;pas de centre dans les 8 s
+1984067;2026-09-12;Auxerre;Nice;21'36;Gauche;Kévin Danois (Milieu défensif / central);Fredrik Oppegård (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984067;2026-09-12;Auxerre;Nice;46'10;Droite;Christ Makosso (Défenseur central);Danny Namaso (Ailier);dégagement puis récupération;pas de centre dans les 8 s
+1984067;2026-09-12;Auxerre;Nice;81'35;Droite;Pierre Ekwah (Milieu défensif / central);Cameron Archer (Attaquant);tacle gagné puis faute;pas de centre dans les 8 s
+1984067;2026-09-12;Auxerre;Nice;71'33;Gauche;Fredrik Oppegård (Latéral / piston);Kévin Danois (Milieu défensif / central);dribblé puis interception;pas de centre dans les 8 s
+1984068;2026-09-04;Auxerre;Lyon;20'20;Gauche;Elikya Legros (Défenseur central);Clément Akpa (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984068;2026-09-04;Auxerre;Lyon;64'13;Gauche;Naouirou Ahamada (Milieu défensif / central);Rémy Labeau Lascary (Ailier);dribblé puis faute;pas de centre dans les 8 s
+1984068;2026-09-04;Lyon;Auxerre;74'27;Droite;Mads Bidstrup (Milieu défensif / central);Zachary Athekame (Latéral / piston);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984068;2026-09-04;Lyon;Auxerre;94'51;Droite;Khalis Merah (Attaquant);Kaïl Boudache (Ailier);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984068;2026-09-04;Lyon;Auxerre;70'34;Gauche;Abner Vinícius (nan);Mads Bidstrup (Milieu défensif / central);dribblé puis récupération;pas de centre dans les 8 s
+1984069;2026-08-30;Le Mans;Rennes;56'15;Droite;Noa Boissé (Défenseur central);Lucas Buadés (Ailier);interception puis faute;pas de centre dans les 8 s
+1984069;2026-08-30;Le Mans;Rennes;71'29;Droite;Adil Bourabaa (Milieu défensif / central);Noa Boissé (Défenseur central);dribblé puis dribblé;pas de centre dans les 8 s
+1984069;2026-08-30;Le Mans;Rennes;57'59;Gauche;Lucas Calodat (Ailier);Harold Voyer (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984069;2026-08-30;Le Mans;Rennes;63'37;Gauche;Jean Vercruysse (Milieu défensif / central);Adil Bourabaa (Milieu défensif / central);récupération puis faute;pas de centre dans les 8 s
+1984069;2026-08-30;Rennes;Le Mans;72'19;Droite;Charlie Cresswell (Défenseur central);Przemyslaw Frankowski (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984069;2026-08-30;Rennes;Le Mans;81'53;Droite;Charlie Cresswell (Défenseur central);Przemyslaw Frankowski (Latéral / piston);passe contrée puis récupération;pas de centre dans les 8 s
+1984069;2026-08-30;Rennes;Le Mans;98'27;Droite;Charlie Cresswell (Défenseur central);Adrien Thomasson (Milieu défensif / central);duel aérien gagné puis dribblé;pas de centre dans les 8 s
+1984069;2026-08-30;Rennes;Le Mans;49'45;Gauche;Adrien Thomasson (Milieu défensif / central);Quentin Merlin (Latéral / piston);dribblé puis passe contrée;pas de centre dans les 8 s
+1984070;2026-08-22;Lyon;Toulouse;43'42;Droite;Zachary Athekame (Latéral / piston);Kaïl Boudache (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984070;2026-08-22;Lyon;Toulouse;7'54;Gauche;Mads Bidstrup (Milieu défensif / central);Mathys de Carvalho (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984070;2026-08-22;Lyon;Toulouse;45'51;Gauche;Noah Nartey (Milieu défensif / central);Mohamed Ouédraogo (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984070;2026-08-22;Lyon;Toulouse;61'25;Droite;Zachary Athekame (Latéral / piston);Kaïl Boudache (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984070;2026-08-22;Lyon;Toulouse;84'00;Droite;Zachary Athekame (Latéral / piston);Tanner Tessmann (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984070;2026-08-22;Lyon;Toulouse;69'25;Gauche;Corentin Tolisso (Milieu défensif / central);Mohamed Ouédraogo (Latéral / piston);dribblé puis passe contrée;pas de centre dans les 8 s
+1984070;2026-08-22;Toulouse;Lyon;29'58;Droite;Niklas Schmidt (Milieu défensif / central);Thomas Jørgensen (Ailier);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984070;2026-08-22;Toulouse;Lyon;37'16;Droite;Julián Vignolo (Ailier);Ismaïl Diallo (Latéral / piston);dégagement puis récupération;pas de centre dans les 8 s
+1984071;2026-09-13;Paris Saint-Germain;Brest;88'25;Droite;Dro Fernández (Milieu défensif / central);Vitinha (Milieu défensif / central);dégagement puis dégagement;pas de centre dans les 8 s
+1984071;2026-09-13;Brest;Paris Saint-Germain;42'00;Droite;Giovani Versini (Ailier);Hugo Magnetti (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984071;2026-09-13;Brest;Paris Saint-Germain;1'44;Gauche;Hugo Magnetti (Milieu défensif / central);Kamory Doumbia (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984071;2026-09-13;Brest;Paris Saint-Germain;40'14;Gauche;Bradley Locko (Latéral / piston);Pathé Mboup (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984071;2026-09-13;Brest;Paris Saint-Germain;68'13;Droite;Joseph Nonge (nan);Kenny Lala (Latéral / piston);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984072;2026-09-06;Paris FC;Marseille;36'31;Droite;Adama Camara (Latéral / piston);Ilan Kebbal (Ailier);récupération puis tacle gagné;pas de centre dans les 8 s
+1984072;2026-09-06;Paris FC;Marseille;56'14;Droite;Adama Camara (Latéral / piston);Ilan Kebbal (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984072;2026-09-06;Paris FC;Marseille;69'28;Droite;Adama Camara (Latéral / piston);Ilan Kebbal (Ailier);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984073;2026-08-29;Lens;Strasbourg;31'10;Gauche;Franjo Ivanovic (Attaquant);Matthieu Udol (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984073;2026-08-29;Lens;Strasbourg;54'41;Droite;Michal Skóras (Latéral / piston);Yacine Titraoui (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984073;2026-08-29;Strasbourg;Lens;68'10;Droite;Genesis Antwi (Latéral / piston);Gessime Yassine (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984073;2026-08-29;Strasbourg;Lens;74'12;Gauche;Lucas Høgsberg (Latéral / piston);Sebastian Nanasi (Ailier);récupération puis tacle gagné;pas de centre dans les 8 s
+1984073;2026-08-29;Strasbourg;Lens;80'26;Gauche;Lucas Høgsberg (Latéral / piston);Sam Amo-Ameyaw (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984073;2026-08-29;Strasbourg;Lens;94'30;Gauche;Pape Diop (Milieu défensif / central);Mateo del Blanco (Défenseur (?));tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984074;2026-08-22;Paris FC;Troyes;19'44;Droite;Adama Camara (Latéral / piston);Ilan Kebbal (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984074;2026-08-22;Paris FC;Troyes;37'30;Gauche;Moustapha Mbow (Défenseur central);Pierre Lees-Melou (Milieu défensif / central);duel aérien gagné puis duel aérien gagné;pas de centre dans les 8 s
+1984074;2026-08-22;Paris FC;Troyes;50'41;Droite;Adama Camara (Latéral / piston);Pierre Lees-Melou (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984074;2026-08-22;Paris FC;Troyes;83'21;Droite;Adama Camara (Latéral / piston);Ilan Kebbal (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984074;2026-08-22;Paris FC;Troyes;93'09;Gauche;Otávio (Latéral / piston);Moses Simon (Ailier);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984074;2026-08-22;Troyes;Paris FC;23'55;Gauche;Anis Ouzenadji (Latéral / piston);Mouhamed Diop (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984074;2026-08-22;Troyes;Paris FC;67'06;Gauche;Iron Gomis (Milieu offensif);Junior Diaz (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984074;2026-08-22;Troyes;Paris FC;94'57;Gauche;Alexandre Phliponeau (Milieu (?));Anis Ouzenadji (Latéral / piston);dégagement puis récupération;pas de centre dans les 8 s
+1984075;2026-09-12;Angers;Le Havre;73'38;Droite;Branco van den Boomen (Milieu défensif / central);Amine Sbaï (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984075;2026-09-12;Le Havre;Angers;14'18;Droite;Kaito Mizuta (Milieu offensif);Simon Ebonog (Milieu défensif / central);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984075;2026-09-12;Le Havre;Angers;14'22;Droite;Simon Ebonog (Milieu défensif / central);Sota Nakamura (Ailier);récupération puis passe contrée;pas de centre dans les 8 s
+1984075;2026-09-12;Le Havre;Angers;28'58;Gauche;Ahmed Touba (Défenseur central);Mbwana Samatta (Ailier);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984076;2026-08-28;Paris Saint-Germain;Lille;3'53;Gauche;Désiré Doué (Ailier);Warren Zaïre-Emery (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984076;2026-08-28;Paris Saint-Germain;Lille;45'37;Gauche;Fabián Ruiz (Milieu défensif / central);Warren Zaïre-Emery (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984076;2026-08-28;Lille;Paris Saint-Germain;82'16;Droite;Tiago Santos (Latéral / piston);Dilane Bakwa (Ailier);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984077;2026-09-05;Nice;Le Mans;5'27;Gauche;Xavier Mandza (Défenseur central);Axel Witsel (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984077;2026-09-05;Nice;Le Mans;57'00;Droite;Jonathan Clauss (Latéral / piston);Nathan Ngoumou (nan);tacle gagné puis passe contrée;pas de centre dans les 8 s
+1984077;2026-09-05;Nice;Le Mans;63'43;Gauche;Xavier Mandza (Défenseur central);Sofiane Diop (Milieu offensif);tacle gagné puis récupération;pas de centre dans les 8 s
+1984077;2026-09-05;Nice;Le Mans;88'35;Gauche;Ali Abdi (Défenseur (?));Mohammed Amoura (Milieu offensif);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984078;2026-09-13;Lens;Le Mans;60'33;Droite;Kyllian Antonio (Défenseur central);Ruben Aguilar (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984078;2026-09-13;Le Mans;Lens;1'45;Droite;Noa Boissé (Défenseur central);Rayan Bamba (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984079;2026-08-29;Angers;Auxerre;46'46;Droite;Branco van den Boomen (Milieu défensif / central);Carlens Arcus (Latéral / piston);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984079;2026-08-29;Angers;Auxerre;39'47;Gauche;Jordan Lefort (Défenseur central);Anthony Bermont (Ailier);dégagement puis récupération;pas de centre dans les 8 s
+1984079;2026-08-29;Angers;Auxerre;48'11;Gauche;Jordan Lefort (Défenseur central);Joseph Kalulu (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984079;2026-08-29;Angers;Auxerre;55'09;Droite;Carlens Arcus (Latéral / piston);nan (nan);tacle gagné puis faute;pas de centre dans les 8 s
+1984079;2026-08-29;Angers;Auxerre;91'08;Droite;Marius Louër (Latéral / piston);Harouna Djibirin (Attaquant);interception puis récupération;pas de centre dans les 8 s
+1984079;2026-08-29;Angers;Auxerre;94'40;Droite;Harouna Djibirin (Attaquant);Prosper Peter (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984079;2026-08-29;Angers;Auxerre;95'07;Gauche;Bané Diatta (Milieu offensif);Jordan Lefort (Défenseur central);dégagement puis récupération;pas de centre dans les 8 s
+1984079;2026-08-29;Auxerre;Angers;13'25;Droite;Arthur Piedfort (Milieu défensif / central);Romain Faivre (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984079;2026-08-29;Auxerre;Angers;47'42;Droite;Sinaly Diomandé (Défenseur central);Naouirou Ahamada (Milieu défensif / central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984079;2026-08-29;Auxerre;Angers;95'51;Droite;Lamine Sy (Latéral / piston);Kévin Danois (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984080;2026-09-06;Rennes;Angers;20'53;Droite;Anthony Rouault (Défenseur central);Przemyslaw Frankowski (Latéral / piston);dégagement puis faute;pas de centre dans les 8 s
+1984080;2026-09-06;Rennes;Angers;64'19;Droite;Przemyslaw Frankowski (Latéral / piston);Charlie Cresswell (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984080;2026-09-06;Angers;Rennes;31'41;Droite;Carlens Arcus (Latéral / piston);Yassin Belkhdim (Milieu défensif / central);dégagement puis tacle gagné;pas de centre dans les 8 s
+1984080;2026-09-06;Angers;Rennes;70'04;Droite;Carlens Arcus (Latéral / piston);Jim Allevinah (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984080;2026-09-06;Angers;Rennes;52'17;Gauche;Yassin Belkhdim (Milieu défensif / central);Joseph Kalulu (Latéral / piston);tacle gagné puis passe contrée;pas de centre dans les 8 s
+1984080;2026-09-06;Angers;Rennes;64'31;Gauche;Bané Diatta (Milieu offensif);Joseph Kalulu (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984081;2026-09-04;Monaco;Paris Saint-Germain;81'39;Droite;Jordan Teze (Défenseur central);Anis Soubeir (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984081;2026-09-04;Paris Saint-Germain;Monaco;5'03;Gauche;Matvey Safonov (Gardien);Warren Zaïre-Emery (Latéral / piston);dégagement puis tacle gagné;centre quand même
+1984081;2026-09-04;Paris Saint-Germain;Monaco;68'40;Droite;Fabián Ruiz (Milieu défensif / central);Marquinhos (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984081;2026-09-04;Paris Saint-Germain;Monaco;79'20;Droite;Dro Fernández (Milieu défensif / central);João Neves (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984082;2026-09-13;Troyes;Lille;34'32;Droite;Adrien Monfray (Défenseur central);Lucas Maronnier (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984082;2026-09-13;Troyes;Lille;35'31;Droite;Kandet Diawara (Ailier);Mouhamed Diop (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984082;2026-09-13;Troyes;Lille;11'44;Gauche;Hugo Picard (Ailier);Anis Ouzenadji (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984082;2026-09-13;Troyes;Lille;61'03;Gauche;Kandet Diawara (Ailier);Dermane Karim (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984082;2026-09-13;Troyes;Lille;61'13;Gauche;Mouhamed Diop (Milieu défensif / central);Dermane Karim (Milieu défensif / central);tacle gagné puis faute;pas de centre dans les 8 s
+1984082;2026-09-13;Lille;Troyes;21'40;Droite;Dilane Bakwa (Ailier);Ngal'ayel Mukau (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984082;2026-09-13;Lille;Troyes;26'52;Droite;Ngal'ayel Mukau (Milieu défensif / central);Nabil Bentaleb (Milieu défensif / central);duel aérien gagné puis duel aérien gagné;pas de centre dans les 8 s
+1984082;2026-09-13;Lille;Troyes;58'21;Droite;Ngal'ayel Mukau (Milieu défensif / central);Tiago Santos (Latéral / piston);dégagement puis dégagement;pas de centre dans les 8 s
+1984082;2026-09-13;Lille;Troyes;49'01;Gauche;Romain Perraud (Latéral / piston);Nabil Bentaleb (Milieu défensif / central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984083;2026-08-29;Toulouse;Brest;58'44;Droite;Thomas Jørgensen (Ailier);Rafik Messali (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984083;2026-08-29;Brest;Toulouse;9'53;Droite;Kenny Lala (Latéral / piston);Joris Chotard (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984083;2026-08-29;Brest;Toulouse;48'02;Droite;Kenny Lala (Latéral / piston);Joris Chotard (Milieu défensif / central);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984083;2026-08-29;Brest;Toulouse;47'05;Gauche;Mamady Diambou (Milieu défensif / central);Kamory Doumbia (Milieu offensif);dégagement puis duel aérien gagné;pas de centre dans les 8 s
+1984084;2026-09-05;Brest;Le Havre;16'29;Gauche;Pathé Mboup (Ailier);Kamory Doumbia (Milieu offensif);tacle gagné puis faute;pas de centre dans les 8 s
+1984084;2026-09-05;Brest;Le Havre;39'16;Gauche;Hugo Magnetti (Milieu défensif / central);Kamory Doumbia (Milieu offensif);tacle gagné puis récupération;pas de centre dans les 8 s
+1984084;2026-09-05;Brest;Le Havre;81'56;Gauche;Joris Chotard (Milieu défensif / central);Joseph Nonge (nan);dégagement puis dribblé;pas de centre dans les 8 s
+1984084;2026-09-05;Brest;Le Havre;81'59;Gauche;Giovani Versini (Ailier);Joseph Nonge (nan);dribblé puis faute;pas de centre dans les 8 s
+1984084;2026-09-05;Le Havre;Brest;21'55;Gauche;Ahmed Touba (Défenseur central);nan (nan);dégagement puis faute;pas de centre dans les 8 s
+1984084;2026-09-05;Le Havre;Brest;93'53;Gauche;Djibril Ouziad (Latéral / piston);Amir Richardson (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984084;2026-09-05;Le Havre;Brest;94'06;Gauche;Simon Ebonog (Milieu défensif / central);Amir Richardson (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984085;2026-09-03;Lille;Toulouse;85'00;Droite;Ngal'ayel Mukau (Milieu défensif / central);Tiago Santos (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984085;2026-09-03;Toulouse;Lille;75'28;Droite;Ismaïl Diallo (Latéral / piston);Mark McKenzie (Défenseur central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984086;2026-09-12;Toulouse;Lorient;20'16;Droite;Cristian Cásseres (Milieu défensif / central);Seny Koumbassa (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984086;2026-09-12;Toulouse;Lorient;90'11;Droite;Niko Sigur (Milieu défensif / central);Alexis Vossah (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984086;2026-09-12;Toulouse;Lorient;87'09;Gauche;Ismaïl Diallo (Latéral / piston);Thomas Jørgensen (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984086;2026-09-12;Lorient;Toulouse;24'26;Droite;Dembo Sylla (Latéral / piston);Gabin Bernardeau (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984086;2026-09-12;Lorient;Toulouse;34'52;Droite;Dembo Sylla (Latéral / piston);Gabin Bernardeau (Milieu offensif);dégagement puis récupération;pas de centre dans les 8 s
+1984086;2026-09-12;Lorient;Toulouse;0'36;Gauche;Montassar Talbi (Défenseur central);Nathaniel Adjei (Défenseur central);dégagement puis dégagement;pas de centre dans les 8 s
+1984086;2026-09-12;Lorient;Toulouse;60'11;Droite;Noah Mbamba (Milieu défensif / central);Théo Le Bris (Latéral / piston);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984087;2026-08-29;Troyes;Lorient;19'16;Droite;Adrien Monfray (Défenseur central);Lucas Maronnier (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984087;2026-08-29;Troyes;Lorient;86'37;Droite;Adrien Monfray (Défenseur central);Mouhamed Diop (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984087;2026-08-29;Troyes;Lorient;45'41;Gauche;Anis Ouzenadji (Latéral / piston);Iron Gomis (Milieu offensif);dégagement puis faute;pas de centre dans les 8 s
+1984087;2026-08-29;Lorient;Troyes;24'23;Droite;Jean-Victor Makengo (Milieu offensif);Arthur Avom (Milieu défensif / central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984087;2026-08-29;Lorient;Troyes;81'29;Gauche;Nathaniel Adjei (Défenseur central);Montassar Talbi (Défenseur central);duel aérien gagné puis tacle gagné;pas de centre dans les 8 s
+1984088;2026-11-01;Toulouse;Marseille;7'54;Droite;Ismaïl Diallo (Latéral / piston);Thomas Jørgensen (Ailier);passe contrée puis récupération;pas de centre dans les 8 s
+1984088;2026-11-01;Toulouse;Marseille;31'52;Droite;Casper Tengstedt (Attaquant);Jacen Russell-Rowe (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984088;2026-11-01;Toulouse;Marseille;74'23;Droite;Niklas Schmidt (Milieu défensif / central);Rasmus Nicolaisen (Défenseur central);récupération puis faute;pas de centre dans les 8 s
+1984088;2026-11-01;Toulouse;Marseille;90'11;Droite;Julián Vignolo (Ailier);Seny Koumbassa (Défenseur central);duel aérien gagné puis duel aérien gagné;pas de centre dans les 8 s
+1984088;2026-11-01;Marseille;Toulouse;21'29;Droite;Timothy Weah (Latéral / piston);Pierre-Emile Højbjerg (Milieu défensif / central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984088;2026-11-01;Marseille;Toulouse;63'12;Droite;Timothy Weah (Latéral / piston);Amine Harit (Ailier);passe contrée puis récupération;pas de centre dans les 8 s
+1984088;2026-11-01;Marseille;Toulouse;90'39;Gauche;Igor Paixão (Ailier);Ulisses Garcia (Latéral / piston);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984090;2026-08-29;Le Havre;Lyon;32'58;Gauche;Amir Richardson (Milieu défensif / central);Mbwana Samatta (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984090;2026-08-29;Le Havre;Lyon;42'07;Gauche;Timothée Pembélé (Latéral / piston);Rassoul Ndiaye (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984090;2026-08-29;Le Havre;Lyon;60'38;Droite;Simon Ebonog (Milieu défensif / central);Ayumu Seko (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984090;2026-08-29;Le Havre;Lyon;72'05;Droite;Fodé Doucouré (Latéral / piston);Josh Maja (Attaquant);interception puis récupération;pas de centre dans les 8 s
+1984090;2026-08-29;Le Havre;Lyon;76'29;Gauche;Sota Nakamura (Ailier);Rassoul Ndiaye (Milieu défensif / central);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984090;2026-08-29;Lyon;Le Havre;13'30;Droite;Felix Bacher (Défenseur central);Mads Bidstrup (Milieu défensif / central);dégagement puis récupération;pas de centre dans les 8 s
+1984091;2026-09-18;Lens;Monaco;58'15;Droite;Jonathan Gradit (Défenseur central);Michaël Cuisance (Milieu défensif / central);dégagement puis récupération;pas de centre dans les 8 s
+1984091;2026-09-18;Lens;Monaco;62'02;Gauche;Matthieu Udol (Latéral / piston);Junior Kadile (Latéral / piston);dégagement puis récupération;pas de centre dans les 8 s
+1984091;2026-09-18;Monaco;Lens;47'00;Droite;Vanderson (Latéral / piston);Edan Diop (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984091;2026-09-18;Monaco;Lens;92'03;Gauche;Mathys Detourbet (Attaquant);Flávio Nazinho (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984093;2026-10-30;Nice;Rennes;59'13;Droite;Sofiane Diop (Milieu offensif);Djibril Coulibaly (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984093;2026-10-30;Nice;Rennes;76'26;Droite;Morgan Sanson (Milieu (?));Gauthier Hein (Milieu offensif);passe contrée puis tacle gagné;pas de centre dans les 8 s
+1984093;2026-10-30;Nice;Rennes;56'28;Gauche;Xavier Mandza (Défenseur central);Niels Nkounkou (Latéral / piston);dribblé puis faute;pas de centre dans les 8 s
+1984094;2026-09-20;Lille;Nice;12'03;Droite;Benjamin André (Milieu défensif / central);Nabil Bentaleb (Milieu défensif / central);tacle gagné puis faute;pas de centre dans les 8 s
+1984094;2026-09-20;Lille;Nice;27'39;Droite;Benjamin André (Milieu défensif / central);Tiago Santos (Latéral / piston);passe contrée puis dégagement;pas de centre dans les 8 s
+1984094;2026-09-20;Lille;Nice;15'50;Gauche;Ayase Ueda (Attaquant);Basar Önal (Ailier);tacle gagné puis faute;pas de centre dans les 8 s
+1984094;2026-09-20;Lille;Nice;85'46;Gauche;Alexsandro (Défenseur central);Maurits Kjærgaard (Milieu défensif / central);dégagement puis récupération;pas de centre dans les 8 s
+1984094;2026-09-20;Nice;Lille;0'22;Gauche;Mohammed Amoura (Milieu offensif);Niels Nkounkou (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984096;2026-11-01;Paris FC;Monaco;32'09;Droite;Ilan Kebbal (Ailier);Maxime Lopez (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984096;2026-11-01;Paris FC;Monaco;5'04;Gauche;Moses Simon (Ailier);Otávio (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984097;2026-09-19;Strasbourg;Paris FC;4'46;Gauche;Oso (Latéral / piston);Sebastian Nanasi (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984097;2026-09-19;Strasbourg;Paris FC;53'31;Droite;Genesis Antwi (Latéral / piston);Gessime Yassine (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984097;2026-09-19;Paris FC;Strasbourg;93'46;Gauche;Rudy Matondo (Latéral / piston);Luca Koleosho (Ailier);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984098;2026-11-01;Auxerre;Strasbourg;89'23;Droite;Marvin Senaya (Latéral / piston);Rayan Mandengue (Défenseur (?));dribblé puis tacle gagné;pas de centre dans les 8 s
+1984098;2026-11-01;Strasbourg;Auxerre;15'44;Droite;Karim Coulibaly (Défenseur central);Gessime Yassine (Ailier);dégagement puis tacle gagné;pas de centre dans les 8 s
+1984098;2026-11-01;Strasbourg;Auxerre;26'09;Droite;Lucas Høgsberg (Latéral / piston);Samir El Mourabet (Milieu défensif / central);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984098;2026-11-01;Strasbourg;Auxerre;27'08;Droite;Dário Essugo (Milieu défensif / central);Gessime Yassine (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984098;2026-11-01;Strasbourg;Auxerre;28'40;Droite;Dário Essugo (Milieu défensif / central);Samir El Mourabet (Milieu défensif / central);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984098;2026-11-01;Strasbourg;Auxerre;20'56;Gauche;Oso (Latéral / piston);Samir El Mourabet (Milieu défensif / central);récupération puis dribblé;pas de centre dans les 8 s
+1984098;2026-11-01;Strasbourg;Auxerre;56'15;Gauche;Karim Coulibaly (Défenseur central);Oso (Latéral / piston);dégagement puis passe contrée;pas de centre dans les 8 s
+1984098;2026-11-01;Strasbourg;Auxerre;56'31;Gauche;Oso (Latéral / piston);Conrad Harder (Attaquant);dégagement puis récupération;pas de centre dans les 8 s
+1984098;2026-11-01;Strasbourg;Auxerre;70'35;Gauche;Oso (Latéral / piston);Dário Essugo (Milieu défensif / central);interception puis tacle gagné;pas de centre dans les 8 s
+1984100;2026-09-19;Le Havre;Toulouse;1'07;Droite;Djibril Ouziad (Latéral / piston);Vincent Sasso (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984100;2026-09-19;Le Havre;Toulouse;72'39;Droite;Amir Richardson (Milieu défensif / central);Simon Ebonog (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984100;2026-09-19;Le Havre;Toulouse;50'20;Gauche;Elias Jelert (Latéral / piston);Amir Richardson (Milieu défensif / central);dribblé puis dribblé;centre quand même
+1984100;2026-09-19;Toulouse;Le Havre;44'03;Droite;Seny Koumbassa (Défenseur central);Rafik Messali (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984102;2026-10-31;Le Mans;Troyes;11'17;Droite;Noa Boissé (Défenseur central);Samuel Yohou (Défenseur central);duel aérien gagné puis dégagement;pas de centre dans les 8 s
+1984102;2026-10-31;Le Mans;Troyes;28'24;Gauche;Raúl Torrente (Défenseur central);Lucas Calodat (Ailier);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984102;2026-10-31;Le Mans;Troyes;50'36;Droite;Lucas Buadés (Ailier);Alexandre Lauray (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984102;2026-10-31;Le Mans;Troyes;59'48;Droite;Lucas Buadés (Ailier);Noa Boissé (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984102;2026-10-31;Le Mans;Troyes;60'04;Droite;Samuel Yohou (Défenseur central);Lucas Bretelle (Milieu défensif / central);passe contrée puis tacle gagné;pas de centre dans les 8 s
+1984102;2026-10-31;Le Mans;Troyes;61'53;Gauche;Raúl Torrente (Défenseur central);Samuel Yohou (Défenseur central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984102;2026-10-31;Troyes;Le Mans;40'35;Droite;Lucas Maronnier (Latéral / piston);Merwan Ifnaoui (nan);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984102;2026-10-31;Troyes;Le Mans;62'41;Droite;Adrien Monfray (Défenseur central);Antoine Mille (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984102;2026-10-31;Troyes;Le Mans;80'45;Gauche;Ismaël Boura (Défenseur central);Iron Gomis (Milieu offensif);récupération puis faute;pas de centre dans les 8 s
+1984103;2026-09-20;Paris Saint-Germain;Marseille;48'51;Droite;João Neves (Milieu défensif / central);Marquinhos (Défenseur central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984103;2026-09-20;Paris Saint-Germain;Marseille;46'45;Gauche;João Neves (Milieu défensif / central);Fabián Ruiz (Milieu défensif / central);duel aérien gagné puis tacle gagné;pas de centre dans les 8 s
+1984103;2026-09-20;Paris Saint-Germain;Marseille;94'31;Droite;Beraldo (Milieu défensif / central);Warren Zaïre-Emery (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984106;2026-11-08;Nice;Angers;13'40;Gauche;Niels Nkounkou (Latéral / piston);Mohamed Abdelmonem (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984106;2026-11-08;Nice;Angers;72'45;Droite;Gauthier Hein (Milieu offensif);Niels Nkounkou (Latéral / piston);dribblé puis tacle gagné;centre quand même
+1984106;2026-11-08;Angers;Nice;24'16;Gauche;Ousmane Camara (Défenseur central);Haris Belkebla (Milieu défensif / central);dégagement puis tacle gagné;pas de centre dans les 8 s
+1984106;2026-11-08;Angers;Nice;58'48;Gauche;Jordan Lefort (Défenseur central);Amine Sbaï (Ailier);dégagement puis faute;pas de centre dans les 8 s
+1984107;2026-10-10;Angers;Brest;96'51;Droite;Emmanuel Biumla (Défenseur central);Branco van den Boomen (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984107;2026-10-10;Brest;Angers;40'20;Droite;Kamory Doumbia (Milieu offensif);Mama Baldé (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984107;2026-10-10;Brest;Angers;11'07;Gauche;Kamory Doumbia (Milieu offensif);Bradley Locko (Latéral / piston);duel aérien gagné puis interception;pas de centre dans les 8 s
+1984107;2026-10-10;Brest;Angers;65'13;Droite;Lucas Tousart (Défenseur central);Joris Chotard (Milieu défensif / central);dégagement puis récupération;pas de centre dans les 8 s
+1984110;2026-11-07;Paris FC;Auxerre;18'04;Droite;Rudy Matondo (Latéral / piston);Ilan Kebbal (Ailier);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984110;2026-11-07;Paris FC;Auxerre;47'26;Droite;Rudy Matondo (Latéral / piston);Hamari Traoré (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984110;2026-11-07;Paris FC;Auxerre;70'40;Droite;Hamari Traoré (Latéral / piston);Maxime Lopez (Milieu défensif / central);dégagement puis duel aérien gagné;pas de centre dans les 8 s
+1984110;2026-11-07;Paris FC;Auxerre;86'37;Droite;Patrick Zabi (Attaquant);Rudy Matondo (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984110;2026-11-07;Paris FC;Auxerre;69'51;Gauche;Otávio (Latéral / piston);Pierre Lees-Melou (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984110;2026-11-07;Auxerre;Paris FC;1'43;Droite;Marvin Senaya (Latéral / piston);Romain Faivre (Milieu offensif);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984110;2026-11-07;Auxerre;Paris FC;52'08;Droite;Marvin Senaya (Latéral / piston);Pierre Ekwah (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984110;2026-11-07;Auxerre;Paris FC;57'46;Droite;Marvin Senaya (Latéral / piston);Romain Faivre (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984110;2026-11-07;Auxerre;Paris FC;68'34;Gauche;Fredrik Oppegård (Latéral / piston);Clément Akpa (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984111;2026-10-09;Lens;Lyon;87'07;Gauche;Junior Kadile (Latéral / piston);Franjo Ivanovic (Attaquant);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984111;2026-10-09;Lens;Lyon;87'13;Gauche;Junior Kadile (Latéral / piston);Franjo Ivanovic (Attaquant);passe contrée puis récupération;pas de centre dans les 8 s
+1984114;2026-11-08;Lyon;Brest;5'42;Droite;Noah Nartey (Milieu défensif / central);Zachary Athekame (Latéral / piston);tacle gagné puis passe contrée;pas de centre dans les 8 s
+1984114;2026-11-08;Lyon;Brest;18'59;Droite;Kaïl Boudache (Ailier);Tanner Tessmann (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984114;2026-11-08;Lyon;Brest;14'40;Gauche;Nicolás Tagliafico (Latéral / piston);Corentin Tolisso (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984114;2026-11-08;Lyon;Brest;70'23;Droite;Ernest Nuamah (Ailier);Tanner Tessmann (Milieu défensif / central);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984114;2026-11-08;Brest;Lyon;45'51;Droite;Kamory Doumbia (Milieu offensif);Lucas Tousart (Défenseur central);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984114;2026-11-08;Brest;Lyon;48'00;Droite;Kenny Lala (Latéral / piston);Noah Edjouma (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984114;2026-11-08;Brest;Lyon;75'19;Droite;Giovani Versini (Ailier);Mamady Diambou (Milieu défensif / central);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984114;2026-11-08;Brest;Lyon;77'23;Droite;Mamady Diambou (Milieu défensif / central);Giovani Versini (Ailier);passe contrée puis récupération;pas de centre dans les 8 s
+1984114;2026-11-08;Brest;Lyon;54'57;Gauche;Bradley Locko (Latéral / piston);Hugo Magnetti (Milieu défensif / central);dégagement puis récupération;pas de centre dans les 8 s
+1984114;2026-11-08;Brest;Lyon;84'27;Gauche;Bradley Locko (Latéral / piston);Pathé Mboup (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984115;2026-10-10;Le Havre;Lille;42'47;Droite;Ayumu Seko (Défenseur central);Sota Nakamura (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984115;2026-10-10;Le Havre;Lille;1'55;Gauche;Lamine N'Diaye (Latéral / piston);Mbwana Samatta (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984115;2026-10-10;Le Havre;Lille;23'01;Gauche;Lamine N'Diaye (Latéral / piston);Mbwana Samatta (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984115;2026-10-10;Le Havre;Lille;41'42;Gauche;Amir Richardson (Milieu défensif / central);Simon Ebonog (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984115;2026-10-10;Le Havre;Lille;45'11;Droite;Ayumu Seko (Défenseur central);Djibril Ouziad (Latéral / piston);duel aérien gagné puis tacle gagné;pas de centre dans les 8 s
+1984118;2026-11-08;Lorient;Le Havre;63'58;Droite;Dembo Sylla (Latéral / piston);Jean-Victor Makengo (Milieu offensif);duel aérien gagné puis faute;pas de centre dans les 8 s
+1984118;2026-11-08;Lorient;Le Havre;74'40;Droite;Mamadou Koné (Attaquant);Nathaniel Adjei (Défenseur central);duel aérien gagné puis duel aérien gagné;pas de centre dans les 8 s
+1984118;2026-11-08;Le Havre;Lorient;92'01;Gauche;Lamine N'Diaye (Latéral / piston);Simon Ebonog (Milieu défensif / central);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984119;2026-10-10;Paris FC;Lorient;32'59;Droite;Ilan Kebbal (Ailier);Adama Camara (Latéral / piston);dribblé puis dégagement;pas de centre dans les 8 s
+1984119;2026-10-10;Paris FC;Lorient;33'03;Droite;Adama Camara (Latéral / piston);Luca Koleosho (Ailier);dégagement puis duel aérien gagné;pas de centre dans les 8 s
+1984119;2026-10-10;Paris FC;Lorient;91'55;Droite;Hamari Traoré (Latéral / piston);Rudy Matondo (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984119;2026-10-10;Paris FC;Lorient;81'17;Gauche;Otávio (Latéral / piston);Luca Koleosho (Ailier);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984119;2026-10-10;Lorient;Paris FC;11'49;Gauche;Mamadou Koné (Attaquant);Alec Georgen (Milieu défensif / central);duel aérien gagné puis interception;pas de centre dans les 8 s
+1984119;2026-10-10;Lorient;Paris FC;48'56;Gauche;Isaak Touré (Défenseur central);Alec Georgen (Milieu défensif / central);récupération puis faute;pas de centre dans les 8 s
+1984119;2026-10-10;Lorient;Paris FC;66'31;Gauche;Isaak Touré (Défenseur central);Alec Georgen (Milieu défensif / central);duel aérien gagné puis duel aérien gagné;pas de centre dans les 8 s
+1984119;2026-10-10;Lorient;Paris FC;73'19;Gauche;Arsène Kouassi (Latéral / piston);Isaak Touré (Défenseur central);tacle gagné puis duel aérien gagné;pas de centre dans les 8 s
+1984122;2026-11-08;Monaco;Le Mans;12'49;Droite;Mamadou Coulibaly (Ailier);Vanderson (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984122;2026-11-08;Monaco;Le Mans;46'37;Gauche;Mathys Detourbet (Attaquant);Flávio Nazinho (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984122;2026-11-08;Monaco;Le Mans;46'39;Droite;Vanderson (Latéral / piston);Aleksandr Golovin (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984122;2026-11-08;Le Mans;Monaco;18'14;Gauche;Harold Voyer (Défenseur central);Dame Gueye (Attaquant);dégagement puis récupération;pas de centre dans les 8 s
+1984122;2026-11-08;Le Mans;Monaco;23'26;Gauche;Harold Voyer (Défenseur central);Lucas Calodat (Ailier);dégagement puis récupération;pas de centre dans les 8 s
+1984123;2026-10-10;Toulouse;Monaco;25'03;Droite;Seny Koumbassa (Défenseur central);Rafik Messali (Latéral / piston);dégagement puis récupération;pas de centre dans les 8 s
+1984123;2026-10-10;Monaco;Toulouse;2'52;Droite;Edan Diop (Ailier);Vanderson (Latéral / piston);tacle gagné puis faute;pas de centre dans les 8 s
+1984123;2026-10-10;Monaco;Toulouse;22'05;Gauche;Flávio Nazinho (Latéral / piston);Mathys Detourbet (Attaquant);interception puis faute;pas de centre dans les 8 s
+1984126;2026-11-07;Troyes;Paris Saint-Germain;35'12;Droite;Dermane Karim (Milieu défensif / central);Antoine Mille (Milieu défensif / central);interception puis faute;pas de centre dans les 8 s
+1984126;2026-11-07;Troyes;Paris Saint-Germain;20'42;Gauche;Mouhamed Diop (Milieu défensif / central);Ismaël Boura (Défenseur central);passe contrée puis récupération;pas de centre dans les 8 s
+1984126;2026-11-07;Troyes;Paris Saint-Germain;68'02;Droite;Merwan Ifnaoui (nan);Lucas Maronnier (Latéral / piston);tacle gagné puis dribblé;centre quand même
+1984126;2026-11-07;Paris Saint-Germain;Troyes;74'01;Droite;Lucas Hernández (Défenseur central);João Neves (Milieu défensif / central);dribblé puis interception;pas de centre dans les 8 s
+1984126;2026-11-07;Paris Saint-Germain;Troyes;85'38;Droite;João Neves (Milieu défensif / central);Warren Zaïre-Emery (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984127;2026-10-11;Strasbourg;Nice;1'53;Gauche;Karim Coulibaly (Défenseur central);Gessime Yassine (Ailier);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984127;2026-10-11;Strasbourg;Nice;76'31;Gauche;Oso (Latéral / piston);Pape Diop (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984127;2026-10-11;Nice;Strasbourg;24'58;Droite;Djibril Coulibaly (Milieu défensif / central);Gauthier Hein (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984130;2026-10-10;Le Mans;Paris Saint-Germain;3'08;Gauche;Lucas Calodat (Ailier);Jean Vercruysse (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984130;2026-10-10;Le Mans;Paris Saint-Germain;48'29;Droite;Noa Boissé (Défenseur central);Rayan Bamba (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984130;2026-10-10;Le Mans;Paris Saint-Germain;68'35;Droite;Billal Brahimi (Attaquant);Noa Boissé (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984130;2026-10-10;Paris Saint-Germain;Le Mans;40'03;Droite;Dro Fernández (Milieu défensif / central);Beraldo (Milieu défensif / central);passe contrée puis tacle gagné;pas de centre dans les 8 s
+1984130;2026-10-10;Paris Saint-Germain;Le Mans;56'21;Droite;Beraldo (Milieu défensif / central);Achraf Hakimi (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984130;2026-10-10;Paris Saint-Germain;Le Mans;84'38;Droite;Désiré Doué (Ailier);Warren Zaïre-Emery (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984131;2026-11-08;Lille;Rennes;1'07;Droite;Nathan Ngoy (Défenseur central);Hákon Haraldsson (Milieu offensif);dégagement puis duel aérien gagné;pas de centre dans les 8 s
+1984131;2026-11-08;Lille;Rennes;4'22;Gauche;Benjamin André (Milieu défensif / central);Soriba Diaoune (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984131;2026-11-08;Lille;Rennes;78'19;Droite;Nathan Ngoy (Défenseur central);Dilane Bakwa (Ailier);dégagement puis récupération;pas de centre dans les 8 s
+1984131;2026-11-08;Lille;Rennes;73'30;Gauche;Benjamin André (Milieu défensif / central);Soriba Diaoune (Ailier);dégagement puis récupération;pas de centre dans les 8 s
+1984131;2026-11-08;Rennes;Lille;91'02;Droite;Abdelhamid Aït Boudlal (Défenseur central);Bryan Reynolds (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984134;2026-10-11;Auxerre;Rennes;77'53;Droite;Arthur Piedfort (Milieu défensif / central);Kévin Danois (Milieu défensif / central);dégagement puis récupération;pas de centre dans les 8 s
+1984134;2026-10-11;Rennes;Auxerre;0'09;Droite;Bryan Reynolds (Latéral / piston);Adrien Thomasson (Milieu défensif / central);duel aérien gagné puis passe contrée;pas de centre dans les 8 s
+1984134;2026-10-11;Rennes;Auxerre;71'47;Gauche;Aboubakar Nagida (Latéral / piston);Anthony Rouault (Défenseur central);duel aérien gagné puis dribblé;pas de centre dans les 8 s
+1984134;2026-10-11;Rennes;Auxerre;71'52;Gauche;Aboubakar Nagida (Latéral / piston);Anthony Rouault (Défenseur central);tacle gagné puis dribblé;pas de centre dans les 8 s
+1984134;2026-10-11;Rennes;Auxerre;88'23;Gauche;Mahdi Camara (Milieu défensif / central);Przemyslaw Frankowski (Latéral / piston);dégagement puis récupération;pas de centre dans les 8 s
+1984135;2026-11-06;Strasbourg;Toulouse;28'32;Gauche;Martial Godo (Ailier);Giovanni Reyna (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984135;2026-11-06;Strasbourg;Toulouse;59'05;Droite;Lucas Høgsberg (Latéral / piston);Gessime Yassine (Ailier);passe contrée puis récupération;pas de centre dans les 8 s
+1984135;2026-11-06;Toulouse;Strasbourg;16'37;Droite;Ismaïl Diallo (Latéral / piston);Thomas Jørgensen (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984135;2026-11-06;Toulouse;Strasbourg;7'01;Gauche;Christ Tapé (Latéral / piston);Rasmus Nicolaisen (Défenseur central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984135;2026-11-06;Toulouse;Strasbourg;93'23;Gauche;Alexis Vossah (Milieu défensif / central);Ilyas Azizi (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984138;2026-10-11;Marseille;Troyes;0'12;Droite;Himad Abdelli (Milieu offensif);Kelyann Bezahaf (Latéral / piston);duel aérien gagné puis dégagement;pas de centre dans les 8 s
+1984138;2026-10-11;Marseille;Troyes;37'45;Droite;Amine Harit (Ailier);Kelyann Bezahaf (Latéral / piston);duel aérien gagné puis interception;pas de centre dans les 8 s
+1984138;2026-10-11;Marseille;Troyes;2'58;Gauche;Nayef Aguerd (Défenseur central);Emerson (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984138;2026-10-11;Marseille;Troyes;92'42;Droite;Kelyann Bezahaf (Latéral / piston);Keyliane Abdallah (Attaquant);dégagement puis récupération;pas de centre dans les 8 s
+1984138;2026-10-11;Marseille;Troyes;63'20;Gauche;Emerson (Latéral / piston);Nayef Aguerd (Défenseur central);duel aérien gagné puis dégagement;pas de centre dans les 8 s
+1984138;2026-10-11;Marseille;Troyes;87'24;Gauche;Emerson (Latéral / piston);Neal Maupay (Attaquant);dégagement puis tacle gagné;pas de centre dans les 8 s
+1984138;2026-10-11;Marseille;Troyes;91'01;Gauche;Keyliane Abdallah (Attaquant);Tochukwu Nnadi (Milieu défensif / central);duel aérien gagné puis dégagement;centre quand même
+1984138;2026-10-11;Troyes;Marseille;34'09;Droite;Lucas Maronnier (Latéral / piston);Antoine Mille (Milieu défensif / central);récupération puis faute;pas de centre dans les 8 s
+1984138;2026-10-11;Troyes;Marseille;70'30;Droite;Lucas Maronnier (Latéral / piston);Mouhamed Diop (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984140;2026-11-08;Marseille;Lens;7'38;Gauche;Ulisses Garcia (Latéral / piston);Amine Gouiri (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984140;2026-11-08;Marseille;Lens;32'52;Gauche;CJ Egan-Riley (Défenseur central);Nayef Aguerd (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984140;2026-11-08;Marseille;Lens;71'13;Droite;Nayef Aguerd (Défenseur central);Amine Harit (Ailier);récupération puis duel aérien gagné;pas de centre dans les 8 s
+1984140;2026-11-08;Marseille;Lens;72'32;Droite;CJ Egan-Riley (Défenseur central);Amine Harit (Ailier);interception puis faute;pas de centre dans les 8 s
+1984140;2026-11-08;Lens;Marseille;21'16;Droite;Amadou Haidara (Milieu défensif / central);Florian Thauvin (Milieu offensif);duel aérien gagné puis duel aérien gagné;pas de centre dans les 8 s
+1984140;2026-11-08;Lens;Marseille;77'41;Droite;Saud Abdulhamid (Latéral / piston);Michaël Cuisance (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984140;2026-11-08;Lens;Marseille;93'28;Gauche;Jean-Clair Todibo (Défenseur central);Michal Skóras (Latéral / piston);dégagement puis récupération;pas de centre dans les 8 s
+1984142;2026-11-21;Toulouse;Lens;8'19;Droite;Jacen Russell-Rowe (Attaquant);Thomas Jørgensen (Ailier);dégagement puis faute;pas de centre dans les 8 s
+1984142;2026-11-21;Toulouse;Lens;49'22;Droite;Ismaïl Diallo (Latéral / piston);Cristian Cásseres (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984142;2026-11-21;Toulouse;Lens;61'38;Droite;Cristian Cásseres (Milieu défensif / central);Ismaïl Diallo (Latéral / piston);passe contrée puis récupération;pas de centre dans les 8 s
+1984142;2026-11-21;Toulouse;Lens;74'01;Gauche;Cristian Cásseres (Milieu défensif / central);Christ Tapé (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984142;2026-11-21;Lens;Toulouse;5'45;Droite;Yacine Titraoui (Milieu défensif / central);Ruben Aguilar (Latéral / piston);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984142;2026-11-21;Lens;Toulouse;43'35;Droite;Ruben Aguilar (Latéral / piston);Jean-Clair Todibo (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984142;2026-11-21;Lens;Toulouse;46'55;Gauche;Matthieu Udol (Latéral / piston);Yacine Titraoui (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984142;2026-11-21;Lens;Toulouse;45'18;Droite;Yacine Titraoui (Milieu défensif / central);Mezian Mesloub (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984143;2026-10-18;Marseille;Angers;9'25;Droite;Amine Harit (Ailier);Amine Gouiri (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984143;2026-10-18;Marseille;Angers;83'32;Droite;Timothy Weah (Latéral / piston);Keyliane Abdallah (Attaquant);dégagement puis récupération;pas de centre dans les 8 s
+1984143;2026-10-18;Angers;Marseille;25'22;Gauche;Lilian Raolisoa (nan);Amine Sbaï (Ailier);passe contrée puis récupération;pas de centre dans les 8 s
+1984146;2026-11-21;Lyon;Lille;21'11;Gauche;Keito Nakamura (Ailier);Corentin Tolisso (Milieu défensif / central);passe contrée puis passe contrée;pas de centre dans les 8 s
+1984146;2026-11-21;Lyon;Lille;23'26;Gauche;Tanner Tessmann (Milieu défensif / central);Moussa Niakhaté (Défenseur central);interception puis dégagement;pas de centre dans les 8 s
+1984146;2026-11-21;Lyon;Lille;92'10;Droite;Mads Bidstrup (Milieu défensif / central);Corentin Tolisso (Milieu défensif / central);dégagement puis récupération;pas de centre dans les 8 s
+1984146;2026-11-21;Lyon;Lille;86'46;Gauche;Nicolás Tagliafico (Latéral / piston);Julien Duranville (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984146;2026-11-21;Lille;Lyon;11'54;Gauche;Soriba Diaoune (Ailier);Romain Perraud (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984146;2026-11-21;Lille;Lyon;35'39;Gauche;Benjamin André (Milieu défensif / central);Romain Perraud (Latéral / piston);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984147;2026-10-18;Auxerre;Le Havre;4'57;Droite;Lamine Sy (Latéral / piston);Romain Faivre (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984147;2026-10-18;Auxerre;Le Havre;47'15;Droite;Axel Tuanzebe (Défenseur central);Naouirou Ahamada (Milieu défensif / central);dégagement puis duel aérien gagné;pas de centre dans les 8 s
+1984147;2026-10-18;Auxerre;Le Havre;51'59;Droite;Christ Makosso (Défenseur central);Lamine Sy (Latéral / piston);dégagement puis récupération;pas de centre dans les 8 s
+1984147;2026-10-18;Auxerre;Le Havre;49'46;Gauche;Clément Akpa (Défenseur central);Danny Namaso (Ailier);passe contrée puis récupération;pas de centre dans les 8 s
+1984147;2026-10-18;Le Havre;Auxerre;34'20;Droite;Junior Mwanga (Défenseur central);Simon Ebonog (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984147;2026-10-18;Le Havre;Auxerre;19'48;Gauche;Amir Richardson (Milieu défensif / central);Ahmed Touba (Défenseur central);dégagement puis récupération;pas de centre dans les 8 s
+1984147;2026-10-18;Le Havre;Auxerre;77'00;Droite;Djibril Ouziad (Latéral / piston);Hakim Dongopandji (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984147;2026-10-18;Le Havre;Auxerre;84'30;Droite;Amir Richardson (Milieu défensif / central);Hakim Dongopandji (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984147;2026-10-18;Le Havre;Auxerre;62'37;Gauche;Ahmed Touba (Défenseur central);Enzo Koffi (Attaquant);dégagement puis récupération;pas de centre dans les 8 s
+1984150;2026-11-22;Rennes;Lorient;16'07;Droite;Anthony Rouault (Défenseur central);Sebastian Szymanski (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984150;2026-11-22;Rennes;Lorient;53'30;Gauche;Gonçalo Oliveira (Défenseur central);Aboubakar Nagida (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984150;2026-11-22;Lorient;Rennes;79'03;Droite;Dembo Sylla (Latéral / piston);Jean-Victor Makengo (Milieu offensif);dégagement puis faute;pas de centre dans les 8 s
+1984150;2026-11-22;Lorient;Rennes;45'18;Gauche;Arsène Kouassi (Latéral / piston);Nosa Obaretin (Défenseur central);duel aérien gagné puis dégagement;pas de centre dans les 8 s
+1984150;2026-11-22;Lorient;Rennes;93'00;Gauche;Théo Le Bris (Latéral / piston);Mamadou Koné (Attaquant);dégagement puis faute;pas de centre dans les 8 s
+1984151;2026-10-16;Toulouse;Le Mans;16'02;Gauche;Niko Sigur (Milieu défensif / central);Christ Tapé (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984151;2026-10-16;Toulouse;Le Mans;69'27;Droite;Thomas Jørgensen (Ailier);Cristian Cásseres (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984151;2026-10-16;Toulouse;Le Mans;51'53;Gauche;Niko Sigur (Milieu défensif / central);Christ Tapé (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984151;2026-10-16;Toulouse;Le Mans;61'25;Gauche;Thomas Jørgensen (Ailier);Christ Tapé (Latéral / piston);tacle gagné puis récupération;centre quand même
+1984151;2026-10-16;Le Mans;Toulouse;17'28;Droite;Lucas Buadés (Ailier);Djibril Sidibé (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984151;2026-10-16;Le Mans;Toulouse;79'12;Gauche;Noa Boissé (Défenseur central);Jean Vercruysse (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984154;2026-11-22;Le Mans;Marseille;66'16;Droite;Samuel Yohou (Défenseur central);Lucas Bretelle (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984154;2026-11-22;Le Mans;Marseille;74'36;Droite;Lucas Buadés (Ailier);Lucas Bretelle (Milieu défensif / central);récupération puis faute;pas de centre dans les 8 s
+1984154;2026-11-22;Marseille;Le Mans;38'51;Droite;Timothy Weah (Latéral / piston);Amine Harit (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984155;2026-10-17;Brest;Lille;9'19;Droite;Lucas Tousart (Défenseur central);Mama Baldé (Ailier);dégagement puis récupération;pas de centre dans les 8 s
+1984155;2026-10-17;Brest;Lille;15'05;Gauche;Bradley Locko (Latéral / piston);Hugo Magnetti (Milieu défensif / central);dribblé puis dribblé;pas de centre dans les 8 s
+1984155;2026-10-17;Brest;Lille;79'36;Droite;Joris Chotard (Milieu défensif / central);Kenny Lala (Latéral / piston);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984155;2026-10-17;Brest;Lille;47'03;Gauche;Pathé Mboup (Ailier);Hugo Magnetti (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984155;2026-10-17;Brest;Lille;74'34;Gauche;Bradley Locko (Latéral / piston);Hugo Magnetti (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984155;2026-10-17;Lille;Brest;60'21;Droite;Maxima Goffi (Latéral / piston);Nathan Ngoy (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984157;2026-11-21;Auxerre;Monaco;2'00;Gauche;Telli Siwe (Défenseur central);Fredrik Oppegård (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984157;2026-11-21;Auxerre;Monaco;64'54;Droite;Axel Tuanzebe (Défenseur central);Romain Faivre (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984157;2026-11-21;Auxerre;Monaco;72'29;Droite;Axel Tuanzebe (Défenseur central);Marvin Senaya (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984157;2026-11-21;Auxerre;Monaco;79'59;Droite;Pierre Ekwah (Milieu défensif / central);Cameron Archer (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984157;2026-11-21;Auxerre;Monaco;49'35;Gauche;Telli Siwe (Défenseur central);Naouirou Ahamada (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984157;2026-11-21;Monaco;Auxerre;1'30;Droite;Takumi Minamino (Milieu offensif);Vanderson (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984157;2026-11-21;Monaco;Auxerre;52'15;Droite;Sadibou Sané (Défenseur central);Takumi Minamino (Milieu offensif);tacle gagné puis récupération;pas de centre dans les 8 s
+1984159;2026-10-18;Monaco;Lorient;45'36;Gauche;Flávio Nazinho (Latéral / piston);Aleksandr Golovin (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984159;2026-10-18;Lorient;Monaco;71'51;Droite;Jean-Victor Makengo (Milieu offensif);Dembo Sylla (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984159;2026-10-18;Lorient;Monaco;92'50;Droite;Arthur Avom (Milieu défensif / central);Dembo Sylla (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984159;2026-10-18;Lorient;Monaco;54'58;Gauche;Arthur Avom (Milieu défensif / central);Noah Cadiou (Milieu défensif / central);interception puis passe contrée;pas de centre dans les 8 s
+1984161;2026-11-21;Paris Saint-Germain;Nice;38'35;Gauche;Fabián Ruiz (Milieu défensif / central);Désiré Doué (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984161;2026-11-21;Paris Saint-Germain;Nice;95'19;Droite;Warren Zaïre-Emery (Latéral / piston);Achraf Hakimi (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984161;2026-11-21;Paris Saint-Germain;Nice;91'26;Gauche;Willian Pacho (Défenseur central);Mika Godts (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984161;2026-11-21;Nice;Paris Saint-Germain;21'12;Gauche;Hicham Boudaoui (Milieu défensif / central);Niels Nkounkou (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984161;2026-11-21;Nice;Paris Saint-Germain;69'57;Droite;Hicham Boudaoui (Milieu défensif / central);Jonathan Clauss (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984161;2026-11-21;Nice;Paris Saint-Germain;51'00;Gauche;Mohammed Amoura (Milieu offensif);Niels Nkounkou (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984164;2026-10-18;Nice;Lyon;16'25;Droite;Mohamed Abdelmonem (Défenseur central);Jonathan Clauss (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984164;2026-10-18;Nice;Lyon;29'16;Droite;Hicham Boudaoui (Milieu défensif / central);Gauthier Hein (Milieu offensif);dégagement puis faute;pas de centre dans les 8 s
+1984164;2026-10-18;Lyon;Nice;0'17;Droite;Zachary Athekame (Latéral / piston);Pavel Sulc (Milieu offensif);récupération puis tacle gagné;pas de centre dans les 8 s
+1984164;2026-10-18;Lyon;Nice;21'50;Droite;Moussa Niakhaté (Défenseur central);Kaïl Boudache (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984164;2026-10-18;Lyon;Nice;59'38;Droite;Zachary Athekame (Latéral / piston);Noah Nartey (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984164;2026-10-18;Lyon;Nice;91'31;Gauche;Moussa Niakhaté (Défenseur central);Mads Bidstrup (Milieu défensif / central);passe contrée puis dégagement;pas de centre dans les 8 s
+1984165;2026-11-22;Angers;Paris FC;31'42;Gauche;Joseph Kalulu (Latéral / piston);Maël Gernigon (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984165;2026-11-22;Angers;Paris FC;46'23;Gauche;Amine Sbaï (Ailier);Usman Simbakoli (Attaquant);dégagement puis tacle gagné;pas de centre dans les 8 s
+1984165;2026-11-22;Angers;Paris FC;49'41;Droite;Carlens Arcus (Latéral / piston);Anthony Bermont (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984165;2026-11-22;Angers;Paris FC;73'38;Droite;Haris Belkebla (Milieu défensif / central);Jim Allevinah (Ailier);tacle gagné puis dribblé;pas de centre dans les 8 s
+1984165;2026-11-22;Angers;Paris FC;82'32;Gauche;Yassin Belkhdim (Milieu défensif / central);Joseph Kalulu (Latéral / piston);dribblé puis dribblé;pas de centre dans les 8 s
+1984165;2026-11-22;Paris FC;Angers;39'52;Gauche;Diego Coppola (Défenseur central);Otávio (Latéral / piston);passe contrée puis récupération;pas de centre dans les 8 s
+1984168;2026-10-18;Rennes;Paris FC;5'40;Gauche;Anthony Rouault (Défenseur central);Przemyslaw Frankowski (Latéral / piston);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984168;2026-10-18;Paris FC;Rennes;5'13;Droite;Ilan Kebbal (Ailier);Pablo Pagis (Milieu offensif);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984169;2026-11-21;Brest;Strasbourg;96'12;Droite;Ludovic Ajorque (Attaquant);Giovani Versini (Ailier);dribblé puis dribblé;pas de centre dans les 8 s
+1984169;2026-11-21;Brest;Strasbourg;86'37;Gauche;Gautier Lloris (Défenseur central);Bradley Locko (Latéral / piston);dégagement puis récupération;pas de centre dans les 8 s
+1984169;2026-11-21;Strasbourg;Brest;20'19;Droite;Genesis Antwi (Latéral / piston);Dário Essugo (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984169;2026-11-21;Strasbourg;Brest;67'20;Gauche;Lucas Høgsberg (Latéral / piston);Martial Godo (Ailier);récupération puis faute;pas de centre dans les 8 s
+1984172;2026-10-17;Strasbourg;Paris Saint-Germain;21'57;Droite;Dário Essugo (Milieu défensif / central);Gessime Yassine (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984172;2026-10-17;Strasbourg;Paris Saint-Germain;46'00;Gauche;Oso (Latéral / piston);Fabio Baldé (Ailier);dribblé puis interception;pas de centre dans les 8 s
+1984172;2026-10-17;Strasbourg;Paris Saint-Germain;62'06;Gauche;Genesis Antwi (Latéral / piston);Dário Essugo (Milieu défensif / central);récupération puis faute;pas de centre dans les 8 s
+1984173;2026-11-20;Le Havre;Troyes;9'08;Droite;Vincent Sasso (Défenseur central);Kaito Mizuta (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984173;2026-11-20;Le Havre;Troyes;21'56;Droite;Vincent Sasso (Défenseur central);Kaito Mizuta (Milieu offensif);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984173;2026-11-20;Le Havre;Troyes;35'19;Droite;Ayumu Seko (Défenseur central);Vincent Sasso (Défenseur central);dégagement puis dégagement;pas de centre dans les 8 s
+1984173;2026-11-20;Le Havre;Troyes;22'47;Gauche;Ahmed Touba (Défenseur central);Enzo Koffi (Attaquant);interception puis dribblé;centre quand même
+1984173;2026-11-20;Le Havre;Troyes;25'21;Gauche;Junior Mwanga (Défenseur central);Enzo Koffi (Attaquant);interception puis récupération;pas de centre dans les 8 s
+1984173;2026-11-20;Le Havre;Troyes;57'54;Droite;Rayan Fofana (Attaquant);Kaito Mizuta (Milieu offensif);duel aérien gagné puis duel aérien gagné;pas de centre dans les 8 s
+1984173;2026-11-20;Le Havre;Troyes;50'51;Gauche;Enzo Koffi (Attaquant);Ahmed Touba (Défenseur central);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984173;2026-11-20;Le Havre;Troyes;68'09;Gauche;Simon Ebonog (Milieu défensif / central);Ahmed Touba (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984173;2026-11-20;Troyes;Le Havre;26'52;Gauche;Ismaël Boura (Défenseur central);Anis Ouzenadji (Latéral / piston);dégagement puis tacle gagné;pas de centre dans les 8 s
+1984173;2026-11-20;Troyes;Le Havre;57'13;Gauche;Ismaël Boura (Défenseur central);Anis Ouzenadji (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984176;2026-10-17;Lens;Troyes;1'12;Droite;Ismaëlo Ganiou (Défenseur central);Ruben Aguilar (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984176;2026-10-17;Lens;Troyes;94'27;Droite;Mezian Mesloub (Milieu offensif);Amadou Haidara (Milieu défensif / central);dribblé puis dribblé;pas de centre dans les 8 s
+1984176;2026-10-17;Troyes;Lens;1'01;Gauche;Timothé Nkada (Ailier);Paolo Gozzi (Latéral / piston);récupération puis tacle gagné;pas de centre dans les 8 s
+1984176;2026-10-17;Troyes;Lens;9'09;Gauche;Timothé Nkada (Ailier);Paolo Gozzi (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984176;2026-10-17;Troyes;Lens;15'20;Gauche;Timothé Nkada (Ailier);Mouhamed Diop (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984176;2026-10-17;Troyes;Lens;34'51;Gauche;Dermane Karim (Milieu défensif / central);Paolo Gozzi (Latéral / piston);récupération puis passe contrée;pas de centre dans les 8 s
+1984180;2026-10-25;Lorient;Angers;15'59;Droite;Arthur Avom (Milieu défensif / central);Jean-Victor Makengo (Milieu offensif);tacle gagné puis récupération;pas de centre dans les 8 s
+1984180;2026-10-25;Lorient;Angers;46'06;Gauche;Isaak Touré (Défenseur central);Arthur Avom (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984180;2026-10-25;Lorient;Angers;90'13;Gauche;Isaak Touré (Défenseur central);Isak Jensen (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984180;2026-10-25;Angers;Lorient;12'58;Droite;Carlens Arcus (Latéral / piston);Lilian Raolisoa (nan);interception puis récupération;pas de centre dans les 8 s
+1984180;2026-10-25;Angers;Lorient;3'05;Gauche;Joseph Kalulu (Latéral / piston);nan (nan);dégagement puis faute;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;23'22;Droite;Djibril Sidibé (Défenseur central);Alexandre Lauray (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;6'54;Gauche;Lucas Bretelle (Milieu défensif / central);Lucas Calodat (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;27'24;Gauche;Raúl Torrente (Défenseur central);Lucas Bretelle (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;30'31;Gauche;Raúl Torrente (Défenseur central);Lucas Calodat (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;56'46;Droite;Noa Boissé (Défenseur central);Lucas Buadés (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;60'16;Droite;Noa Boissé (Défenseur central);Lucas Buadés (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;60'22;Droite;Noa Boissé (Défenseur central);Lucas Buadés (Ailier);tacle gagné puis dribblé;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;73'49;Droite;Lucas Buadés (Ailier);Dame Gueye (Attaquant);passe contrée puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;81'13;Droite;Lucas Bretelle (Milieu défensif / central);Lucas Buadés (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;55'28;Gauche;Raúl Torrente (Défenseur central);Lucas Calodat (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Le Mans;Auxerre;90'38;Gauche;Jean Vercruysse (Milieu défensif / central);Lucas Calodat (Ailier);dribblé puis passe contrée;pas de centre dans les 8 s
+1984184;2026-10-25;Auxerre;Le Mans;31'39;Droite;Kévin Danois (Milieu défensif / central);Lamine Sy (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984184;2026-10-25;Auxerre;Le Mans;63'11;Gauche;Clément Akpa (Défenseur central);Axel Tuanzebe (Défenseur central);duel aérien gagné puis passe contrée;pas de centre dans les 8 s
+1984184;2026-10-25;Auxerre;Le Mans;80'06;Gauche;Clément Akpa (Défenseur central);Fredrik Oppegård (Latéral / piston);duel aérien gagné puis dégagement;pas de centre dans les 8 s
+1984184;2026-10-25;Auxerre;Le Mans;80'24;Gauche;Axel Tuanzebe (Défenseur central);Danny Namaso (Ailier);dégagement puis récupération;pas de centre dans les 8 s
+1984189;2026-10-23;Nice;Brest;9'33;Gauche;Hicham Boudaoui (Milieu défensif / central);Mohamed Abdelmonem (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984193;2026-10-24;Paris FC;Lens;23'55;Droite;Ilan Kebbal (Ailier);Moustapha Mbow (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984193;2026-10-24;Paris FC;Lens;25'16;Droite;Ilan Kebbal (Ailier);Maxime Lopez (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984193;2026-10-24;Paris FC;Lens;7'43;Gauche;Otávio (Latéral / piston);Pablo Pagis (Milieu offensif);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984193;2026-10-24;Paris FC;Lens;58'32;Gauche;Otávio (Latéral / piston);Pablo Pagis (Milieu offensif);dribblé puis faute;pas de centre dans les 8 s
+1984193;2026-10-24;Lens;Paris FC;16'34;Gauche;Amadou Haidara (Milieu défensif / central);Jean-Clair Todibo (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984197;2026-10-25;Marseille;Le Havre;35'34;Droite;Timothy Weah (Latéral / piston);Amine Harit (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984197;2026-10-25;Marseille;Le Havre;57'01;Droite;Timothy Weah (Latéral / piston);Himad Abdelli (Milieu offensif);passe contrée puis récupération;pas de centre dans les 8 s
+1984197;2026-10-25;Marseille;Le Havre;51'00;Gauche;Pierre-Emile Højbjerg (Milieu défensif / central);Nayef Aguerd (Défenseur central);dribblé puis interception;pas de centre dans les 8 s
+1984197;2026-10-25;Marseille;Le Havre;65'04;Gauche;Nayef Aguerd (Défenseur central);Emerson (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984197;2026-10-25;Marseille;Le Havre;92'24;Gauche;Emerson (Latéral / piston);Ulisses Garcia (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984201;2026-10-25;Lille;Monaco;17'40;Droite;Ngal'ayel Mukau (Milieu défensif / central);Hákon Haraldsson (Milieu offensif);dribblé puis interception;pas de centre dans les 8 s
+1984201;2026-10-25;Lille;Monaco;17'42;Droite;Hákon Haraldsson (Milieu offensif);Ethan Mbappé (Ailier);récupération puis faute;pas de centre dans les 8 s
+1984201;2026-10-25;Lille;Monaco;24'31;Droite;Nathan Ngoy (Défenseur central);Ethan Mbappé (Ailier);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984201;2026-10-25;Lille;Monaco;43'45;Droite;Benjamin André (Milieu défensif / central);Romain Perraud (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984201;2026-10-25;Lille;Monaco;39'53;Gauche;Romain Perraud (Latéral / piston);Benjamin André (Milieu défensif / central);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984201;2026-10-25;Lille;Monaco;49'31;Droite;Nathan Ngoy (Défenseur central);Ethan Mbappé (Ailier);récupération puis faute;pas de centre dans les 8 s
+1984201;2026-10-25;Lille;Monaco;85'51;Droite;Maxima Goffi (Latéral / piston);Alexsandro (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984201;2026-10-25;Lille;Monaco;89'08;Gauche;Isaac Cossier (Défenseur (?));Romain Perraud (Latéral / piston);récupération puis faute;pas de centre dans les 8 s
+1984201;2026-10-25;Monaco;Lille;74'29;Gauche;Jordan Teze (Défenseur central);Mathys Detourbet (Attaquant);passe contrée puis récupération;pas de centre dans les 8 s
+1984206;2026-10-25;Strasbourg;Rennes;5'52;Droite;Genesis Antwi (Latéral / piston);Jeyland Mitchell (Défenseur central);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984206;2026-10-25;Strasbourg;Rennes;6'04;Droite;Diogo Sousa (Milieu défensif / central);Pape Diop (Milieu défensif / central);duel aérien gagné puis duel aérien gagné;pas de centre dans les 8 s
+1984206;2026-10-25;Strasbourg;Rennes;0'37;Gauche;Karim Coulibaly (Défenseur central);Dário Essugo (Milieu défensif / central);dégagement puis récupération;pas de centre dans les 8 s
+1984206;2026-10-25;Strasbourg;Rennes;83'37;Gauche;Oso (Latéral / piston);Martial Godo (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984206;2026-10-25;Rennes;Strasbourg;15'33;Droite;Abdelhamid Aït Boudlal (Défenseur central);Charlie Cresswell (Défenseur central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984206;2026-10-25;Rennes;Strasbourg;46'01;Gauche;Aboubakar Nagida (Latéral / piston);nan (nan);interception puis faute;pas de centre dans les 8 s
+1984206;2026-10-25;Rennes;Strasbourg;81'43;Gauche;Ludovic Blas (Ailier);Adrien Thomasson (Milieu défensif / central);récupération puis dribblé;pas de centre dans les 8 s
+1984210;2026-10-25;Troyes;Toulouse;33'21;Gauche;Paolo Gozzi (Latéral / piston);Timothé Nkada (Ailier);passe contrée puis récupération;pas de centre dans les 8 s
+1984210;2026-10-25;Troyes;Toulouse;70'32;Droite;Lucas Maronnier (Latéral / piston);Merwan Ifnaoui (nan);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984210;2026-10-25;Troyes;Toulouse;70'48;Droite;Adrien Monfray (Défenseur central);Renaud Ripart (Attaquant);récupération puis faute;pas de centre dans les 8 s
+1984210;2026-10-25;Troyes;Toulouse;76'07;Droite;Lucas Maronnier (Latéral / piston);Merwan Ifnaoui (nan);interception puis récupération;pas de centre dans les 8 s
+1984210;2026-10-25;Troyes;Toulouse;86'54;Gauche;Jérémy Le Douaron (Attaquant);Paolo Gozzi (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984210;2026-10-25;Toulouse;Troyes;11'09;Gauche;Christ Tapé (Latéral / piston);Rasmus Nicolaisen (Défenseur central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984210;2026-10-25;Toulouse;Troyes;58'25;Droite;Mark McKenzie (Défenseur central);Aron Dønnum (Ailier);récupération puis passe contrée;pas de centre dans les 8 s
+1984210;2026-10-25;Toulouse;Troyes;58'39;Droite;Mark McKenzie (Défenseur central);Aron Dønnum (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984210;2026-10-25;Toulouse;Troyes;68'58;Gauche;Cristian Cásseres (Milieu défensif / central);Ilyas Azizi (Ailier);récupération puis faute;pas de centre dans les 8 s
+1984214;2026-10-26;Lyon;Paris Saint-Germain;7'52;Droite;Corentin Tolisso (Milieu défensif / central);Zachary Athekame (Latéral / piston);dribblé puis dribblé;pas de centre dans les 8 s
+1984214;2026-10-26;Lyon;Paris Saint-Germain;14'35;Droite;Felix Bacher (Défenseur central);Tyler Morton (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984214;2026-10-26;Lyon;Paris Saint-Germain;2'10;Gauche;Abner Vinícius (nan);Tyler Morton (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984214;2026-10-26;Paris Saint-Germain;Lyon;3'17;Droite;João Neves (Milieu défensif / central);Achraf Hakimi (Latéral / piston);passe contrée puis récupération;pas de centre dans les 8 s
+1984218;2026-10-30;Paris Saint-Germain;Le Havre;31'43;Gauche;Lucas Digne (Latéral / piston);Mika Godts (Ailier);dégagement puis dribblé;pas de centre dans les 8 s
+1984218;2026-10-30;Le Havre;Paris Saint-Germain;2'32;Droite;Ayumu Seko (Défenseur central);Djibril Ouziad (Latéral / piston);interception puis tacle gagné;pas de centre dans les 8 s
+1984221;2026-10-30;Lens;Lille;10'24;Droite;Saud Abdulhamid (Latéral / piston);Ruben Aguilar (Latéral / piston);duel aérien gagné puis interception;pas de centre dans les 8 s
+1984221;2026-10-30;Lens;Lille;24'58;Droite;Saud Abdulhamid (Latéral / piston);Michaël Cuisance (Milieu défensif / central);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984221;2026-10-30;Lens;Lille;7'44;Gauche;Matthieu Udol (Latéral / piston);Florian Sotoca (Milieu offensif);interception puis récupération;pas de centre dans les 8 s
+1984221;2026-10-30;Lens;Lille;18'43;Gauche;Matthieu Udol (Latéral / piston);Florian Sotoca (Milieu offensif);tacle gagné puis récupération;pas de centre dans les 8 s
+1984221;2026-10-30;Lille;Lens;14'02;Droite;Nabil Bentaleb (Milieu défensif / central);Maxima Goffi (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984222;2026-11-02;Brest;Lorient;42'31;Gauche;Pathé Mboup (Ailier);Kamory Doumbia (Milieu offensif);passe contrée puis récupération;pas de centre dans les 8 s
+1984222;2026-11-02;Brest;Lorient;45'12;Gauche;Kamory Doumbia (Milieu offensif);Gautier Lloris (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984222;2026-11-02;Lorient;Brest;31'26;Gauche;Arthur Avom (Milieu défensif / central);Arsène Kouassi (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984222;2026-11-02;Lorient;Brest;81'08;Droite;Gabin Bernardeau (Milieu offensif);Dembo Sylla (Latéral / piston);interception puis dégagement;centre quand même
+1984222;2026-11-02;Lorient;Brest;76'21;Gauche;Arthur Avom (Milieu défensif / central);Gabin Bernardeau (Milieu offensif);tacle gagné puis récupération;pas de centre dans les 8 s
+1984222;2026-11-02;Lorient;Brest;78'11;Gauche;Arsène Kouassi (Latéral / piston);Isaak Touré (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984225;2026-11-01;Angers;Lyon;5'13;Droite;Yassin Belkhdim (Milieu défensif / central);Carlens Arcus (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984225;2026-11-01;Angers;Lyon;6'03;Droite;Lilian Raolisoa (nan);Haris Belkebla (Milieu défensif / central);passe contrée puis récupération;pas de centre dans les 8 s
+1984225;2026-11-01;Angers;Lyon;4'32;Gauche;Amine Sbaï (Ailier);Branco van den Boomen (Milieu défensif / central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984225;2026-11-01;Angers;Lyon;81'39;Gauche;Yassin Belkhdim (Milieu défensif / central);Joseph Kalulu (Latéral / piston);interception puis récupération;pas de centre dans les 8 s
+1984272;2026-08-22;Auxerre;Lens;1'03;Droite;Sinaly Diomandé (Défenseur central);Romain Faivre (Milieu offensif);dégagement puis duel aérien gagné;pas de centre dans les 8 s
+1984272;2026-08-22;Auxerre;Lens;34'24;Droite;Lamine Sy (Latéral / piston);Christ Makosso (Défenseur central);duel aérien gagné puis faute;pas de centre dans les 8 s
+1984272;2026-08-22;Lens;Auxerre;44'38;Droite;Maik Nawrocki (Défenseur central);Yacine Titraoui (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984272;2026-08-22;Lens;Auxerre;92'54;Droite;Michal Skóras (Latéral / piston);Yacine Titraoui (Milieu défensif / central);interception puis récupération;pas de centre dans les 8 s
+1984272;2026-08-22;Lens;Auxerre;98'13;Droite;Yacine Titraoui (Milieu défensif / central);Michal Skóras (Latéral / piston);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984273;2026-08-21;Strasbourg;Marseille;18'42;Gauche;Genesis Antwi (Latéral / piston);Gessime Yassine (Ailier);tacle gagné puis récupération;pas de centre dans les 8 s
+1984273;2026-08-21;Strasbourg;Marseille;53'56;Gauche;Lucas Høgsberg (Latéral / piston);Genesis Antwi (Latéral / piston);passe contrée puis dégagement;pas de centre dans les 8 s
+1984273;2026-08-21;Marseille;Strasbourg;73'25;Gauche;Igor Paixão (Ailier);Pierre-Emile Højbjerg (Milieu défensif / central);dribblé puis dribblé;pas de centre dans les 8 s
+1984274;2026-09-12;Lyon;Paris FC;18'51;Droite;Zachary Athekame (Latéral / piston);Felix Bacher (Défenseur central);passe contrée puis dégagement;pas de centre dans les 8 s
+1984274;2026-09-12;Lyon;Paris FC;66'22;Droite;Zachary Athekame (Latéral / piston);Mads Bidstrup (Milieu défensif / central);dégagement puis tacle gagné;pas de centre dans les 8 s
+1984275;2026-09-11;Marseille;Rennes;14'45;Droite;Amine Harit (Ailier);Timothy Weah (Latéral / piston);récupération puis faute;pas de centre dans les 8 s
+1984275;2026-09-11;Rennes;Marseille;11'27;Droite;Przemyslaw Frankowski (Latéral / piston);Charlie Cresswell (Défenseur central);interception puis récupération;pas de centre dans les 8 s
+1984275;2026-09-11;Rennes;Marseille;20'48;Droite;Przemyslaw Frankowski (Latéral / piston);Charlie Cresswell (Défenseur central);duel aérien gagné puis faute;pas de centre dans les 8 s
+1984275;2026-09-11;Rennes;Marseille;44'38;Droite;Adrien Thomasson (Milieu défensif / central);Ludovic Blas (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984276;2026-09-12;Monaco;Strasbourg;30'35;Gauche;Flávio Nazinho (Latéral / piston);Stanis Idumbo (Ailier);dégagement puis dégagement;centre quand même
+1984276;2026-09-12;Monaco;Strasbourg;63'51;Droite;Sadibou Sané (Défenseur central);Vanderson (Latéral / piston);duel aérien gagné puis dégagement;pas de centre dans les 8 s
+1984276;2026-09-12;Monaco;Strasbourg;90'38;Droite;Sadibou Sané (Défenseur central);Vanderson (Latéral / piston);tacle gagné puis tacle gagné;pas de centre dans les 8 s
+1984276;2026-09-12;Monaco;Strasbourg;91'24;Droite;Vanderson (Latéral / piston);Aleksandr Golovin (Milieu offensif);dégagement puis récupération;pas de centre dans les 8 s
+1984276;2026-09-12;Monaco;Strasbourg;75'12;Gauche;Flávio Nazinho (Latéral / piston);Mathys Detourbet (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984276;2026-09-12;Strasbourg;Monaco;24'13;Gauche;Pape Diop (Milieu défensif / central);Oso (Latéral / piston);dribblé puis passe contrée;pas de centre dans les 8 s
+1984276;2026-09-12;Strasbourg;Monaco;47'15;Gauche;Jeyland Mitchell (Défenseur central);Ismaël Doukouré (Défenseur central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984277;2026-09-19;Troyes;Angers;7'40;Gauche;Anis Ouzenadji (Latéral / piston);Junior Diaz (Défenseur central);duel aérien gagné puis dégagement;pas de centre dans les 8 s
+1984277;2026-09-19;Angers;Troyes;43'01;Droite;Yassin Belkhdim (Milieu défensif / central);Jim Allevinah (Ailier);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984277;2026-09-19;Angers;Troyes;45'06;Droite;Carlens Arcus (Latéral / piston);Ousmane Camara (Défenseur central);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984277;2026-09-19;Angers;Troyes;5'51;Gauche;Jordan Lefort (Défenseur central);Yassin Belkhdim (Milieu défensif / central);duel aérien gagné puis faute;pas de centre dans les 8 s
+1984278;2026-09-20;Brest;Auxerre;12'39;Gauche;Bradley Locko (Latéral / piston);Pathé Mboup (Ailier);interception puis récupération;pas de centre dans les 8 s
+1984278;2026-09-20;Brest;Auxerre;88'54;Gauche;Hugo Magnetti (Milieu défensif / central);Djylian N'Guessan (Attaquant);tacle gagné puis récupération;pas de centre dans les 8 s
+1984278;2026-09-20;Auxerre;Brest;5'14;Droite;Arthur Piedfort (Milieu défensif / central);Fredrik Oppegård (Latéral / piston);tacle gagné puis dégagement;pas de centre dans les 8 s
+1984278;2026-09-20;Auxerre;Brest;8'13;Gauche;Rémy Labeau Lascary (Ailier);Clément Akpa (Défenseur central);interception puis faute;pas de centre dans les 8 s
+1984278;2026-09-20;Auxerre;Brest;9'19;Gauche;Clément Akpa (Défenseur central);Axel Tuanzebe (Défenseur central);dégagement puis récupération;pas de centre dans les 8 s
+1984278;2026-09-20;Auxerre;Brest;86'53;Droite;Pierre Ekwah (Milieu défensif / central);Romain Faivre (Milieu offensif);récupération puis passe contrée;pas de centre dans les 8 s
+1984278;2026-09-20;Auxerre;Brest;90'03;Droite;Cameron Archer (Attaquant);Romain Faivre (Milieu offensif);duel aérien gagné puis tacle gagné;pas de centre dans les 8 s
+1984278;2026-09-20;Auxerre;Brest;61'31;Gauche;Cameron Archer (Attaquant);Clément Akpa (Défenseur central);duel aérien gagné puis duel aérien gagné;centre quand même
+1984279;2026-09-19;Lorient;Le Mans;32'15;Droite;Montassar Talbi (Défenseur central);Dembo Sylla (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984279;2026-09-19;Lorient;Le Mans;32'27;Droite;Arthur Avom (Milieu défensif / central);Dembo Sylla (Latéral / piston);tacle gagné puis récupération;pas de centre dans les 8 s
+1984279;2026-09-19;Lorient;Le Mans;38'20;Droite;Montassar Talbi (Défenseur central);Théo Le Bris (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984279;2026-09-19;Lorient;Le Mans;20'24;Gauche;Nathaniel Adjei (Défenseur central);Noah Cadiou (Milieu défensif / central);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984279;2026-09-19;Lorient;Le Mans;21'47;Gauche;Arsène Kouassi (Latéral / piston);Jean-Victor Makengo (Milieu offensif);dégagement puis faute;pas de centre dans les 8 s
+1984279;2026-09-19;Lorient;Le Mans;92'49;Gauche;Nosa Obaretin (Défenseur central);Arsène Kouassi (Latéral / piston);duel aérien gagné puis récupération;pas de centre dans les 8 s
+1984279;2026-09-19;Lorient;Le Mans;94'04;Gauche;Arsène Kouassi (Latéral / piston);Nosa Obaretin (Défenseur central);duel aérien gagné puis dégagement;pas de centre dans les 8 s
+1984279;2026-09-19;Le Mans;Lorient;66'57;Droite;Djibril Sidibé (Défenseur central);Rayan Bamba (Ailier);dribblé puis tacle gagné;pas de centre dans les 8 s
+1984279;2026-09-19;Le Mans;Lorient;73'16;Droite;Rayan Bamba (Ailier);Djibril Sidibé (Défenseur central);interception puis faute;pas de centre dans les 8 s
+1984280;2026-09-19;Rennes;Lyon;36'22;Droite;Valentin Rongier (Milieu défensif / central);Charlie Cresswell (Défenseur central);interception puis dégagement;pas de centre dans les 8 s
+1984280;2026-09-19;Lyon;Rennes;23'17;Gauche;Tyler Morton (Milieu défensif / central);Moussa Niakhaté (Défenseur central);tacle gagné puis récupération;pas de centre dans les 8 s
+1984280;2026-09-19;Lyon;Rennes;30'51;Gauche;Moussa Niakhaté (Défenseur central);Mads Bidstrup (Milieu défensif / central);interception puis dégagement;pas de centre dans les 8 s
+1984280;2026-09-19;Lyon;Rennes;38'41;Gauche;Corentin Tolisso (Milieu défensif / central);Loïs Openda (Attaquant);passe contrée puis récupération;pas de centre dans les 8 s
+1984280;2026-09-19;Lyon;Rennes;74'56;Droite;Zachary Athekame (Latéral / piston);Kaïl Boudache (Ailier);passe contrée puis récupération;pas de centre dans les 8 s

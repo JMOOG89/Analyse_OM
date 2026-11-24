@@ -1,0 +1,180 @@
+﻿game_id;adversaire;minute;tranche;tireur;x;y;xg;but;partie_corps;type_passe;passeur;passe_x;passe_y;cote_origine_nous;ballon_aerien_10s;aerien_type;aerien_cote_nous;aerien_distance_but_m;intervention_nous
+1984061;Monaco;7;0-15;Stanis Idumbo;78,8;62,9;0,03772884779761574;False;Pied;Centre;Mamadou Coulibaly;84,6;9,7;Gauche;True;Centre;Gauche;31,81898986454473;
+1984061;Monaco;12;0-15;Eric Dier;90,6;49,5;0,06799262299530025;False;Tête;Coup de pied arrêté;Flávio Nazinho;68,0;83,9;Droite;False;;;;
+1984061;Monaco;12;0-15;Paris Brunner;93,3;52,8;0,12808839627165716;True;Tête;Centre;Aleksandr Golovin;74,5;14,9;Gauche;True;Centre;Gauche;35,86895661989627;
+1984061;Monaco;21;16-30;Paris Brunner;90,1;40,0;0,1299746631406596;False;Pied;Centre;Stanis Idumbo;92,1;73,2;Droite;True;Centre;Droite;17,823837998590545;
+1984061;Monaco;21;16-30;Paris Brunner;90,4;38,7;0,12340958105073399;False;Pied;Centre;Stanis Idumbo;92,1;73,2;Droite;True;Centre;Droite;17,823837998590545;
+1984061;Monaco;22;16-30;Denis Zakaria;79,1;62,2;0,03923147704846427;False;Pied;Passe courte / combinaison;Vanderson;41,4;19,6;Gauche;False;;;;
+1984061;Monaco;26;16-30;Stanis Idumbo;92,1;68,1;0,08478063118385433;False;Pied;Passe courte / combinaison;Lamine Camara;40,0;33,8;Gauche;False;;;;
+1984061;Monaco;37;31-45+;Stanis Idumbo;81,2;53,0;0,05504792524405862;False;Pied;Remise en retrait;Mamadou Coulibaly;84,7;29,3;Gauche;False;;;;
+1984061;Monaco;47;46-60;Paris Brunner;82,5;36,8;0,05075363177018186;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Gauche;True;Long ballon;Gauche;48,63331701621842;CJ Egan-Riley (Challenge)
+1984061;Monaco;52;46-60;Paris Brunner;92,6;43,5;0,24049532834008178;True;Pied;Coup de pied arrêté;Eric Dier;4,8;58,9;Axe;False;;;;
+1984061;Monaco;71;61-75;Stanis Idumbo;94,9;61,0;0,20499672132437485;False;Pied;Centre;Mamadou Coulibaly;95,8;12,4;Gauche;True;Centre;Gauche;25,94553379678283;
+1984072;Paris FC;0;0-15;Lassine Sinayoko;92,5;46,4;0,4022452354964925;True;Pied;Passe courte / combinaison;Luca Koleosho;90,3;63,2;Droite;True;Long ballon;Droite;64,79115391008251;
+1984072;Paris FC;18;16-30;Ilan Kebbal;78,4;31,8;0,03218961166326851;False;Pied;Passe courte / combinaison;Pablo Pagis;38,4;72,9;Droite;False;;;;
+1984072;Paris FC;18;16-30;Pablo Pagis;74,6;54,0;0,030662817744288546;False;Pied;Passe courte / combinaison;Pierre Lees-Melou;70,7;54,4;Axe;False;;;;
+1984072;Paris FC;18;16-30;Lassine Sinayoko;93,8;50,4;0,09889163479454434;True;Tête;Centre;Pablo Pagis;86,5;81,8;Droite;True;Centre;Droite;25,855908435017323;
+1984072;Paris FC;33;31-45+;Luca Koleosho;70,9;47,0;0,023723169201132627;False;Pied;Passe courte / combinaison;Ilan Kebbal;73,0;70,0;Droite;False;;;;
+1984072;Paris FC;43;31-45+;Luca Koleosho;87,1;65,2;0,0596760935051997;False;Pied;Passe courte / combinaison;Samir Chergui;91,7;63,0;Axe;False;;;;
+1984072;Paris FC;43;31-45+;Adama Camara;85,9;40,5;0,08050800793082363;False;Pied;Passe courte / combinaison;Pablo Pagis;77,9;48,6;Axe;False;;;;
+1984072;Paris FC;45;31-45+;Lassine Sinayoko;86,2;40,3;0,08264774273853068;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Axe;False;;;;Nayef Aguerd (Challenge)
+1984072;Paris FC;45;46-60;Ilan Kebbal;95,7;50,7;0,6355342030610123;False;Pied;Passe courte / combinaison;Pablo Pagis;92,4;72,7;Droite;False;;;;
+1984072;Paris FC;45;46-60;Luca Koleosho;87,5;48,9;0,12264621043653864;False;Pied;Ballon perdu par nous;;;;Axe;False;;;;Angel Gomes (Pass)
+1984072;Paris FC;46;46-60;Pablo Pagis;47,0;61,5;0,012610735954249663;False;Pied;Ballon perdu par nous;;;;Axe;False;;;;Angel Gomes (Error)
+1984072;Paris FC;63;61-75;Ilan Kebbal;85,9;37,4;0,07106759171945148;False;Pied;Passe courte / combinaison;Lassine Sinayoko;53,4;71,7;Droite;False;;;;
+1984072;Paris FC;68;61-75;Luca Koleosho;76,8;46,4;0,06057152361898481;False;Pied;Passe courte / combinaison;Ilan Kebbal;32,7;18,0;Gauche;False;;;;
+1984072;Paris FC;77;76-90+;Moses Simon;88,7;67,5;0,07030014453055829;False;Pied;Passe courte / combinaison;Rudy Matondo;65,7;39,4;Axe;False;;;;
+1984072;Paris FC;80;76-90+;Pierre Lees-Melou;71,6;43,8;0,024466662500373392;False;Pied;Passe courte / combinaison;Maxime Lopez;69,0;27,6;Gauche;False;;;;
+1984072;Paris FC;82;76-90+;Moses Simon;88,3;65,2;0,12567007493208046;False;Pied;Passe courte / combinaison;Patrick Zabi;63,7;28,5;Gauche;False;;;;
+1984072;Paris FC;85;76-90+;Lassine Sinayoko;88,5;50,0;0,76;True;Pied;Penalty;Patrick Zabi;63,7;28,5;Gauche;False;;;;
+1984072;Paris FC;89;76-90+;Moses Simon;90,8;64,2;0,16481656443739465;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Droite;False;;;;Pierre-Emile Højbjerg (Challenge)
+1984088;Toulouse;4;0-15;Jacen Russell-Rowe;84,0;28,5;0,041660751404140675;False;Pied;Passe courte / combinaison;Cristian Cásseres;37,6;59,4;Axe;False;;;;
+1984088;Toulouse;11;0-15;Thomas Jørgensen;89,7;49,5;0,17726983307152244;False;Pied;Passe courte / combinaison;Jacen Russell-Rowe;91,4;37,8;Axe;True;Long ballon;Droite;25,74566233368254;
+1984088;Toulouse;11;0-15;Casper Tengstedt;86,2;52,1;0,10062978882148418;False;Pied;2e ballon : rebond après arrêt ou tir contré;;;;Droite;True;Long ballon;Droite;25,74566233368254;Jeffrey de Lange (Save)
+1984088;Toulouse;11;0-15;Cristian Cásseres;75,7;51,7;0,033708410208656864;False;Pied;Passe courte / combinaison;Thomas Jørgensen;77,5;44,5;Axe;False;;;;
+1984088;Toulouse;15;16-30;Niko Sigur;76,0;51,7;0,03452941373604211;False;Pied;Passe courte / combinaison;Cristian Cásseres;77,0;70,3;Droite;False;;;;
+1984088;Toulouse;32;31-45+;Jacen Russell-Rowe;89,1;36,3;0,09188662743061381;False;Pied;Passe en profondeur;Thomas Jørgensen;74,0;28,5;Gauche;False;;;;
+1984088;Toulouse;38;31-45+;Jacen Russell-Rowe;94,3;56,6;0,31858563318034644;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Axe;False;;;;Nayef Aguerd (Interception)
+1984088;Toulouse;47;46-60;Jacen Russell-Rowe;90,9;41,9;0,1640637153614721;False;Pied;Remise en retrait;Christ Tapé;97,7;75,0;Droite;False;;;;
+1984088;Toulouse;56;46-60;Cristian Cásseres;86,7;47,0;0,10671009640456093;False;Pied;Remise en retrait;Ismaïl Diallo;94,6;32,7;Gauche;True;Centre;Droite;28,564108965623277;
+1984088;Toulouse;59;46-60;Casper Tengstedt;92,0;51,9;0,3884178453149633;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Axe;False;;;;Nayef Aguerd (BallTouch)
+1984088;Toulouse;63;61-75;Thomas Jørgensen;90,2;57,7;0,1518413552107092;False;Pied;2e ballon : après un dégagement;;;;Droite;True;Centre;Droite;35,69833644583456;Nayef Aguerd (Clearance)
+1984088;Toulouse;71;61-75;Sion Oppong;96,0;71,8;0,07185893659560284;False;Pied;Passe courte / combinaison;Christ Tapé;78,5;97,3;Droite;False;;;;
+1984088;Toulouse;79;76-90+;Cristian Cásseres;73,7;63,8;0,02583061455164802;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Droite;False;;;;Kelyann Bezahaf (Interception)
+1984088;Toulouse;91;76-90+;Cristian Cásseres;76,8;64,8;0,03126118292380662;False;Pied;Remise en retrait;Santiago Hidalgo;88,8;66,7;Droite;False;;;;
+1984103;Paris Saint-Germain;7;0-15;Désiré Doué;85,2;37,8;0,10942309174218844;False;Pied;Passe courte / combinaison;Ousmane Dembélé;72,8;37,8;Axe;False;;;;
+1984103;Paris Saint-Germain;9;0-15;Nuno Mendes;97,6;66,0;0,1932303881707205;False;Pied;Passe courte / combinaison;Khvicha Kvaratskhelia;90,7;75,6;Droite;False;;;;
+1984103;Paris Saint-Germain;11;0-15;Fabián Ruiz;80,8;67,1;0,03925815714931098;False;Pied;Remise en retrait;Khvicha Kvaratskhelia;90,3;73,6;Droite;False;;;;
+1984103;Paris Saint-Germain;11;0-15;Désiré Doué;88,7;34,6;0,07981242145429163;False;Pied;2e ballon : rebond après arrêt ou tir contré;;;;Gauche;False;;;;Pierre-Emile Højbjerg (Save)
+1984103;Paris Saint-Germain;11;0-15;Ousmane Dembélé;88,9;63,4;0,09179627170212229;False;Pied;Passe courte / combinaison;Nuno Mendes;55,9;74,1;Droite;False;;;;
+1984103;Paris Saint-Germain;34;31-45+;Vitinha;71,3;51,3;0,02445682879886392;False;Pied;Passe courte / combinaison;Khvicha Kvaratskhelia;71,2;60,3;Axe;False;;;;
+1984103;Paris Saint-Germain;41;31-45+;Warren Zaïre-Emery;95,7;56,8;0,17261607171136611;False;Tête;Remise en retrait;Désiré Doué;98,6;70,3;Droite;False;;;;
+1984103;Paris Saint-Germain;41;31-45+;Ousmane Dembélé;97,0;43,0;0,20877448409614008;False;Tête;Remise en retrait;Désiré Doué;98,6;70,3;Droite;False;;;;
+1984103;Paris Saint-Germain;42;31-45+;Fabián Ruiz;81,6;31,8;0,040135313383755256;False;Pied;Remise en retrait;Ousmane Dembélé;90,3;22,5;Gauche;False;;;;
+1984103;Paris Saint-Germain;42;31-45+;Ousmane Dembélé;75,7;27,2;0,02430124977722674;False;Pied;Passe courte / combinaison;Vitinha;62,8;14,8;Gauche;False;;;;
+1984103;Paris Saint-Germain;46;46-60;Désiré Doué;87,0;27,4;0,04747081957286329;False;Pied;Récupération ou dribble adverse;;;;Gauche;False;;;;
+1984103;Paris Saint-Germain;47;46-60;João Neves;89,5;51,7;0,06253173134412783;False;Tête;Centre;Désiré Doué;87,5;19,2;Gauche;True;Centre;Gauche;24,716730386521597;
+1984103;Paris Saint-Germain;47;31-45+;Vitinha;87,1;44,4;0,10651260899991714;False;Pied;Passe courte / combinaison;Ousmane Dembélé;79,8;21,1;Gauche;False;;;;
+1984103;Paris Saint-Germain;48;31-45+;Ousmane Dembélé;74,1;39,5;0,0278214044569427;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Axe;False;;;;Neal Maupay (Challenge)
+1984103;Paris Saint-Germain;48;46-60;Khvicha Kvaratskhelia;81,3;43,6;0,08745393914337722;False;Pied;Remise en retrait;Désiré Doué;86,9;32,3;Gauche;False;;;;
+1984103;Paris Saint-Germain;51;46-60;Khvicha Kvaratskhelia;92,4;48,1;0,29598356838596795;False;Pied;Remise en retrait;Ousmane Dembélé;97,9;32,7;Gauche;True;Centre;Droite;36,652415800326175;
+1984103;Paris Saint-Germain;52;46-60;Ousmane Dembélé;96,6;39,0;0,22894724162003494;False;Pied;Centre;Nuno Mendes;73,0;96,3;Droite;True;Centre;Droite;42,367024393978866;
+1984103;Paris Saint-Germain;54;46-60;Vitinha;87,7;32,3;0,06447732673079816;False;Pied;Passe courte / combinaison;Ousmane Dembélé;64,9;41,8;Axe;False;;;;
+1984103;Paris Saint-Germain;55;46-60;João Neves;95,7;50,1;0,3668617464394643;False;Tête;Passe courte / combinaison;Nuno Mendes;89,9;64,8;Droite;True;Long ballon;Axe;27,83709900474545;
+1984103;Paris Saint-Germain;60;61-75;Ousmane Dembélé;88,9;31,1;0,0655265602998338;False;Pied;Passe courte / combinaison;Ferran Torres;78,9;45,2;Axe;False;;;;
+1984103;Paris Saint-Germain;60;61-75;Désiré Doué;84,2;62,8;0,05993305946138814;False;Pied;Remise en retrait;Nuno Mendes;91,3;75,7;Droite;False;;;;
+1984103;Paris Saint-Germain;65;61-75;Ferran Torres;92,7;51,9;0,13122022262816255;True;Tête;Centre;Désiré Doué;80,8;89,7;Droite;True;Centre;Droite;33,69287188709209;
+1984103;Paris Saint-Germain;69;61-75;Ferran Torres;87,0;42,6;0,09916299862015808;False;Pied;Remise en retrait;Désiré Doué;86,3;7,9;Gauche;False;;;;
+1984103;Paris Saint-Germain;73;61-75;Marquinhos;92,1;48,7;0,24750509593377296;False;Pied;Centre;Nuno Mendes;73,8;89,2;Droite;True;Centre;Droite;38,30590601982937;
+1984103;Paris Saint-Germain;73;61-75;Marquinhos;97,4;49,1;0,8345983353718129;True;Pied;2e ballon : rebond après arrêt ou tir contré;;;;Droite;True;Centre;Droite;38,30590601982937;Jeffrey de Lange (Save)
+1984103;Paris Saint-Germain;77;76-90+;Ousmane Dembélé;90,3;57,0;0,13827566829812044;False;Pied;Coup de pied arrêté;Nuno Mendes;61,3;82,2;Droite;False;;;;
+1984103;Paris Saint-Germain;81;76-90+;Nuno Mendes;75,5;66,3;0,013321405536296037;False;Pied;Passe courte / combinaison;Vitinha;72,0;39,9;Axe;False;;;;
+1984103;Paris Saint-Germain;82;76-90+;Ferran Torres;82,2;45,8;0,060413163783088523;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Axe;False;;;;CJ Egan-Riley (Tackle)
+1984103;Paris Saint-Germain;85;76-90+;Maghnes Akliouche;95,4;52,8;0,5500990108745458;False;Pied;Passe courte / combinaison;Nuno Mendes;95,0;72,0;Droite;False;;;;
+1984103;Paris Saint-Germain;89;76-90+;Maghnes Akliouche;89,6;53,0;0,16796098884542598;False;Pied;Remise en retrait;Nuno Mendes;94,0;71,4;Droite;False;;;;
+1984103;Paris Saint-Germain;90;76-90+;João Neves;74,4;47,4;0,059562089213968425;False;Pied;Récupération ou dribble adverse;;;;Axe;False;;;;
+1984138;Troyes;4;0-15;Adrien Monfray;92,1;42,4;0,038074859319442815;False;Tête;Centre;Antoine Mille;92,2;86,1;Droite;True;Centre;Droite;25,87818393937256;
+1984138;Troyes;4;0-15;Adrien Monfray;87,4;42,1;0,01735788414365406;False;Tête;Centre;Antoine Mille;92,2;86,1;Droite;True;Centre;Droite;25,87818393937256;
+1984138;Troyes;15;16-30;Adrien Monfray;83,3;49,7;0,03443755211767338;False;Pied;Passe courte / combinaison;Jérémy Le Douaron;82,2;34,0;Gauche;False;;;;
+1984138;Troyes;22;16-30;Jérémy Le Douaron;89,8;47,4;0,06518369893457983;False;Tête;Centre;Lucas Maronnier;81,3;14,7;Gauche;True;Centre;Gauche;31,011695229380805;
+1984138;Troyes;41;31-45+;Jérémy Le Douaron;87,5;53,8;0,0419834049324406;False;Tête;Centre;Iron Gomis;85,1;90,4;Droite;True;Centre;Droite;31,61450314333598;
+1984138;Troyes;51;46-60;Antoine Mille;75,9;35,8;0,029719873937527144;False;Pied;Ballon perdu par nous;;;;Gauche;True;Long ballon;Gauche;37,52636898235692;Nouhoum Kamissoko (Error)
+1984138;Troyes;55;46-60;Dermane Karim;84,2;61,5;0,030672724055025132;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Axe;False;;;;Amine Gouiri (Challenge)
+1984138;Troyes;60;61-75;Jérémy Le Douaron;90,8;47,7;0,04004204856680145;False;Tête;Centre;Lucas Maronnier;78,2;22,1;Gauche;True;Centre;Gauche;29,730268818159043;
+1984138;Troyes;71;61-75;Renaud Ripart;90,6;58,1;0,05751815284184719;False;Tête;Centre;Antoine Mille;76,7;8,5;Gauche;True;Centre;Gauche;37,34842198808405;
+1984138;Troyes;75;76-90+;Renaud Ripart;86,4;61,6;0,07808050010685748;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Axe;False;;;;CJ Egan-Riley (BallTouch)
+1984138;Troyes;79;76-90+;Christ Batola;87,0;58,4;0,03343343820860876;False;Tête;Centre;Lucas Maronnier;85,6;8,8;Gauche;True;Centre;Gauche;31,835682119282453;
+1984138;Troyes;80;76-90+;Timothé Nkada;78,4;44,4;0,041223047726642474;False;Pied;Remise en retrait;Renaud Ripart;88,6;15,8;Gauche;False;;;;
+1984138;Troyes;83;76-90+;Timothé Nkada;86,5;48,5;0,03144147623221877;False;Tête;Coup de pied arrêté;Hugo Picard;76,8;15,9;Gauche;False;;;;
+1984138;Troyes;90;76-90+;Renaud Ripart;91,4;47,0;0,23362742155669286;False;Pied;Centre;Lucas Maronnier;92,7;11,2;Gauche;True;Centre;Gauche;27,474855431830754;
+1984138;Troyes;91;76-90+;Christ Batola;92,4;45,4;0,10503114751983345;False;Tête;Centre;Paolo Gozzi;87,3;87,7;Droite;True;Centre;Droite;28,8968289090689;
+1984140;Lens;5;0-15;Florian Thauvin;98,2;64,4;0,14689403519330937;False;Pied;Passe courte / combinaison;Florian Sotoca;87,2;79,0;Droite;False;;;;
+1984140;Lens;6;0-15;Florian Thauvin;86,4;52,8;0,03609226385983866;False;Tête;Centre;Matthieu Udol;69,4;87,1;Droite;True;Centre;Droite;40,85081252557897;
+1984140;Lens;8;0-15;Florian Thauvin;89,0;27,3;0,05266629844210336;False;Pied;Passe courte / combinaison;Thorgan Hazard;66,9;41,7;Axe;False;;;;
+1984140;Lens;8;0-15;Jean-Clair Todibo;80,8;63,0;0,04418971918647928;False;Pied;2e ballon : rebond après arrêt ou tir contré;;;;Axe;False;;;;Nayef Aguerd (Save)
+1984140;Lens;10;0-15;Matthieu Udol;90,9;54,6;0,07563131537043616;False;Tête;Centre;Florian Thauvin;92,2;11,1;Gauche;True;Centre;Gauche;27,69087221450419;
+1984140;Lens;19;16-30;Florian Thauvin;95,5;47,7;0,3094084609321542;True;Tête;Centre;Florian Sotoca;96,8;20,8;Gauche;True;Centre;Gauche;20,138280363526576;
+1984140;Lens;23;16-30;Yacine Titraoui;80,8;48,1;0,053210179392709916;False;Pied;Passe courte / combinaison;Florian Sotoca;81,5;64,0;Droite;True;Long ballon;Droite;48,083170954087464;
+1984140;Lens;40;31-45+;Saud Abdulhamid;80,2;24,8;0,029103575431614646;False;Pied;2e ballon : après un dégagement;;;;Droite;True;Long ballon;Droite;22,73968867421012;CJ Egan-Riley (Clearance)
+1984140;Lens;45;31-45+;Yacine Titraoui;85,8;51,3;0,09586137002961545;False;Pied;Ballon perdu par nous;;;;Axe;False;;;;Igor Paixão (Error)
+1984140;Lens;45;46-60;Yacine Titraoui;79,7;38,0;0,04136658446917625;False;Pied;Remise en retrait;Saud Abdulhamid;88,6;31,3;Gauche;False;;;;
+1984140;Lens;46;31-45+;Amadou Haidara;81,1;54,2;0,02621668922807325;False;Pied;2e ballon : après un dégagement;;;;Axe;False;;;;Amine Gouiri (Clearance)
+1984140;Lens;60;61-75;Matthieu Udol;91,4;52,0;0,09385378297343334;False;Tête;Centre;Florian Sotoca;74,9;78,1;Droite;True;Centre;Droite;32,553059595067246;
+1984140;Lens;71;61-75;Matthieu Udol;91,4;53,0;0,09077234699533158;False;Tête;Long ballon aérien dans la surface;Michaël Cuisance;60,5;31,5;Gauche;True;Long ballon;Gauche;43,34088168231006;
+1984143;Angers;13;0-15;Lilian Raolisoa;96,2;54,0;0,3195414650181614;True;Tête;2e ballon : après un dégagement;;;;Droite;True;Centre;Droite;24,264509906445664;Geoffrey Kondogbia (Clearance)
+1984143;Angers;16;16-30;Lilian Raolisoa;79,7;75,1;0,04733563322469001;False;Pied;Passe courte / combinaison;Amine Sbaï;33,5;51,3;Axe;False;;;;
+1984143;Angers;28;16-30;Amine El Ouazzani;78,7;44,9;0,07018773135238489;False;Pied;Passe courte / combinaison;Jim Allevinah;77,3;59,8;Axe;False;;;;
+1984143;Angers;34;31-45+;Louis Mouton;86,1;56,8;0,09023276747201703;False;Pied;Remise en retrait;Amine Sbaï;92,5;76,3;Droite;False;;;;
+1984143;Angers;34;31-45+;Lilian Raolisoa;73,1;62,8;0,02521811311362697;False;Pied;2e ballon : après un dégagement;;;;Axe;False;;;;Geoffrey Kondogbia (Clearance)
+1984143;Angers;64;61-75;Prosper Peter;91,3;57,4;0,06813765115922622;False;Tête;Centre;Jim Allevinah;78,2;15,7;Gauche;True;Centre;Gauche;32,679673743781464;
+1984143;Angers;65;61-75;Prosper Peter;89,5;46,3;0,16206578624663057;False;Pied;Centre;Jim Allevinah;92,6;6,6;Gauche;True;Centre;Gauche;30,517716887080528;
+1984143;Angers;74;61-75;Amine El Ouazzani;88,5;50,0;0,76;True;Pied;Penalty;;;;Axe;False;;;;
+1984143;Angers;77;76-90+;Harouna Djibirin;92,4;34,5;0,03183353579671574;False;Tête;Centre;Joseph Kalulu;95,4;96,3;Droite;True;Centre;Droite;31,852333603678083;
+1984143;Angers;87;76-90+;Prosper Peter;97,4;61,5;0,2168757890334197;False;Pied;Passe courte / combinaison;Amine Sbaï;86,3;62,2;Axe;False;;;;
+1984143;Angers;91;76-90+;Bané Diatta;81,2;44,7;0,05373103246275787;False;Pied;Ballon perdu par nous;;;;Axe;False;;;;Neal Maupay (Error)
+1984154;Le Mans;8;0-15;Daouda Traoré;80,3;68,4;0,060316773723679794;False;Pied;Passe courte / combinaison;Antoine Rabillard;65,1;44,3;Axe;False;;;;
+1984154;Le Mans;11;0-15;Louis Mafouta;86,6;44,3;0,1577347749675959;False;Pied;Passe courte / combinaison;Harold Voyer;27,8;73,6;Droite;False;;;;
+1984154;Le Mans;21;16-30;Daouda Traoré;84,6;65,4;0,056131747249176224;False;Pied;2e ballon : après un dégagement;;;;Gauche;True;Centre;Gauche;17,589502579663815;Amine Harit (Clearance)
+1984154;Le Mans;26;16-30;Dame Gueye;89,9;53,3;0,06518907468684117;False;Tête;Centre;Lucas Calodat;73,8;91,8;Droite;True;Centre;Droite;39,55659080355637;
+1984154;Le Mans;36;31-45+;Dame Gueye;91,9;56,4;0,07012333569362356;False;Tête;Centre;Rayan Bamba;69,2;13,4;Gauche;True;Centre;Gauche;40,80794216816133;
+1984154;Le Mans;45;31-45+;Dame Gueye;94,3;50,3;0,4658999871916281;False;Pied;Remise en retrait;Lucas Calodat;95,3;65,8;Droite;False;;;;
+1984154;Le Mans;45;31-45+;Dame Gueye;98,3;50,5;0,9457858768838941;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Axe;False;;;;Jeffrey de Lange (BallTouch)
+1984154;Le Mans;51;46-60;Antoine Rabillard;81,7;46,7;0,028193338292340837;False;Pied;Coup de pied arrêté;Lucas Bretelle;99,5;0,5;Gauche;False;;;;
+1984154;Le Mans;64;61-75;Erwan Colas;91,2;63,8;0,11125016605983744;False;Pied;Ballon perdu par nous;;;;Droite;False;;;;Tochukwu Nnadi (Error)
+1984154;Le Mans;64;61-75;Erwan Colas;93,6;66,0;0,11028483780688166;False;Pied;2e ballon : rebond après arrêt ou tir contré;;;;Droite;False;;;;Jeffrey de Lange (Save)
+1984154;Le Mans;65;61-75;Louis Mafouta;80,8;38,5;0,04591440045304845;False;Pied;Passe courte / combinaison;Erwan Colas;66,4;23,1;Gauche;False;;;;
+1984154;Le Mans;67;61-75;Louis Mafouta;83,2;62,5;0,05523414968993044;False;Pied;2e ballon : après un dégagement;;;;Droite;True;Long ballon;Droite;42,31753566785288;CJ Egan-Riley (Clearance)
+1984154;Le Mans;69;61-75;Louis Mafouta;79,9;34,4;0,07461287509532734;True;Pied;Récupération ou dribble adverse;;;;Gauche;False;;;;
+1984154;Le Mans;77;76-90+;Daouda Traoré;83,7;28,0;0,04005377358156209;False;Pied;Passe courte / combinaison;Lucas Bretelle;81,9;22,2;Gauche;False;;;;
+1984154;Le Mans;78;76-90+;Louis Mafouta;88,5;50,0;0,76;False;Pied;Penalty;Lucas Bretelle;81,9;22,2;Gauche;False;;;;
+1984154;Le Mans;83;76-90+;Erwan Colas;90,8;48,9;0,2167614192077328;False;Pied;Long ballon aérien dans la surface;Lucas Calodat;71,5;77,1;Droite;True;Long ballon;Droite;35,143944129821286;
+1984154;Le Mans;83;76-90+;Erwan Colas;97,0;54,0;0,6785848111949592;True;Pied;2e ballon : rebond après arrêt ou tir contré;;;;Droite;True;Long ballon;Droite;35,143944129821286;Jeffrey de Lange (Save)
+1984154;Le Mans;87;76-90+;Rayan Bamba;77,5;31,5;0,03010796550440206;False;Pied;Passe courte / combinaison;Daouda Traoré;73,7;48,2;Axe;False;;;;
+1984154;Le Mans;94;76-90+;Jean Vercruysse;88,0;43,6;0,11755267550913863;True;Pied;Remise en retrait;Rayan Bamba;93,2;27,9;Gauche;False;;;;
+1984197;Le Havre;8;0-15;Enzo Koffi;78,5;59,5;0,01900677059906177;False;Pied;2e ballon : après un dégagement;;;;Axe;False;;;;Nayef Aguerd (Clearance)
+1984197;Le Havre;11;0-15;Mbwana Samatta;91,7;51,9;0,10119569575766403;False;Tête;Centre;Djibril Ouziad;93,2;3,7;Gauche;True;Centre;Gauche;32,283461028830224;
+1984197;Le Havre;14;0-15;Amir Richardson;77,4;58,1;0,03676651085457411;False;Pied;Passe courte / combinaison;Ayumu Seko;68,7;35,7;Gauche;False;;;;
+1984197;Le Havre;20;16-30;Djibril Ouziad;88,8;38,8;0,08840159106552005;False;Pied;Remise en retrait;Mbwana Samatta;99,0;70,5;Droite;False;;;;
+1984197;Le Havre;22;16-30;Rayan Fofana;77,5;55,2;0,03830958270784959;False;Pied;Ballon perdu par nous;;;;Axe;False;;;;Amine Harit (Error)
+1984197;Le Havre;31;31-45+;Rayan Fofana;85,5;47,1;0,09071948622146879;False;Pied;Passe courte / combinaison;Enzo Koffi;80,3;56,7;Axe;False;;;;
+1984197;Le Havre;36;31-45+;Djibril Ouziad;89,8;31,0;0,06909216837277023;False;Pied;2e ballon : après un dégagement;;;;Droite;True;Centre;Droite;25,078923601303153;CJ Egan-Riley (Clearance)
+1984197;Le Havre;40;31-45+;Djibril Ouziad;88,6;42,8;0,12382474570925578;False;Pied;Centre;Rassoul Ndiaye;82,6;94,8;Droite;True;Centre;Droite;35,52250267084233;
+1984197;Le Havre;46;46-60;Ayumu Seko;77,2;38,3;0,03418555900688673;False;Pied;Récupération ou dribble adverse;;;;Axe;False;;;;
+1984197;Le Havre;62;61-75;Josh Maja;91,7;51,5;0,2579417506271082;False;Pied;Passe courte / combinaison;Sota Nakamura;90,2;62,4;Axe;False;;;;
+1984197;Le Havre;68;61-75;Simon Ebonog;70,1;68,1;0,01950457616781488;False;Pied;Passe courte / combinaison;Djibril Ouziad;65,6;85,9;Droite;False;;;;
+1984197;Le Havre;69;61-75;Sota Nakamura;90,3;65,2;0,09268615800775758;False;Pied;Passe courte / combinaison;Ayumu Seko;57,6;15,9;Gauche;False;;;;
+1984197;Le Havre;76;76-90+;Josh Maja;88,5;50,0;0,76;True;Pied;Penalty;;;;Axe;False;;;;Jeffrey de Lange (PenaltyFaced)
+1984197;Le Havre;79;76-90+;Rayan Fofana;96,5;35,2;0,140295890279762;False;Pied;Centre;Lamine N'Diaye;84,6;95,2;Droite;True;Centre;Droite;34,72996682981428;
+1984197;Le Havre;81;76-90+;Lamine N'Diaye;86,0;80,4;0,03136922952425718;False;Pied;Passe courte / combinaison;Rayan Fofana;61,7;15,6;Gauche;False;;;;
+1984197;Le Havre;85;76-90+;Sota Nakamura;95,5;66,7;0,11192890439374134;False;Pied;Passe courte / combinaison;Kaito Mizuta;86,5;65,7;Droite;False;;;;
+1984197;Le Havre;85;76-90+;Lamine N'Diaye;94,5;53,4;0,20252903898856445;True;Tête;2e ballon : rebond après arrêt ou tir contré;;;;Axe;False;;;;Jeffrey de Lange (Save)
+1984197;Le Havre;88;76-90+;Josh Maja;91,4;47,0;0,0773905870063511;True;Tête;Coup de pied arrêté;Kaito Mizuta;80,2;13,9;Gauche;False;;;;
+1984197;Le Havre;94;76-90+;Kaito Mizuta;88,6;56,3;0,1285508120590026;False;Pied;2e ballon : après un dégagement;;;;Droite;True;Centre;Droite;22,04553324372083;Nouhoum Kamissoko (Clearance)
+1984197;Le Havre;100;76-90+;Ayumu Seko;73,8;35,6;0,025749795548903155;False;Pied;Passe courte / combinaison;Simon Ebonog;75,4;49,2;Axe;False;;;;
+1984197;Le Havre;101;76-90+;Simon Ebonog;92,5;50,1;0,12830141927074282;False;Tête;2e ballon : après un dégagement;;;;Droite;True;Long ballon;Droite;44,57421339743417;Nayef Aguerd (Clearance)
+1984197;Le Havre;102;76-90+;Kaito Mizuta;81,8;46,2;0,058165414275720445;False;Pied;Passe courte / combinaison;Daren Mosengo;79,5;60,3;Axe;True;Long ballon;Droite;44,57421339743417;
+1984273;Strasbourg;11;0-15;Guéla Doué;92,1;56,0;0,043876393988245374;False;Tête;Centre;Samir El Mourabet;87,8;12,7;Gauche;True;Centre;Gauche;28,415288068221308;
+1984273;Strasbourg;20;16-30;Diogo Sousa;73,7;39,1;0,02692856536617001;False;Pied;Passe courte / combinaison;Lucas Høgsberg;13,8;45,4;Axe;False;;;;
+1984273;Strasbourg;31;31-45+;Gessime Yassine;96,7;70,6;0,07973879201226003;False;Pied;Passe courte / combinaison;Sebastian Nanasi;78,5;63,4;Droite;True;Centre;Gauche;24,9827132433609;
+1984273;Strasbourg;38;31-45+;Sam Amo-Ameyaw;81,5;26,4;0,03305227292498956;False;Pied;Passe courte / combinaison;Lucas Høgsberg;70,1;62,1;Axe;False;;;;
+1984273;Strasbourg;81;76-90+;Gessime Yassine;93,6;33,0;0,10076552645551036;False;Pied;2e ballon : après un dégagement;;;;Gauche;True;Centre;Gauche;30,374226327595576;Timothy Weah (Clearance)
+1984275;Rennes;19;16-30;Valentin Rongier;79,1;40,9;0,04170396117040597;False;Pied;Remise en retrait;Adrien Thomasson;89,9;29,1;Gauche;False;;;;
+1984275;Rennes;24;16-30;Issa Soumaré;90,5;58,7;0,054249918817339565;False;Tête;2e ballon : après un dégagement;;;;Gauche;True;Long ballon;Gauche;45,78952981850764;Nayef Aguerd (Clearance)
+1984275;Rennes;29;16-30;Ludovic Blas;74,6;66,2;0,02626181623905066;False;Pied;Passe courte / combinaison;Adrien Thomasson;45,3;29,5;Gauche;False;;;;
+1984275;Rennes;35;31-45+;Przemyslaw Frankowski;90,9;31,2;0,07500876639936158;False;Pied;Remise en retrait;Estéban Lepaul;84,2;82,5;Droite;False;;;;
+1984275;Rennes;41;31-45+;Issa Soumaré;76,9;66,7;0,02550230942492806;False;Pied;Coup de pied arrêté;Adrien Thomasson;70,7;100,0;Droite;False;;;;
+1984275;Rennes;43;31-45+;Valentin Rongier;81,2;49,6;0,05568010778797605;False;Pied;2e ballon : après un dégagement;;;;Gauche;True;Centre;Gauche;33,55734941857;Nayef Aguerd (Clearance)
+1984275;Rennes;45;31-45+;Ludovic Blas;73,8;50,9;0,024631404011595474;False;Pied;Coup de pied arrêté;Valentin Rongier;73,7;41,7;Axe;False;;;;
+1984275;Rennes;51;46-60;Adrien Thomasson;84,7;47,7;0,08237907720379586;False;Pied;2e ballon : après un duel ou un contrôle raté;;;;Axe;False;;;;Himad Abdelli (BallTouch)
+1984275;Rennes;51;46-60;Mousa Al Tamari;96,0;58,9;0,12287349320406404;False;Tête;Centre;Ludovic Blas;85,2;9,4;Gauche;True;Centre;Gauche;31,681118414601467;
+1984275;Rennes;51;46-60;Adrien Thomasson;95,7;46,8;0,5703896837341547;True;Pied;2e ballon : après un duel ou un contrôle raté;;;;Gauche;True;Centre;Gauche;31,681118414601467;Timothy Weah (BallTouch)
+1984275;Rennes;55;46-60;Ludovic Blas;88,9;43,2;0,047242013083205865;False;Tête;Centre;Adrien Thomasson;97,2;19,2;Gauche;True;Centre;Gauche;21,14934363047705;
+1984275;Rennes;58;46-60;Mousa Al Tamari;91,7;68,5;0,08037095097543946;False;Pied;Passe courte / combinaison;Mahdi Camara;65,4;74,2;Droite;False;;;;
+1984275;Rennes;61;61-75;Estéban Lepaul;92,3;56,2;0,09072803941375537;False;Tête;Centre;Aboubakar Nagida;78,1;89,3;Droite;True;Centre;Droite;35,25538541840098;
+1984275;Rennes;63;61-75;Estéban Lepaul;85,6;72,0;0,0741223133146951;False;Pied;Passe courte / combinaison;Mahdi Camara;67,8;78,6;Droite;False;;;;
+1984275;Rennes;67;61-75;Mousa Al Tamari;94,1;31,0;0,08659284345262167;False;Pied;Passe courte / combinaison;Valentin Rongier;40,0;36,1;Gauche;False;;;;
+1984275;Rennes;70;61-75;Mahdi Camara;86,1;35,1;0,0652778442140471;False;Pied;2e ballon : après un dégagement;;;;Gauche;True;Centre;Gauche;36,17817994316464;CJ Egan-Riley (Clearance)
+1984275;Rennes;71;61-75;Adrien Thomasson;91,5;53,6;0,2329954866340479;False;Pied;Remise en retrait;Mousa Al Tamari;93,5;69,9;Droite;False;;;;
+1984275;Rennes;76;76-90+;Mahdi Camara;74,9;58,9;0,03003996324994199;False;Pied;Passe courte / combinaison;Adrien Thomasson;76,1;82,3;Droite;False;;;;
+1984275;Rennes;86;76-90+;Eliezer Mayenda;81,7;49,6;0,058688459675121665;False;Pied;Ballon perdu par nous;;;;Axe;False;;;;CJ Egan-Riley (Error)
+1984275;Rennes;89;76-90+;Eliezer Mayenda;88,1;67,5;0,06720235888569479;False;Pied;Passe courte / combinaison;Boulaye Dia;85,3;62,2;Axe;False;;;;
