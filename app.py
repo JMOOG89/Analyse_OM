@@ -107,7 +107,7 @@ st.markdown(f"""
 # 2. LECTURE DES DONNÉES
 # =====================================================================================
 @st.cache_data
-def lire(nom, _date=None):
+def lire(nom, date_fichier=None):
     chemin = DOSSIER / nom
     if not chemin.exists():
         return None
