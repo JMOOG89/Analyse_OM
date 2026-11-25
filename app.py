@@ -2306,6 +2306,74 @@ TEXTE_STATSBOMB = (
     "Alternative : SkillCorner (données de suivi issues des images TV, intensité de la pression).")
 
 
+# ------------------------------------------------------------------ STATSBOMB : indicateurs à prendre en compte
+# Numéros = ceux du document « Indicateurs StatsBomb à acheter pour le diagnostic OM ».
+SB_IND = {
+    9: ("xG par tir concédé à contexte égal", "Standard"),
+    22: ("Passe décisive exacte (remise en retrait, profondeur, centre)", "Standard"),
+    28: ("Tirs concédés sous pression ou non", "Standard"),
+    29: ("% de centres concédés sous pression", "Standard"),
+    30: ("Délai de sortie sur le centreur, et qui presse", "Standard"),
+    31: ("Distance du défenseur le plus proche du centreur", "360"),
+    32: ("Vraies prises à 2 dans le couloir", "360"),
+    33: ("Distance ailier–latéral, ballon dans le couloir", "360"),
+    34: ("Renoncement adverse (ressortie ou perte après pression)", "Standard"),
+    35: ("Type de centre concédé (hauteur, rentrant, sortant, remise)", "Standard"),
+    36: ("Nombre dans la surface au moment du centre", "360"),
+    37: ("Receveur du centre marqué ou libre", "360"),
+    38: ("2e ballon après centre", "Standard"),
+    39: ("Valeur (OBV) des centres concédés", "IQ"),
+    40: ("Tir contesté ou libre (distance au tireur)", "Standard"),
+    41: ("Préparation du tir : 1re intention, face-à-face, après dribble", "Standard"),
+    42: ("Part du danger due au placement", "Standard"),
+    43: ("Entrées dans la surface exactes", "Standard"),
+    44: ("Réceptions adverses en zone 14", "Standard"),
+    45: ("Joueurs engagés avant le tir", "Standard"),
+    46: ("Prises à 2 devant la surface", "360"),
+    47: ("Milieu au point de penalty (redescente)", "360"),
+    48: ("Compacité du bloc à chaque entrée", "360"),
+    49: ("Dribblé et duels par zone, avec leur coût", "Standard"),
+    50: ("Tirs contrés (qui se met devant la frappe)", "Standard"),
+    51: ("Valeur (OBV) des actions adverses en zone 14 et dans la surface", "IQ"),
+    64: ("Pressions par zone et par joueur", "Standard"),
+    68: ("PPDA exact", "Standard"),
+    69: ("Hauteur de récupération", "Standard"),
+    75: ("Pressions et récupérations après pression /90", "Standard"),
+    77: ("Dribblé /90 par zone", "Standard"),
+    78: ("% duels gagnés au sol et aériens, par zone", "Standard"),
+    81: ("Valeur (OBV) par joueur", "IQ"),
+    82: ("Latéral : distance au centreur", "360"),
+    83: ("Milieu : présence dans la surface", "360"),
+    84: ("Défenseur : distance au tireur et au receveur", "360"),
+    97: ("Images de placement des séquences clés", "360"),
+}
+COULEUR_SB = "#6D28D9"
+
+
+def statsbomb_ici(items):
+    """Sous un graphique : les indicateurs StatsBomb qui rendraient ce constat plus précis, et la question qu'ils tranchent."""
+    lignes = "".join(
+        f"<li><b>n°{n} · {SB_IND[n][0]}</b> <span style='color:{COULEUR_SB};font-size:11px'>({SB_IND[n][1]})</span> — "
+        f"{gras(q)}</li>" for n, q in items)
+    st.markdown(f'<div class="creuser" style="border-left-color:{COULEUR_SB};background:#F5F3FF"><b>➜ Pour aller plus loin '
+                f'avec StatsBomb</b><ul style="margin:4px 0 0 0;padding-left:18px;font-size:12.5px">{lignes}</ul></div>',
+                unsafe_allow_html=True)
+
+
+def conclusion_statsbomb(items, constat):
+    """Conclusion d'une piste : les indicateurs StatsBomb à prendre en compte, par niveau d'achat."""
+    titre("Conclusion : les indicateurs StatsBomb à prendre en compte",
+          "numéros du document des indicateurs ; Standard = événements, 360 = positions de tous les joueurs, IQ = plateforme")
+    st.markdown(constat)
+    ordre = {"Standard": 0, "360": 1, "IQ": 2}
+    t = pd.DataFrame([{"N°": n, "Indicateur": SB_IND[n][0], "Niveau": SB_IND[n][1], "Ce qu'il permettra de trancher": q}
+                      for n, q in items]).sort_values(["Niveau", "N°"], key=lambda c: c.map(ordre) if c.name == "Niveau" else c)
+    st.dataframe(t, hide_index=True, height=38 + 35 * len(t))
+    nb = t["Niveau"].value_counts()
+    st.caption(f"{len(t)} indicateurs : {nb.get('Standard', 0)} avec les événements standard, {nb.get('360', 0)} avec "
+               f"l'option 360, {nb.get('IQ', 0)} sur la plateforme IQ. Données à prendre sur la Ligue 1 2026/2027 uniquement.")
+
+
 # ------------------------------------------------------------------ PISTE 2 : sections
 CRIT_ZONE = {"entrees_surface_match": ("Entrées /match", -1), "tirs_apres_entrees_match": ("Tirs après entrée /match", -1),
              "pct_entrees_suivies_tir": ("% entrées → tir", -1), "pct_z14_suivies_tir": ("% zone 14 → tir", -1),
@@ -2672,6 +2740,12 @@ def page_piste_centres():
                     "pct_centres_de_loin": "% de loin (> 30 m)", "xg_par_centre_adv": "xG / centre",
                     "Profil": "Profil"}, n=12)
 
+    statsbomb_ici([
+        (29, "les clubs du carré idéal subissent-ils peu de centres **parce qu'ils pressent le centreur** ? On le verrait directement."),
+        (35, "quels types de centres chacun laisse : rentrants, longs, remises en retrait."),
+        (34, "combien d'arrivées adverses dans le couloir finissent en ressortie ou en perte chez les références."),
+        (39, "le coût réel des centres concédés, même quand ils ne donnent pas de tir.")])
+
     # ---------- B. COMMENT ILS Y ARRIVENT
     titre("B. Comment ils y arrivent : système, ballon, pressing",
           "PPDA = passes adverses par action défensive : bas = pression haute")
@@ -2680,6 +2754,10 @@ def page_piste_centres():
                  "pct_centres_adv_reussis": "% centres réussis", "xga_tete_par_centre_adv": "xG tête / centre",
                  "tirs_contre_m": "Tirs concédés /match"},
                 {"centres_adv_match": "Centres dans le jeu /match (L1)", "pct_centres_de_loin": "% centres de loin (L1)"})
+    statsbomb_ici([
+        (30, "**qui sort sur le centreur** chez les références (latéral, ailier, milieu) et en combien de temps."),
+        (64, "la vraie carte des pressions des références, au lieu du PPDA approché de ce tableau."),
+        (33, "la distance entre l'ailier et le latéral quand le ballon est dans le couloir.")])
     with st.expander("Pour info : défendre le centre une fois donné (ne sert plus à choisir les références)"):
         if WS_OK:
             duel_ok = WS_NOUS["pct_aeriens_surface_gagnes"] >= WS["pct_aeriens_surface_gagnes"].mean()
@@ -2699,6 +2777,12 @@ def page_piste_centres():
     else:
         message_whoscored()
 
+    statsbomb_ici([
+        (29, "la preuve qui manque : nos centres concédés partent-ils **sous pression ou libres** ?"),
+        (31, "la distance du défenseur le plus proche du centreur, en mètres : un centre « libre » se compte enfin."),
+        (37, "sur les centres longs que nos adversaires réussissent si souvent, **le receveur était-il libre ou marqué** ?"),
+        (36, "combien nous sommes dans la surface au moment du centre, et quelles zones restent libres (2e poteau).")])
+
     # ---------- D. LE SYSTÈME COLLECTIF
     titre("D. Le système collectif : des attaques dangereuses sur centres, neutralisées par une défense à 4",
           "match par match : ce que l'adversaire fait quand il arrive dans le couloir, ce que fait la défense")
@@ -2707,6 +2791,12 @@ def page_piste_centres():
     else:
         message_whoscored()
     section_europe_centres()
+
+    statsbomb_ici([
+        (32, "les vraies prises à 2 dans le couloir, sans dépendre d'un contact enregistré."),
+        (33, "l'aide de l'ailier mesurée par **sa position**, pas par ses actions sur le ballon."),
+        (34, "l'adversaire ressort-il **parce qu'il est pressé**, ou par choix ?"),
+        (97, "les images de placement de ces séquences pour la vidéo.")])
 
     # ---------- LATÉRAUX
     titre("Les latéraux : centres subis de leur côté et qualité de ces centres",
@@ -2733,11 +2823,19 @@ def page_piste_centres():
                    ("Duels perdus /90", "Duels perdus /90", -1)],
                   refs_l1 + refs_eu)
 
+    statsbomb_ici([
+        (82, "la distance de chaque latéral au centreur sur les centres de son côté : sort-il ?"),
+        (29, "le % de centres de son côté concédés sous pression."),
+        (75, "ses pressions et récupérations après pression par 90 minutes."),
+        (77, "dribblé par zone : près ou loin de notre but.")])
+
     # ---------- VIDÉO
     titre("Exemples à analyser en vidéo", "match et minute ; pour les clubs étrangers, le match le plus parlant")
     exemples("Centres", refs_l1, refs_eu, match_peu_de_centres,
              lambda r: f"{int(r['centres_adv'])} centres subis face à une attaque au-dessus de la moyenne, "
                        f"{fmt(r['xga_tete'], 2)} xG de la tête concédé : regarder la pression sur le porteur côté")
+    statsbomb_ici([(97, "chaque séquence avec la position de tous les joueurs au moment du centre : support direct pour "
+                        "la séance vidéo.")])
 
     # ---------- ENTRAÎNEMENT
     consignes("Pistes pour l'entraînement", [
@@ -2754,6 +2852,23 @@ def page_piste_centres():
         "dégagement « haut et large », jamais dans l'axe.",
         "**Vidéo** : montrer côte à côte une séquence « à reproduire » d'une référence et une séquence « à corriger » "
         "de chez nous, même type de centre."])
+    conclusion_statsbomb([
+        (29, "Pression ou distance : nos centres concédés partent-ils sous pression ?"),
+        (30, "Qui sort sur le centreur, et en combien de temps (nous et les références)."),
+        (34, "Les références font-elles renoncer l'adversaire dans le couloir ?"),
+        (35, "Quels types de centres nous coûtent (centres longs, rentrants, remises)."),
+        (38, "Qui récupère le 2e ballon après un centre."),
+        (31, "Distance au centreur : combien de centres « libres » nous laissons."),
+        (32, "Vraies prises à 2 dans le couloir."),
+        (33, "L'ailier aide-t-il le latéral (distance entre les deux) ?"),
+        (36, "Combien nous sommes dans la surface, quelles zones restent libres."),
+        (37, "Le receveur des centres longs était-il marqué ?"),
+        (82, "Chaque latéral sort-il sur le centreur ?"),
+        (39, "Le coût réel de chaque couloir, même sans tir.")],
+        "Nos données actuelles montrent **où** et **combien** : centres subis, centres longs qui trouvent preneur, temps "
+        "laissé au centreur. Elles ne voient pas **la pression sans contact ni le placement**. Ces indicateurs permettront "
+        "de dire objectivement si le problème vient de la sortie sur le centreur, de l'aide de l'ailier ou du marquage "
+        "dans la surface, et donc quoi changer à l'entraînement.")
     note("decision_piste_centres", "✎ Décisions et exercices retenus", zone=True, hauteur=90)
 
 
@@ -2809,6 +2924,12 @@ def page_piste_zone():
                     "ligue": "Ligue", "tirs_contre_m": "Tirs /match", "tirs_surface_contre_m": "Tirs surface /match",
                     "xga_par_tir": "xG / tir", "Profil": "Profil"}, n=12)
 
+    statsbomb_ici([
+        (40, "tir contesté ou libre : la **distance au tireur** explique-t-elle notre écart de xG par tir avec les références ?"),
+        (42, "la part du danger due à notre placement, à distance et angle égaux."),
+        (28, "le % de tirs concédés sous pression."),
+        (9, "le xG par tir à contexte égal, avec la position des défenseurs.")])
+
     # ---------- B. COMMENT ILS Y ARRIVENT
     titre("B. Comment ils y arrivent : système, ballon, pressing, accès à la surface",
           "PPDA = passes adverses par action défensive : bas = pression haute")
@@ -2818,6 +2939,12 @@ def page_piste_zone():
                  "touches_surface_contre_m": "Ballons adv. dans notre surface /match", "xga_cote_Axe_m": "xG face au but /match"},
                 {"entrees_surface_match": "Entrées surface /match (L1)", "pct_entrees_suivies_tir": "% entrées → tir (L1)"})
 
+    statsbomb_ici([
+        (64, "où les références pressent, par zone."),
+        (68, "le PPDA exact, avec les pressions (ici approché)."),
+        (69, "la hauteur de récupération : bloc haut ou bas."),
+        (48, "la compacité du bloc à chaque entrée adverse.")])
+
     # ---------- C. LA ZONE DE VÉRITÉ
     titre("C. La zone de vérité : combien d'entrées, et combien finissent en tir",
           f"{LIGUE} ; un % élevé avec peu d'entrées pèse moins qu'un % moyen avec beaucoup d'entrées")
@@ -2826,6 +2953,13 @@ def page_piste_zone():
     else:
         message_whoscored()
 
+    if WS_OK:
+        statsbomb_ici([
+            (43, "les entrées dans la surface exactes, balle au pied ou par une passe, **sous pression ou non**."),
+            (44, "les réceptions adverses en zone 14 : libres ou sous pression, et ce qui suit."),
+            (48, "la compacité au moment de l'entrée : le bloc était-il regroupé ?"),
+            (49, "duels et dribblé par zone avec leur coût en xG, au lieu du % de duels brut (cf. le cas du PSG).")])
+
     # ---------- D. CE QUI REND UN TIR DANGEREUX
     titre("D. Pourquoi leurs tirs sont moins dangereux : les indicateurs qui font la différence",
           "lien avec le danger = corrélation r entre l'indicateur et le xG par tir concédé, sur les clubs du championnat")
@@ -2833,6 +2967,15 @@ def page_piste_zone():
         section_discriminants(refs_l1, refs_eu)
     else:
         message_whoscored()
+
+    if WS_OK:
+        statsbomb_ici([
+            (40, "la **distance au tireur**, vraie mesure de la pression au moment du tir (notre % de contacts n'en voit qu'une partie)."),
+            (41, "1re intention, face-à-face, tir après dribble : les définitions officielles."),
+            (45, "le nombre de nos joueurs engagés dans la possession avant le tir."),
+            (46, "les prises à 2 devant la surface."),
+            (47, "le milieu au point de penalty quand le ballon arrive à la ligne : la redescente mesurée directement."),
+            (22, "la passe décisive exacte (remise en retrait, profondeur).")])
 
     # ---------- JOUEURS
     titre("Les joueurs : radars jusqu'à 4 joueurs, 6 indicateurs",
@@ -2871,6 +3014,13 @@ def page_piste_zone():
                "notre surface (dégagement, interception, contre, duel gagné) : pour un milieu, c'est la trace d'un retour "
                "dans la surface. Indicateurs Ligue 1 : WhoScored ; 5 championnats : FotMob.")
 
+    statsbomb_ici([
+        (75, "pressions et récupérations après pression par 90 minutes, tous postes."),
+        (78, "duels au sol et aériens par zone."),
+        (84, "défenseur : distance au tireur et au receveur dans la surface."),
+        (83, "milieu : présence dans la surface sur les entrées adverses."),
+        (81, "la valeur (OBV) apportée ou concédée par chaque joueur.")])
+
     # ---------- LES BUTS CITÉS
     if WS_OK:
         titre("Les buts du Havre et du Mans : ce qu'ils montrent")
@@ -2891,6 +3041,10 @@ def page_piste_zone():
             "vers le but au lieu de protéger la zone de remise.\n"
             "- **Le Mans, 83'** : changement d'aile, centre de Calodat depuis notre droite, arrêt de De Lange, **Colas "
             "suit et marque** : 2e ballon.")
+        statsbomb_ici([
+            (47, "Le Mans 94' : où était notre milieu le plus proche au moment de la remise en retrait ?"),
+            (40, "Le Havre 85' : la distance de nos défenseurs au tireur et au passeur."),
+            (97, "les images de placement des trois buts, pour la séance vidéo.")])
 
     # ---------- VIDÉO
     titre("Exemples à analyser en vidéo", "match et minute ; pour les clubs étrangers, le match le plus parlant")
@@ -2910,6 +3064,24 @@ def page_piste_zone():
         "(les deux buts cités partent de combinaisons non pressées).",
         "**Références à regarder** : la distance entre nos lignes et la sortie des milieux chez les clubs retenus (vidéo "
         "ci-dessus)."])
+    conclusion_statsbomb([
+        (40, "Distance au tireur : nos tirs concédés sont-ils plus libres que chez les références ?"),
+        (41, "Comment les tirs sont préparés (1re intention, face-à-face, après dribble)."),
+        (43, "Entrées dans la surface exactes, sous pression ou non."),
+        (44, "Réceptions adverses en zone 14 : libres ou pressées."),
+        (45, "Combien de nos joueurs défendent l'action avant le tir."),
+        (49, "Duels et dribblé par zone, avec leur coût."),
+        (50, "Qui se met devant la frappe."),
+        (46, "Vraies prises à 2 devant la surface."),
+        (47, "Le milieu redescend-il au point de penalty ?"),
+        (48, "Le bloc est-il compact quand l'adversaire entre ?"),
+        (84, "Distance de chaque défenseur au tireur et au receveur."),
+        (83, "Présence de chaque milieu dans la surface."),
+        (51, "Où l'adversaire crée sa valeur contre nous, même sans tir.")],
+        "Nos données actuelles montrent **d'où et comment** l'adversaire tire : de près, en contre-attaque, en 1re "
+        "intention, après avoir éliminé un des nôtres. Elles ne voient pas **la distance au tireur, les prises à 2 ni la "
+        "redescente du milieu**. Ces indicateurs permettront de dire objectivement ce qui diffère entre nous et Brest, "
+        "Paris FC ou le PSG, et quelle consigne changer.")
     note("decision_piste_zone", "✎ Décisions et exercices retenus", zone=True, hauteur=90)
 
 
